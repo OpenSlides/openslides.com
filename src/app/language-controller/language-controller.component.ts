@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LanguageService } from '../languages.service';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-language-controller',
@@ -8,14 +8,4 @@ import { LanguageService } from '../languages.service';
 })
 export class LanguageControllerComponent {
     constructor(public languageService: LanguageService) {};
-    // get all available languages
-    // languages = LanguageService.getLanguages();
-    // // controller to switch app language
-    // switchLanguage = function (lang) {
-    //     this.selectedLangCode = lang;
-    //     this.languages = LanguageService.setCurrentLanguage(lang);
-    // };
-    // getLanguageHref = function (lang) {
-    //     return window.location.toString().split('?')[0] + '?lang=' + lang;
-    // };
 }

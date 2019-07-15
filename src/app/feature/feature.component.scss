@@ -1,0 +1,7 @@
+::ng-deep .slideshow-container {
+    padding-top: 63.3064516%;   // force correct aspect ratio on images, since auto height isnt possible
+}
+
+.mat-menu-item {
+    text-transform: uppercase;
+}

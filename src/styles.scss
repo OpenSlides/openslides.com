@@ -11,6 +11,11 @@ a {
     color: inherit;
 }
 
+tbd {
+    display: inline-block;
+    color: red;
+}
+
 .fill-remaining-space {
     flex: 1 1 auto;
 }
@@ -127,6 +132,10 @@ h2 {
     margin-bottom: 30px !important;
 }
 
+.mb-2 {
+    margin-bottom: 70px !important;
+}
+
 .text-left {
     text-align: left;
 }
@@ -144,14 +153,49 @@ h2 {
     }
 }
 
+.icon-wrapper {
+    display: flex;
+
+    &.col {
+        justify-content: center;
+    }
+    &:not(.col) {
+        align-items: center;
+    }
+
+    .icon {
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .mat-icon {
+        margin-right: 10px;
+    }
+}
+
 .text-right {
     text-align: right;
+
+    &.flex {
+        &:not(.col) {
+            justify-content: flex-end;
+        }
+        &.col {
+            align-items: flex-end;
+        }
+    }
 }
 
 .mat-list-base .mat-list-item {
     color: inherit;
     height: auto !important;
     text-align: left;
+}
+
+.mat-icon.inline {
+    font-size: smaller;
+    height: auto;
+    width: auto;
 }
 
 .main-container {

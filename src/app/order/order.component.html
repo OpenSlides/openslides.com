@@ -1,0 +1,77 @@
+<div class="container main-container">
+    <form id="order-form" [formGroup]="orderForm" (ngSubmit)="onSubmit()">
+        <b class="mb-0">Details</b>
+        <div fxLayout="row wrap" appWrappable wrapMargin="4%">
+            <mat-form-field fxFlex.gt-sm="46">
+                <mat-label>OpenSlides-Tarif</mat-label>
+                <mat-select formControlName="tariff">
+                    <mat-option value="single">Single</mat-option>
+                    <mat-option value="basic">Basic</mat-option>
+                    <mat-option value="enterprise">Enterprise</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field fxFlex.gt-sm="46">
+                <input type="text" matInput formControlName="domain" placeholder="Wunschdomain">
+                <span matSuffix>.openslides.com</span>
+            </mat-form-field>
+        </div>
+        <mat-form-field>
+            <input type="text" matInput formControlName="event_name" placeholder="Veranstaltungsname">
+        </mat-form-field>
+        <mat-form-field>
+            <input type="text" matInput formControlName="organizer" placeholder="Veranstalter">
+        </mat-form-field>
+        <div fxLayout="row wrap" appWrappable wrapMargin="4%">
+            <mat-form-field fxFlex.gt-sm="61">
+                <input type="text" matInput formControlName="location" placeholder="Veranstaltungsort">
+            </mat-form-field>
+            <mat-form-field fxFlex.gt-sm="31">
+                <input type="number" matInput formControlName="expected_users" min="1" placeholder="Erwartete Teilnehmeranzahl">
+            </mat-form-field>
+        </div>
+        <div fxLayout="row wrap" appWrappable wrapMargin="4%" class="mb-1">
+            <mat-form-field fxFlex.gt-sm="46">
+                <input matInput [matDatepicker]="fromPicker" placeholder="Von" formControlName="date_from">
+                <mat-datepicker-toggle matSuffix [for]="fromPicker"></mat-datepicker-toggle>
+                <mat-datepicker #fromPicker></mat-datepicker>
+            </mat-form-field>
+            <mat-form-field fxFlex.gt-sm="46">
+                <input matInput [matDatepicker]="toPicker" placeholder="Bis" formControlName="date_to">
+                <mat-datepicker-toggle matSuffix [for]="toPicker"></mat-datepicker-toggle>
+                <mat-datepicker #toPicker></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <b class="mb-0">Ansprechpartner</b>
+        <div formGroupName="contact_person" class="mb-1">
+            <mat-form-field>
+                <input type="text" matInput formControlName="name" placeholder="Name">
+            </mat-form-field>
+            <div fxLayout="row wrap" appWrappable wrapMargin="4%">
+                <mat-form-field fxFlex.gt-sm="46">
+                    <input type="email" matInput formControlName="email" placeholder="E-Mail">
+                </mat-form-field>
+                <mat-form-field fxFlex.gt-sm="46">
+                    <input type="tel" matInput formControlName="phone" placeholder="Telefon">
+                </mat-form-field>
+            </div>
+        </div>
+        <b class="mb-0">Rechnungsadresse</b>
+        <div formGroupName="billing_address">
+            <mat-form-field>
+                <input type="text" matInput formControlName="name" placeholder="Name">
+            </mat-form-field>
+            <mat-form-field>
+                <input type="text" matInput formControlName="street" placeholder="Straße + Hausnummer">
+            </mat-form-field>
+            <div fxLayout="row wrap" appWrappable wrapMargin="4%">
+                <mat-form-field fxFlex.gt-sm="23">
+                    <input type="text" matInput formControlName="zipcode" placeholder="PLZ">
+                </mat-form-field>
+                <mat-form-field fxFlex.gt-sm="69">
+                    <input type="text" matInput formControlName="city" placeholder="Ort">
+                </mat-form-field>
+            </div>
+        </div>
+        <button type="submit" mat-flat-button class="os-button">Anfrage schicken</button>
+    </form>
+</div>

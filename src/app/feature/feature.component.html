@@ -1,0 +1,14 @@
+<div class="container main-container">
+    <div class="flex text-right">
+        <a mat-menu-item *ngFor="let item of routes | keyvalue" routerLink="/feature/{{item.key}}" [style.order]="item.value.order">{{ item.value.title }}</a>
+    </div>
+    <h1 class="valign-wrapper">
+        <mat-icon class="inline mr-1">{{ icon }}</mat-icon>
+        <span>{{ title }}</span>
+    </h1>
+    <p>{{ intro }}</p>
+    <slideshow [autoPlay]="true" autoPlayInterval="5000" [imageUrls]="images"></slideshow>
+    <mat-list>
+        <mat-list-item *ngFor="let d of details"><mat-icon matListIcon>arrow_right</mat-icon>{{ d }}</mat-list-item>
+    </mat-list>
+</div>
