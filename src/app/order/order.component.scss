@@ -7,4 +7,11 @@
     input, select, mat-form-field {
         width: 100%;
     }
+
+    .error-div {
+        border-radius: 4px;
+        border: 1px solid red;
+        color: red;
+        padding: 10px 20px;
+    }
 }

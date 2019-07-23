@@ -70,14 +70,19 @@ p {
         background-color: #bce0fd;
         margin-top: -8rem;
         padding-top: 14rem;
+        margin-bottom: 12rem;
 
         .container {
             margin-bottom: -4rem;
         }
+    }
+}
 
-        & + .section {
-            padding-top: 8rem;
-        }
+.blue-links a {
+    color: #2699fb;
+
+    &:hover {
+        color: #057ae1;
     }
 }
 
@@ -108,12 +113,21 @@ p {
 }
 
 .blue-strip {
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+    left: 0;
+    right: 0;
     background-color: #bce0fd;
+    z-index: -1;
+}
 
-    .container img {
-        margin-top: -8rem;
-        margin-bottom: -8rem;
-    }
+.white-links a {
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 3px;
+    margin-bottom: 12px;
+    margin-left: 7px;
 }
 
 .github-button {
@@ -171,7 +185,6 @@ p {
 }
 
 img.screenshot {
-    // height: 500px;
     width: 100%;
 }
 
@@ -181,6 +194,7 @@ img.screenshot {
 
 .icon-as-img {
     flex-grow: 1;
+    margin-bottom: -50px;
     
     mat-icon {
         font-size: 300px;
@@ -193,6 +207,21 @@ img.screenshot {
 .inline-logo {
     height: 20px;
     margin-right: 8px;
+}
+
+#open-source-div {
+    margin-top: 7rem;
+}
+
+::ng-deep .quote-container {
+    padding-left: 35px;
+    padding-right: 35px;
+
+    @media (max-width: 767px) {
+        h1 {
+            font-size: 25px;
+        }
+    }
 }
 
 @media (max-width: 767.99px) {
@@ -226,13 +255,10 @@ img.screenshot {
         padding-top: 2rem;
         padding-bottom: 2rem;
         margin-top: initial;
+        margin-bottom: initial;
 
         .container {
             margin-bottom: initial;
-        }
-
-        & + .section {
-            padding-top: initial;
         }
     }
 }

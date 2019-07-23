@@ -16,8 +16,10 @@ schema = {
         "event_name": { "type": "string", "pattern": standard_pattern },
         "organizer": { "type": "string", "pattern": standard_pattern },
         "location": { "type": "string", "pattern": standard_pattern },
-        "date_from": { "type": "string", "format": "date" },
-        "date_to": { "type": "string", "format": "date" },
+        "event_from": { "type": "string", "format": "date" },
+        "event_to": { "type": "string", "format": "date" },
+        "hosting_from": { "type": "string", "format": "date" },
+        "hosting_to": { "type": "string", "format": "date" },
         "expected_users": { "type": "integer", "minimum": 1},
         "contact_person": {
             "type": "object",
@@ -33,13 +35,15 @@ schema = {
             "properties": {
                 "name": { "type": "string", "pattern": standard_pattern },
                 "street": { "type": "string", "pattern": standard_pattern },
+                "extra": { "type": "string" },
                 "zipcode": { "type": "string", "pattern": "^[0-9]{4,5}$" },
-                "city": { "type": "string", "pattern": standard_pattern_no_number }
+                "city": { "type": "string", "pattern": standard_pattern_no_number },
+                "country": { "type": "string", "pattern": standard_pattern_no_number }
             },
-            "required": ["name", "street", "zipcode", "city"]
+            "required": ["name", "street", "extra", "zipcode", "city", "country"]
         }
     },
-    "required": ["tariff", "domain", "event_name", "organizer", "location", "date_from", "date_to", "expected_users", "contact_person", "billing_address"]
+    "required": ["tariff", "domain", "event_name", "organizer", "location", "event_from", "event_to", "hosting_from", "hosting_to", "expected_users", "contact_person", "billing_address"]
 }
 
 @app.route('/api/order', methods=["POST", "GET"])
@@ -57,7 +61,8 @@ def send_mail():
         Veranstaltungsname: {data["event_name"]}<br>
         <br>
         Veranstalter: {data["organizer"]}<br>
-        Zeitraum: {data["date_from"]} bis {data["date_to"]}<br>
+        Veranstaltungszeitraum: {data["event_from"]} bis {data["event_to"]}<br>
+        Hostingzeitraum: {data["hosting_from"]} bis {data["hosting_to"]}<br>
         Veranstaltungsort: {data["location"]}<br>
         Erwartete Teilnehmeranzahl: {data["expected_users"]}<br>
         <br>
@@ -69,8 +74,10 @@ def send_mail():
         Rechnungsanschrift:<br>
         Name: {data["billing_address"]["name"]}<br>
         Straße: {data["billing_address"]["street"]}<br>
+        Adresszusatz: {data["billing_address"]["extra"]}<br>
         PLZ: {data["billing_address"]["zipcode"]}<br>
-        Ort: {data["billing_address"]["city"]}
+        Ort: {data["billing_address"]["city"]}<br>
+        Land: {data["billing_address"]["country"]}
     """
     mail.send(msg)
     return { "success": True }

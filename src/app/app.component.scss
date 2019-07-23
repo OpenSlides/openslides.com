@@ -35,6 +35,11 @@ footer.footer {
             h1 {
                 font-size: 45px;
             }
+
+            .link:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
         }
 
         mat-divider {

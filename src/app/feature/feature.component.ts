@@ -8,17 +8,18 @@ import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 })
 export class FeatureComponent implements OnInit {
     private path = "assets/img/features/";
-    public routes: Object = {
+    private activeRoute = "";
+    private routes: Object = {
         agenda: {
             title: "Tagesordnung",
             icon: "calendar_today",
             intro: "Bleiben Sie flexibel: Ergänzen, ändern oder verschieben Sie Tagesordnungspunkte im laufenden Betrieb.",
             images: [
-                `${this.path}agenda-list_de.png`,
-                `${this.path}agenda-list-of-speakers_de.png`,
-                `${this.path}agenda-list-of-speakers-projector_de.png`,
-                `${this.path}agenda-projector_de.png`,
-                `${this.path}agenda-edit_de.png`
+                { url: `${this.path}agenda-list_de.png`, caption: "Lorem ipsum" },
+                { url: `${this.path}agenda-list-of-speakers_de.png`, caption: "Lorem ipsum" },
+                { url: `${this.path}agenda-list-of-speakers-projector_de.png`, caption: "Lorem ipsum" },
+                { url: `${this.path}agenda-projector_de.png`, caption: "Lorem ipsum" },
+                { url: `${this.path}agenda-edit_de.png`, caption: "Lorem ipsum" }
             ],
             details: [
                 "Redelisten für jeden Tagesordnungspunkt.",
@@ -31,18 +32,17 @@ export class FeatureComponent implements OnInit {
                 "Tagesordnung als PDF exportieren.",
                 "Projektor über die Seitenleiste steuern.",
                 "Tagesordnung per Drag&Drop sortieren."
-            ],
-            order: 1
+            ]
         },
         motions: {
             title: "Anträge",
             icon: "note",
             intro: "Sparen Sie Papier: Erfassen und verwalten Sie Anträge und Abstimmungsergebnisse digital.",
             images: [
-                `${this.path}motions-list_de.png`,
-                `${this.path}motions-detail_de.png`,
-                `${this.path}motions-projector_de.png`,
-                `${this.path}motions-pdf_de.png`
+                { url: `${this.path}motions-list_de.png`, caption: "Lorem ipsum" },
+                { url: `${this.path}motions-detail_de.png`, caption: "Lorem ipsum" },
+                { url: `${this.path}motions-projector_de.png`, caption: "Lorem ipsum" },
+                { url: `${this.path}motions-pdf_de.png`, caption: "Lorem ipsum" }
             ],
             details: [
                 "Anträge mit Zeilennummern verwalten.",
@@ -56,18 +56,17 @@ export class FeatureComponent implements OnInit {
                 "Kommentarfelder für Anträge erlauben.",
                 "Abstimmungsergebnisse erfassen.",
                 "Anträge als PDF, CSV und DOCX exportieren."
-            ],
-            order: 2
+            ]
         },
         elections: {
             title: "Wahlen",
             icon: "pie_chart",
             intro: "Beschleunigen Sie das Prozedere: Generieren Sie ad-hoc Stimmzettel für Ihre geheime Wahlen.",
             images: [
-                `${this.path}elections-list_de.png`,
-                `${this.path}elections-detail_de.png`,
-                `${this.path}elections-projector_de.png`,
-                `${this.path}elections-ballot-pdf_de.png`
+                { url: `${this.path}elections-list_de.png`, caption: "Lorem ipsum" },
+                { url: `${this.path}elections-detail_de.png`, caption: "Lorem ipsum" },
+                { url: `${this.path}elections-projector_de.png`, caption: "Lorem ipsum" },
+                { url: `${this.path}elections-ballot-pdf_de.png`, caption: "Lorem ipsum" }
             ],
             details: [
                 "Kandidaten aus der Teilnehmenden-Liste vorschlagen.",
@@ -77,18 +76,17 @@ export class FeatureComponent implements OnInit {
                 "Mehrere Wahlgänge.",
                 "Wahlergebnisse eingeben und mit Diagramm projizieren.",
                 "Wahlen (mit allen Ergebnissen) als PDF exportieren."
-            ],
-            order: 3
+            ]
         },
         projectors: {
             title: "Projektoren",
             icon: "videocam",
             intro: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             images: [
-                `${this.path}elections-list_de.png`,
-                `${this.path}elections-detail_de.png`,
-                `${this.path}elections-projector_de.png`,
-                `${this.path}elections-ballot-pdf_de.png`
+                { url: `${this.path}elections-list_de.png`, caption: "Lorem ipsum" },
+                { url: `${this.path}elections-detail_de.png`, caption: "Lorem ipsum" },
+                { url: `${this.path}elections-projector_de.png`, caption: "Lorem ipsum" },
+                { url: `${this.path}elections-ballot-pdf_de.png`, caption: "Lorem ipsum" }
             ],
             details: [
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -98,18 +96,17 @@ export class FeatureComponent implements OnInit {
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            ],
-            order: 3
+            ]
         },
         miscellaneous: {
             title: "Weitere Funktionen",
             icon: "search",
             intro: "",
             images: [
-                `${this.path}general-users-list_de.png`,
-                `${this.path}general-files-list_de.png`,
-                `${this.path}general-chat-frontpage_de.png`,
-                `${this.path}general-windows-portable.png`
+                { url: `${this.path}general-users-list_de.png`, caption: "Lorem ipsum" },
+                { url: `${this.path}general-files-list_de.png`, caption: "Lorem ipsum" },
+                { url: `${this.path}general-chat-frontpage_de.png`, caption: "Lorem ipsum" },
+                { url: `${this.path}general-windows-portable.png`, caption: "Lorem ipsum" }
             ],
             details: [
                 "Mehrere Projektoren erstellen.",
@@ -124,10 +121,10 @@ export class FeatureComponent implements OnInit {
                 "Portable Version für Windows.",
                 "Mehrsprachigkeit (Englisch, Deutsch, Französisch, Tschechisch, Portugiesisch, Spanisch und Russisch).",
                 "OpenSlides ist eine plattformunabhängige Webanwendung basierend auf Python 3 und AngularJS mit einer REST-API."
-            ],
-            order: 4
+            ]
         }
     };
+    private routeOrder = ["agenda", "motions", "elections", "projectors", "miscellaneous"];
 
     constructor(private route: ActivatedRoute, private router: Router) { }
 
@@ -142,7 +139,8 @@ export class FeatureComponent implements OnInit {
 
     private setData() {
         let url = this.route.snapshot.url;
-        let data = this.routes[url[url.length - 1].path];
+        this.activeRoute = url[url.length - 1].path;
+        let data = this.routes[this.activeRoute];
         for (let key in data) {
             this[key] = data[key];
         }

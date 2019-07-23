@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -18,8 +18,10 @@ export class OrderComponent implements OnInit {
         event_name: ['', [Validators.required, this.standard]],
         organizer: ['', [Validators.required, this.standard]],
         location: ['', [Validators.required, this.standard]],
-        date_from: ['', [Validators.required]],
-        date_to: ['', [Validators.required]],
+        event_from: ['', [Validators.required]],
+        event_to: ['', [Validators.required]],
+        hosting_from: ['', [Validators.required]],
+        hosting_to: ['', [Validators.required]],
         expected_users: ['', [Validators.required, Validators.min(1)]],
         contact_person: this.fb.group({
             name: ['', [Validators.required, this.standard_no_number]],
@@ -29,32 +31,67 @@ export class OrderComponent implements OnInit {
         billing_address: this.fb.group({
             name: ['', [Validators.required, this.standard]],
             street: ['', [Validators.required, this.standard]],
+            extra: [''],
             zipcode: ['', [Validators.required, Validators.pattern(/^[0-9]{4,5}$/)]],
-            city: ['', [Validators.required, this.standard_no_number]]
+            city: ['', [Validators.required, this.standard_no_number]],
+            country: ['', [Validators.required, this.standard_no_number]]
         })
     }, {
-        validator: this.dateLessThan('date_from', 'date_to')
+        validators: [
+            this.dateLessThan('event_from', 'event_to'),
+            this.dateLessThan('hosting_from', 'hosting_to')
+        ]
     });
+    private error = null;
 
-    constructor(private fb: FormBuilder, private route: ActivatedRoute, private http: HttpClient) { }
+    constructor(private fb: FormBuilder, private route: ActivatedRoute, private http: HttpClient, private router: Router) { }
 
     ngOnInit() {
+        // if tariff is given in get params, set it
         let t = this.route.snapshot.queryParamMap.get("tariff");
         if (t) {
             this.orderForm.get("tariff").setValue(t);
         }
-        console.log(this.orderForm);
     }
 
     onSubmit() {
         let data = this.orderForm.value;
-        if (data.date_from && data.date_from.format) data.date_from = data.date_from.format("DD.MM.YYYY");
-        if (data.date_to && data.date_to.format) data.date_to = data.date_to.format("DD.MM.YYYY");
-        this.http.post("/api/order", data).subscribe(res => {
-            console.log("res:", res);
-        });
+        // format the dates in DD.MM.YYYY since time is irrelevant
+        const dateFields = ["event_from", "event_to", "hosting_from", "hosting_to"];
+        for (var key of dateFields)
+            if (data[key] && data[key].format)
+                data[key] = data[key].format("DD.MM.YYYY");
+        // post the request
+        this.http.post("/api/order", data).subscribe(
+            res => {
+                console.log("res:", res);
+                if (res["success"] === true) {
+                    this.router.navigate(["order", "success"]);
+                } else {
+                    this.error = res["error"] || "Ein unbekannter Fehler ist aufgetreten.";
+                }
+            },
+            error => {
+                console.log(error);
+                switch (error.status) {
+                    case 502:
+                    case 504:
+                        this.error = "Der Server ist momentan nicht erreichbar. Bitte probieren Sie es später nochmal.";
+                        break;
+                    default:
+                        this.error = error.message;
+                        break;
+                }
+            }
+        );
     }
     
+    /**
+     * compares the given date inputs and sets errors according to their states
+     * @param from the key of the "from" control
+     * @param to the key of the "to" control
+     * @return null if no error was set, otherwise the error
+     */
     dateLessThan(from: string, to: string) {
         return (group: FormGroup) => {
             let f = group.controls[from];
@@ -70,7 +107,7 @@ export class OrderComponent implements OnInit {
             } else {
                 if (t.errors && t.errors["negativeDatespan"]) t.updateValueAndValidity();
                 if (f.errors && f.errors["negativeDatespan"]) f.updateValueAndValidity();
-                return {};
+                return null;
             }
         }
     }

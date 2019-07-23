@@ -6,11 +6,11 @@
                 <span class="title">OpenSlides</span>
             </a>
             <span class="fill-remaining-space"></span>
-            <app-main-menu fxLayout="row" fxShow="false" fxShow.gt-sm></app-main-menu>
-            <div fxFlexOffset="10px" class="valign-wrapper">
+            <app-main-menu class="flex hide-xl-down"></app-main-menu>
+            <div class="valign-wrapper">
                 <app-language-controller></app-language-controller>
             </div>
-            <button fxFlexOffset="10px" mat-button [mat-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm>
+            <button class="hide-xl-up" mat-button [mat-menu-trigger-for]="menu">
                 <mat-icon>menu</mat-icon>
             </button>
         </div>
@@ -29,8 +29,8 @@
         <div class="container">
             <ng-container *ngIf="!router.url.endsWith('/contact')">
                 <div class="contact-div">
-                    <h1>Treten Sie mit uns in Kontakt</h1>
-                    <p class="margined">Sollten Sie Fragen zu OpenSlides haben oder eine persönliche Beratung wünschen - wir unterstützen Sie gern.</p>
+                    <h1 routerLink="/contact" class="link">Treten Sie mit uns in Kontakt</h1>
+                    <p class="margined">Sollten Sie Fragen zu OpenSlides haben oder eine persönliche Beratung wünschen &mdash; wir unterstützen Sie gern.</p>
                     <div class="mt-1"></div>
                     <div fxLayout="row wrap" fxLayoutAlign="space-around" fxLayoutAlign.lt-sm="center" class="text-center" appWrappable>
                         <a href="mailto:info@openslides.org" fxFlex.lt-sm="100%" class="valign-wrapper" fxLayoutAlign="center center">

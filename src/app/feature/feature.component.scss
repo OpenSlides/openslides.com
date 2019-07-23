@@ -1,7 +1,17 @@
-::ng-deep .slideshow-container {
-    padding-top: 63.3064516%;   // force correct aspect ratio on images, since auto height isnt possible
-}
-
 .mat-menu-item {
     text-transform: uppercase;
+}
+
+h1.title {
+    color: #2699fb;
+}
+
+.active {
+    color: #2699fb;
+}
+
+.submenu ::ng-deep .mat-select-value {
+    max-width: none;
+    width: auto;
+    color: #2699fb;
 }
