@@ -1,5 +1,5 @@
 <div class="container main-container">
-    <form id="order-form" [formGroup]="orderForm" (ngSubmit)="onSubmit()">
+    <form *ngIf="!isOverviewStep" id="order-form" [formGroup]="orderForm" (ngSubmit)="showOverview()">
         <div class="text-center" translate>
             Senden Sie uns das ausgefüllte Formular. Mit unserer Bestätigung starten wir i.d.R. innerhalb eines Tages das Hosting.
         </div>
@@ -10,14 +10,10 @@
                 <span translate>OpenSlides-Hostingpaket</span>
             </mat-label>
             <mat-select formControlName="package" required>
-                <mat-option value="meeting">
-                    {{ 'Sitzung' | translate }} ({{ 'bis 50 TLN' | translate }} · 50€/{{ 'Monat' | translate }} {{ 'zzgl. USt' | translate }})
-                </mat-option>
-                <mat-option value="conference">
-                    {{ 'Tagung' | translate }} ({{ 'bis 500 TLN' | translate }} · 100€/{{ 'Monat' | translate }} {{ 'zzgl. USt' | translate }})
-                </mat-option>
-                <mat-option value="congress">
-                    {{ 'Kongress' | translate }} ({{ 'bis 1.000 TLN' | translate }} · 200€/{{ 'Monat' | translate }} {{ 'zzgl. USt' | translate }})
+                <mat-option *ngFor="let package of packages | keyvalue: originalOrder" [value]="package.key">
+                    {{ package.value.name | translate }}
+                    ({{ 'bis' | translate }} {{ package.value.max_users }} {{ 'TLN' | translate }} ·
+                    {{ package.value.price }}€/{{ 'Monat' | translate }} {{ 'zzgl. USt' | translate }})
                 </mat-option>
             </mat-select>
         </mat-form-field>
@@ -39,10 +35,13 @@
         </mat-form-field>
 
         <b translate>Zusatzfunktionen</b>
-        <div formGroupName="services">
-            <div *ngFor="let service of services | keyvalue: originalOrder">
-                <mat-checkbox [formControlName]="service.key">{{ service.value | translate }}</mat-checkbox>
-                <a class="details-link" target="_blank" routerLink="/pricing" [fragment]="service.key">Details</a>
+        <div formGroupName="services" class="services-container">
+            <div *ngFor="let service of services | keyvalue: originalOrder" class="valign-wrapper">
+                <mat-checkbox [formControlName]="service.key">{{ service.value.name | translate }}</mat-checkbox>
+                <div class="suffix-container valign-wrapper">
+                    <span class="price">{{ service.value.price_verbose }}</span>
+                    <a class="details-link" target="_blank" routerLink="/pricing" [fragment]="service.key">Details</a>
+                </div>
             </div>
         </div>
 
@@ -101,12 +100,67 @@
             </mat-form-field>
         </div>
 
-        <button type="submit" [disabled]="!orderForm.valid && false" mat-flat-button class="os-button">
-            <span translate>Anfrage absenden</span>
+        <button type="submit" [disabled]="!orderForm.valid" mat-flat-button class="os-button">
+            <span translate>weiter zur Übersicht</span>
         </button>
+    </form>
+
+    <div *ngIf="isOverviewStep">
+        <h2 translate>Bestellübersicht</h2>
+
+        <table class="overviewTable">
+            <tr class="overview-position" *ngFor="let row of overviewData.positions">
+                <td>{{ row.name }}</td>
+                <td>{{ row.base_price | currency:"EUR" }}</td>
+                <td><span *ngIf="row.monthly">x</span></td>
+                <td class="multiplier">{{ row.multiplier }}</td>
+                <td>{{ row.total | currency:"EUR" }}</td>
+            </tr>
+            <tr class="first-non-position">
+                <td colspan="3"></td>
+                <td>{{ "Summe Netto" | translate }}:</td>
+                <td>{{ overviewData.total | currency:"EUR" }}</td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td>{{ "zzgl. USt" | translate }} ({{ VAT_PERCENTAGE * 100 }}%):</td>
+                <td>{{ overviewData.total * VAT_PERCENTAGE | currency:"EUR" }}</td>
+            </tr>
+            <tr class="total-row">
+                <td colspan="3"></td>
+                <td>{{ "Gesamtsumme" | translate }}:</td>
+                <td>
+                    {{ overviewData.total * (1 + VAT_PERCENTAGE) | currency:"EUR" }}
+                    <span *ngIf="overviewData.isUnlimited">**</span>
+                </td>
+            </tr>
+            <tr *ngIf="this.orderForm.controls.services.value['video']">
+                <td colspan="5">
+                    *&nbsp;<span translate>Preis abhängig von Veranstaltungstag und Verfügbarkeiten. Die Bestellung erfolgt unter Vorbehalt, wir kommen mit dem finalen Angebot nach Rücksprache auf Sie zu.</span>
+                </td>
+            </tr>
+            <tr *ngIf="overviewData.isUnlimited">
+                <td colspan="5">
+                    **&nbsp;<span translate>Preis für 12 Monate, beliebig verlängerbar.</span>
+                </td>
+            </tr>
+            <tr class="button-row">
+                <td colspan="3">
+                    <button mat-flat-button class="os-button" (click)="isOverviewStep = false">
+                        <span translate>zurück</span>
+                    </button>
+                </td>
+                <td colspan="2">
+                    <button mat-flat-button class="os-button" (click)="onSubmit()">
+                        <span translate>Jetzt kostenpflichtig bestellen</span>
+                    </button>
+                </td>
+            </tr>
+        </table>
+
         <div class="error-div mt-1" *ngIf="error">
             <span translate>Fehler:</span><br>
             {{ error }}
         </div>
-    </form>
+    </div>
 </div>

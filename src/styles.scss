@@ -212,6 +212,8 @@ p, li {
     }
 }
 
+.align
+
 h1 {
     font-size: 40px;
     font-weight: normal;
@@ -276,6 +278,19 @@ h2 {
         }
         &.col {
             align-items: center;
+        }
+    }
+}
+
+.text-right {
+    text-align: right;
+
+    &.flex {
+        &:not(.col) {
+            justify-content: flex-end;
+        }
+        &.col {
+            align-items: flex-end;
         }
     }
 }

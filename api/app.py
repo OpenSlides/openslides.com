@@ -1,3 +1,4 @@
+import math
 import re
 import smtplib
 import sqlite3 as sql
@@ -10,6 +11,8 @@ from flask_babel import refresh
 from flask_mail import Mail, Message
 from jsonschema import Draft7Validator, draft7_format_checker
 from jsonschema.exceptions import ValidationError
+
+VAT_PERCENTAGE = 0.16
 
 app = Flask(__name__)
 try:
@@ -40,23 +43,41 @@ standard_pattern = r"^[A-Za-z0-9\u00C0-\u00FF][A-Za-z0-9\u00C0-\u00FF\'\-\.\,\#]
 standard_pattern_no_number = r"^[A-Za-z\u00C0-\u00FF][A-Za-z\u00C0-\u00FF\'\-\.\,\#]+([\ A-Za-z\u00C0-\u00FF][A-Za-z\u00C0-\u00FF\'\-\.\,\#]+)*$"
 domain_regex = r"^[a-zA-Z0-9\-\.]+$"
 
-# luckily no need to mark these for translation since these are exactly the same as in the client
-# but careful if you add something here which doesn't have a translation; these will not be extracted!
+
 packages = {
-    "meeting": "Sitzung",
-    "conference": "Tagung",
-    "congress": "Kongress",
+    "meeting": {"name": _("Sitzung"), "max_users": 50, "price": 50},
+    "conference": {"name": _("Tagung"), "max_users": 500, "price": 100},
+    "congress": {"name": _("Kongress"), "max_users": 1000, "price": 200},
 }
-package_sizes = {
-    "meeting": 50,
-    "conference": 500,
-    "congress": 1000,
-}
+
+
+def default_price_function(months, users):
+    return months * 50
+
+
 services = {
-    "evoting": "eVoting",
-    "audio": "Audiokonferenz via Jitsi",
-    "video": "Video-Livestream",
-    "saml": "Single Sign-On via SAML",
+    "evoting": {
+        "name": _("eVoting"),
+        "base_price": 50,
+        "price_func": default_price_function,
+        "monthly": True,
+    },
+    "audio": {
+        "name": _("Audiokonferenz via Jitsi"),
+        "base_price": 50,
+        "price_func": default_price_function,
+        "monthly": True,
+    },
+    "video": {
+        "name": _("Video-Livestream"),
+        "price_func": lambda months, users: math.ceil(users / 250) * 750,
+    },
+    "saml": {
+        "name": _("Single Sign-On via SAML"),
+        "base_price": 50,
+        "price_func": default_price_function,
+        "monthly": True,
+    },
 }
 
 order_schema = Draft7Validator(
@@ -165,6 +186,7 @@ def order():
     confirmation_mail = render_template(
         "confirmation-email.jinja", name=data["contact_person"]["name"]
     )
+    price_overview = get_prices_overview_str(data)
     data_customer = render_template("order-summary.jinja", **get_summary_data(data))
 
     # since the user might have another language selected, but the admin mail should be in german,
@@ -173,7 +195,7 @@ def order():
         summary = render_template("order-summary.jinja", **get_summary_data(data))
         metadata = render_template(
             "metadata.jinja",
-            package_size=package_sizes[data["package"]],
+            package_size=packages[data["package"]]["max_users"],
             raw_services_str=",".join(
                 service for service, status in data["services"].items() if status
             ),
@@ -189,7 +211,9 @@ def order():
     msg = Message(
         _("Ihre Anfrage bei OpenSlides"), recipients=[data["contact_person"]["email"]]
     )
-    msg.body = join_mail_bodies(confirmation_mail, data_customer)
+    msg.body = join_mail_bodies(
+        confirmation_mail, price_overview, _("\nIhre Angaben:"), data_customer
+    )
     try_send_mail(msg)
 
     return {}
@@ -232,9 +256,9 @@ def get_summary_data(data):
     summary_data = {
         **data,
         **contact_person,
-        "package_str": _(packages[package]),
+        "package_str": _(packages[package]["name"]),
         "services_str": ", ".join(
-            _(services[service])
+            _(services[service]["name"])
             for service, status in data["services"].items()
             if status
         ),
@@ -243,6 +267,70 @@ def get_summary_data(data):
         else _("unbegrenzt"),
     }
     return summary_data
+
+
+def get_prices_overview_str(data):
+    overview_data = get_overview_data(data)
+    return render_template(
+        "prices-overview.jinja",
+        **{
+            "data": data,
+            "overview_data": overview_data,
+            "VAT_PERCENTAGE": VAT_PERCENTAGE,
+        }
+    )
+
+
+def get_overview_data(data):
+    package = packages[data["package"]]
+    months = data["running_time"]
+    isUnlimited = months == "unlimited"
+    if isUnlimited:
+        months = 12
+    users = data["expected_users"]
+    positions = [
+        {
+            "name": _("Hostingpaket") + " " + _(package["name"]),
+            "base_price": package["price"],
+            "monthly": True,
+            "total": months * package["price"],
+        }
+    ]
+    for service_key, service in services.items():
+        if data["services"][service_key]:
+            service_total = service["price_func"](months, users)
+            positions.append(
+                {
+                    "name": _(service["name"]),
+                    "base_price": service.get("base_price") or service_total,
+                    "monthly": service.get("monthly") or False,
+                    "total": service_total,
+                }
+            )
+
+    total = 0
+    for entry in positions:
+        if entry["monthly"]:
+            entry["multiplier"] = "x " + str(months) + " " + _("Monate")
+        else:
+            entry["multiplier"] = (
+                "("
+                + _("pro Veranstaltungstag")
+                + ", "
+                + _("zzgl. Techniksupport")
+                + ")*"
+            )
+        total += entry["total"]
+    return {
+        "positions": positions,
+        "total": total,
+        "isUnlimited": isUnlimited,
+    }
+
+
+@app.template_filter()
+def currency(value):
+    return "{:,.2f} €".format(value)
 
 
 @app.route("/api/add_newsletter", methods=["POST"])
