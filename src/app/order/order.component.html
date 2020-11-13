@@ -1,4 +1,10 @@
 <div class="container main-container">
+    <form [formGroup]="form" (ngSubmit)="onSubmit2()">
+        <mat-form-field>
+            <input required type="number" matInput min="0" formControlName="number" placeholder="TEST">
+      </mat-form-field>
+            <button type="submit" mat-flat-button>Submit</button>
+    </form>
     <form *ngIf="!isOverviewStep" id="order-form" [formGroup]="orderForm" (ngSubmit)="onSubmit()">
         <input type="hidden" formControlName="mode">
 

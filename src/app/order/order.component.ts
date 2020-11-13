@@ -79,6 +79,7 @@ export class OrderComponent implements OnInit {
             months = 12;
         }
         const users = this.orderForm.controls.expected_users.value;
+        debugger;
         const positions: OverviewTableEntry[] = [
             this.setDefaultsOnUnitDescriptor({
                 name: this.translate.instant('Hostingpaket') + ' "' + this.translate.instant(pkg.name) + '"',
@@ -162,6 +163,12 @@ export class OrderComponent implements OnInit {
         return this.orderForm.controls.extra_functions.value.video;
     }
 
+    public form: FormGroup;
+
+    public onSubmit2(): void {
+        console.log(this.form.value);
+    }
+
     public constructor(
         private fb: FormBuilder,
         private route: ActivatedRoute,
@@ -169,6 +176,9 @@ export class OrderComponent implements OnInit {
         private router: Router,
         private translate: TranslateService
     ) {
+        this.form = this.fb.group({
+            number: ["", [Validators.required, Validators.min(0)]]
+        });
         this.orderForm = this.fb.group({
             mode: ['order', []],
             package: ['', [Validators.required, Validators.pattern(Object.keys(this.packages).join('|'))]],
