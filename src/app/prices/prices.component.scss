@@ -13,6 +13,10 @@
     flex-direction: column;
     width: 100%;
 
+    h1 {
+        color: inherit;
+    }
+
     &.grey {
         .price-col-header {
             background-color: $os-grey;

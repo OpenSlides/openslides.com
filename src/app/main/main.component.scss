@@ -1,15 +1,6 @@
 @import '../../vars.scss';
 
 .full-width-img-wrapper {
-    position: relative;
-    overflow: hidden;
-
-    img.full-width-img {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-    }
 
     @media (max-width: $breakpoint-xs-down) {
         h1 {
@@ -20,6 +11,13 @@
 
 p {
     line-height: 1.5;
+}
+
+.bluesection {
+    background-color: $os-darkblue;
+    color: white;
+    font-size: 110%;
+    padding-top: 15px;
 }
 
 .milky-bg {
@@ -128,8 +126,10 @@ p {
     color: #fff;
 }
 
-#features h1 {
+#features h2 {
     margin-top: 0;
+    color: $os-grey;
+    font-weight: 500;
 }
 
 .reference-container {
@@ -198,9 +198,12 @@ p {
     transform: translateY(-5px);
 }
 
-img.screenshot {
+img.screenshot, .box {
     width: 100%;
     box-shadow: 0 0 5px 1px rgba(50, 120, 150, 0.5);
+}
+.box p {
+    padding: 0 20px 0 20px;
 }
 
 .denser-paragraphs p {
@@ -244,9 +247,6 @@ img.screenshot {
 /* colors */
 .grey {
     color: rgba(0, 0, 0, 0.54);
-}
-.os-blue {
-    color: $os-blue;
 }
 
 .inline-logo {

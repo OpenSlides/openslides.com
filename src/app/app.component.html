@@ -27,15 +27,19 @@
         <div class="container" id="contact">
             <ng-container>
                 <div class="contact-div">
-                    <h1 translate>Treten Sie mit uns in Kontakt</h1>
+                    <h1 class="white text-center" translate>Treten Sie mit uns in Kontakt</h1>
                     <p class="margined" translate>Sollten Sie Fragen zu OpenSlides haben oder eine persönliche Beratung wünschen – wir unterstützen Sie gern.</p>
                     <div class="mt-1"></div>
                 </div>
                 <mat-divider></mat-divider>
+               
+
                 <div class="text-left" translate>
-                    Zur Zeit gibt es ein erhöhtes Anfrageaufkommen.
                     Um Ihnen und Anderen schneller weiterhelfen zu können, schauen Sie bitte zuerst in unsere
-                    <strong><a href="https://support.openslides.com/help/de-de">FAQs</a></strong>
+                    <strong>
+                        <a *ngIf="languageService.getCurrentLanguage() == 'de'" href="https://support.openslides.com/help/de-de" target="_blank" rel="noreferrer"><span translate>FAQ</span></a>
+                        <a *ngIf="languageService.getCurrentLanguage() != 'de'" href="https://support.openslides.com/help/en-gb" target="_blank" rel="noreferrer"><span translate>FAQ</span></a>
+                    </strong>
                     und nutzen dann bevorzugt die Möglichkeit uns eine E-Mail zu senden.
                 </div>
                 <div class="mt-1"></div>
