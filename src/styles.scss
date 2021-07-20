@@ -278,9 +278,11 @@ p, li {
 
 h1 {
     font-size: 40px;
-    font-weight: normal;
+    font-weight: 500;
     margin-bottom: 0;
     margin-top: 0;
+    color: $os-dark-grey;
+    text-align: left;
 }
 
 h2 {
@@ -355,6 +357,10 @@ h2 {
             align-items: flex-end;
         }
     }
+}
+.text-justify {
+    text-align: justify;
+    hyphens: auto;
 }
 
 .lh-1 {
@@ -466,6 +472,15 @@ h2 {
         padding: 0;
         padding-right: 5px;
     }
+}
+
+
+/* Colors */
+.os-blue {
+    color: $os-blue;
+}
+.white {
+    color: white;
 }
 
 @media (min-width: $breakpoint-sm-up) {

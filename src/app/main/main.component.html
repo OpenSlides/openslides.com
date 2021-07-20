@@ -1,84 +1,81 @@
 <div appScrollSpy footer="contact">
 
     <!-- Welcome -->
-    <div class="full-width-img-wrapper flex col" style="height: 728px">
-        <img class="full-width-img" src="assets/img/dgb-bundeskongress2018-mit-openslides-leinwand.jpg">
-        <div class="fill-remaining-space valign-wrapper main-paragraph flex col text-center">
-            <div class="milky-bg mb-1 text-center">
-                <h1 translate>Managen Sie Veranstaltungen digital</h1>
+    <div class="full-width-img-wrapper flex col">
+        <img class="full-width-img" src="assets/img/welcome.jpg">
+    </div>
+
+    <!-- About OpenSlides -->
+    <div class="container smaller section">
+        <h1 translate>Managen Sie Veranstaltungen digital</h1>
+        <p>
+            {{ "OpenSlides ist ein leistungsstarkes Werkzeug und bietet eine umfassende Lösung zur digitalen Organisation Ihrer Veranstaltungen und Konferenzen. Alle Mitgliederversammlungen können als Präsenz-, Hybrid- oder als virtuelle Veranstaltungen bereitgestellt werden. Verwalten Sie Tagesordnungen, Anträge, Wahlen, Redelisten, Dokumente und Teilnehmende. Alle diese Dinge sind erstaunlich intuitiv zu bedienen.  " | translate }}
+        </p>
+        <a href="https://demo.openslides.org/login/" target="_blank" rel="noreferrer" mat-flat-button class="os-button transparent-btn blue">
+            <span translate>Jetzt ausprobieren (Demo)</span>
+        </a>
+    </div>
+    <div class="container smaller section">
+        <h1 class="text-center" translate>OpenSlides für alle Formate</h1>
+
+        <div class="mt-1 mb-1 flex evenly-spaced wrap-mobile denser-paragraphs center-headings" appWrappable
+            wrapMargin="30px">
+            <div class="text-justify box">
+                <div>
+                    <img src="assets/img/praesenz.png">
+                    <h2 class="os-blue" translate>Präsenz</h2>
+                </div>
                 <p>
-                    {{ "OpenSlides ist die umfassende Lösung zur digitalen Organisation Ihrer Versammlungen und Konferenzen. Verwalten und projizieren Sie Tagesordnungen, Anträge, Wahlen, Dokumente, Redelisten und Teilnehmende. Webbasiert und immer auf dem neuesten Stand. " | translate }}
+                    {{ "Verschlanken und vereinfachen Sie Ihre Abläufe auf klassischen Präsenz-Veranstaltungen und lassen sich von den Vorteilen überzeugen: Reagieren Sie mit OpenSlides flexibel in Echtzeit und modernisieren Ihre Prozesse." | translate }}
+                </p>
+                <p>
+                    <a href="https://support.openslides.com/help/de-de/1/84" target="_blank" mat-flat-button class="os-button">
+                        <span translate>Mehr erfahren</span>
+                    </a>
                 </p>
             </div>
-            <div appWrappable wrapMargin="20px">
-                <a href="https://demo.openslides.org/login/" target="_blank" rel="noreferrer" mat-flat-button
-                    class="os-button transparent-btn blue"><span translate>Demo</span></a>
-                <a routerLink="/" fragment="getting-started" mat-flat-button
-                    class="os-button transparent-btn green"><span translate>Hosting starten</span></a>
-                <a *ngIf="translate.currentLang == 'de'" href="https://support.openslides.com/help/de-de" target="_blank" rel="noreferrer" mat-flat-button
-                    class="os-button transparent-btn blue"><span translate>FAQ</span></a>
-                <a *ngIf="translate.currentLang != 'de'" href="https://support.openslides.com/help/en-gb" target="_blank" rel="noreferrer" mat-flat-button
-                    class="os-button transparent-btn blue"><span translate>FAQ</span></a>
+            <div class="text-justify box">
+                <div>
+                    <img src="assets/img/hybrid.png">
+                    <h2 class="os-blue" translate>Hybrid</h2>
+                </div>
+                <p>
+                    {{ "Geben Sie einem dezentral verteilten Plenum die Möglichkeit zur interaktiven Teilnahme: Alle Funktionen von OpenSlides können sowohl von zu Hause als auch am Veranstaltungsort gesteuert und genutzt werden. Hybrid - das Format der Zukunft!" | translate }}
+                </p>
+                <p>
+                    <a href="https://support.openslides.com/help/de-de/1/9" target="_blank" mat-flat-button class="os-button">
+                        <span translate>Mehr erfahren</span>
+                    </a>
+                </p>
             </div>
-        </div>
-    </div>
-    <div class="bottom-banner">
-        <div class="inner-banner-container flex" appWrappable>
-            <div class="banner-text">
-                <strong>+++ Auch für virtuelle Mitgliederversammlungen, Hauptversammlungen und Parteitage +++</strong><br>
-                {{ "eVoting · integrierte Audio-/Videokonferenz · Video-Livestream" | translate }}
+            <div class="text-justify box">
+                <div>
+                    <img src="assets/img/virtuell.png">
+                    <h2 class="os-blue" translate>Virtuell</h2>
+                </div>
+                <p>
+                    {{ "Der integrierte Livestream macht OpenSlides zur Komplettlösung für Ihre digitale Veranstaltung. Die intelligente Koppelung von Redeliste, Videokonferenz und Livestream ermöglicht eine einfach Bedienung. Virtuell macht Sie unabhängig." | translate }}
+                </p>
+                <p>
+                    <a href="https://support.openslides.com/help/de-de/1/7" target="_blank" mat-flat-button class="os-button">
+                        <span translate>Mehr erfahren</span>
+                    </a>
+                </p>
             </div>
         </div>
     </div>
 
-    <!-- What is OpenSlides -->
-    <div class="container tiny section">
-        <h1 translate>Maximale Flexibilität und Transparenz</h1>
-        <p>
-            {{ "Schaffen Sie die Voraussetzungen für eine offene Kommunikation, ohne das Ziel aus den Augen zu verlieren. OpenSlides gibt Ihnen dafür ein modernes und mächtiges Werkzeug an die Hand. Erweitern Sie Ihre Tagungsordnung live, reagieren Sie auf Antragsänderungen in Echtzeit und geben Sie Ihren Delegierten kontrollierten Zugriff auf das System." | translate }}
-        </p>
-    </div>
-    <div class="container smaller section">
-        <div class="iframe-wrapper-wrapper">
-            <div class="iframe-wrapper">
-                <iframe src="https://www.youtube-nocookie.com/embed/blW5h9lE9TE" frameborder="0"
-                    allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="mt-2 mb-2 flex evenly-spaced wrap-mobile denser-paragraphs center-headings" appWrappable
-            wrapMargin="30px">
-            <div class="text-center">
-                <div>
-                    <img src="assets/img/group_idea.png" style="height:150px">
-                    <h2 class="os-blue" translate>Einfache Interaktion</h2>
-                </div>
-                <p>
-                    {{ "Beziehen Sie das Plenum aktiv mit ein. Öffnen Sie den mobilen Zugriff auf OpenSlides – zur Einsicht wichtiger Dokumente, zum Einreichen von Anträgen oder Abrufen von Wahlergebnissen." | translate }}
-                </p>
-            </div>
-            <div class="text-center">
-                <div>
-                    <img src="assets/img/time_goes_by.png" style="height:150px">
-                    <h2 class="os-blue" translate>Schnelle Ergebnisse</h2>
-                </div>
-                <p>
-                    {{ "Beschleunigen Sie Prozesse durch eine nahtlose Steuerung mit nur einer Software. OpenSlides strafft das Verfahren – von der Vorbereitung über Anträge und Wahlen bis zum Beschlussprotokoll." | translate }}
-                </p>
-            </div>
-            <div class="text-center">
-                <div>
-                    <img src="assets/img/eco_leaf.png" style="height:150px">
-                    <h2 class="os-blue" translate>Papierlos</h2>
-                </div>
-                <p>
-                    {{ "Machen Sie OpenSlides zu Ihrer zentralen Schnittstelle für die Verwaltung und Veröffentlichung aller relevanten Versammlungsinhalte auf Leinwand, Notebook oder Smartphone." | translate }}
-                </p>
-            </div>
+    <!-- News -->
+    <div class="bluesection" style="height: 80px;">
+        <div class="container smaller text-center">
+            <b>+++ Auch für virtuelle Mitgliederversammlungen, Hauptversammlungen und Parteitage +++</b>
+            <br>{{ "eVoting · integrierte Audio-/Videokonferenz · Video-Livestream" | translate }}
         </div>
     </div>
 
     <!-- Features -->
     <div id="features" class="mt-3">
+        <h1 class="text-center" translate>Basisfunktionen in OpenSlides</h1>
         <div class="container section center-mobile">
             <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
                 <div>
@@ -88,7 +85,7 @@
                     </a>
                 </div>
                 <div>
-                    <h1 class="lh-1" translate>Tagesordnung</h1>
+                    <h2 class="lh-1" translate>Tagesordnung</h2>
                     <p>
                         {{ "Ergänzen, ändern oder verschieben Sie automatisch nummerierte Tagesordnungspunkte per Drag & Drop im laufenden Betrieb. Verknüpfen Sie die einzelnen Punkte mit Redelisten sowie Redezeiten und integrieren Sie für eine bessere Zeitplanung auch inoffizielle Einträge wie Pausen." | translate }}
                     </p>
@@ -102,7 +99,7 @@
             <div class="container">
                 <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
                     <div class="switch-flex-order">
-                        <h1 class="lh-1" translate>Anträge</h1>
+                        <h2 class="lh-1" translate>Anträge</h2>
                         <p>
                             {{ "Erfassen Sie Anträge mit Antragsteller und Antragstext. Ordnen Sie Sachgebiete und Antragsnummer zu. Protokollieren Sie Beschluss und Abstimmungsergebnis während der Antragsberatung. Die flexible Filterung der Liste hilft bei der Suche in allen Anträgen und ihren Änderungen." | translate }}
                         </p>
@@ -128,7 +125,7 @@
                     </a>
                 </div>
                 <div>
-                    <h1 class="lh-1" translate>Wahlen</h1>
+                    <h2 class="lh-1" translate>Wahlen</h2>
                     <p>
                         {{ "Schlagen Sie Kandidat/innen aus der Liste der Teilnehmenden vor. Generieren Sie ad-hoc personalisierte Stimmzettel für geheime Wahlen. Protokollieren und projizieren Sie die ausgezählten Stimmen – für jeden Teilnehmenden nachzulesen in OpenSlides." | translate }}
                     </p>
@@ -142,7 +139,7 @@
             <div class="container">
                 <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
                     <div class="switch-flex-order">
-                        <h1 class="lh-1" translate>Projektoren</h1>
+                        <h2 class="lh-1" translate>Projektoren</h2>
                         <p>
                             {{ "OpenSlides ist für die Arbeit mit multiplen Bildschirmen konzipiert und mit einer mächtigen Projektorsteuerung versehen. Das Webinterface erlaubt das Projizieren und Bearbeitung der Folien, während die Projektoren in Vollbild laufen." | translate }}
                         </p>
@@ -168,9 +165,9 @@
                     </a>
                 </div>
                 <div>
-                    <h1 class="lh-1" translate>Elektronische Stimmabgabe</h1>
+                    <h2 class="lh-1" translate>Elektronische Stimmabgabe</h2>
                     <p>
-                        {{ "Nutzen Sie Live-Voting für Anträge und Wahlen. Die stimmberechtigte Nutzergruppe lässt sich pro Antrag/Wahl festlegen. Nur in OpenSlides auf anwesend und stimmberechtigt geschaltete Teilnehmende dürfen abstimmen. Möglich sind namentliche oder nicht-namentliche (anonyme) sAntragsabstimmungen und Personenwahlen. Auch individuelle Stimmgewichtungen und Stimmrechtsübertragungen sind möglich." | translate }}
+                        {{ "Nutzen Sie Live-Voting für Anträge und Wahlen. Die stimmberechtigte Nutzergruppe lässt sich pro Antrag/Wahl festlegen. Nur in OpenSlides auf anwesend und stimmberechtigt geschaltete Teilnehmende dürfen abstimmen. Möglich sind namentliche oder nicht-namentliche (anonyme) Antragsabstimmungen und Personenwahlen. Auch individuelle Stimmgewichtungen und Stimmrechtsübertragungen sind möglich." | translate }}
                     </p>
                     <a routerLink="./feature/evoting" mat-flat-button class="os-button">
                         <span translate>Mehr erfahren</span>
@@ -182,7 +179,7 @@
             <div class="container">
                 <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
                     <div class="switch-flex-order">
-                        <h1 class="lh-1" translate>Video-Livestream</h1>
+                        <h2 class="lh-1" translate>Video-Livestream</h2>
                         <p>
                             {{ "Integrieren Sie einen Video-Livestream Ihrer virtuellen Veranstaltung in OpenSlides. Alle Teilnehmenden verfolgen den Stream jederzeit sichtbar in OpenSlides. Möchte sich eine Person zu Wort melden, setzt sich diese selbständig auf die aktuelle Redeliste in OpenSlides und wechselt damit automatisch in einen Jitsi-Videokonferenzraum. Der Livestream überträgt die Videokonferenz. Nach Ende der Wortmeldung verlässt man den Konferenzraum und verfolgt wieder den Livestream." | translate }}
                         </p>
@@ -207,7 +204,7 @@
                     </a>
                 </div>
                 <div>
-                    <h1 translate>Vielseitig und responsiv</h1>
+                    <h2 translate>Vielseitig und responsiv</h2>
                     <p>
                         {{ "Die Verwaltung der Delegierten und ihrer Anwesenheit sowie das ausgefeilte Rechtemanagement sind unkompliziert und intuitiv. Jeder Bereich von OpenSlides kann für einzelne Nutzergruppen freigeschalten werden." | translate }}
                     </p>
@@ -229,7 +226,7 @@
                 <div class="flex wrap-mobile center-mobile" appWrappable>
                     <img class="hosting-logo" src="assets/img/host.png">
                     <div>
-                        <h1 class="lh-1" translate>Hosting bestellen</h1>
+                        <h1 class="lh-1 white text-left" translate>Hosting bestellen</h1>
                         <p>
                             {{ "Sie wollen OpenSlides für ihre nächste Veranstaltung nutzen, aber sich nicht um die technischen Details kümmern? Bestellen Sie jetzt ein passendes Hosting-Paket!" | translate }}
                         </p>
@@ -278,7 +275,7 @@
                 <div class="flex wrap-mobile center-mobile" appWrappable>
                     <img class="hosting-logo" src="assets/img/self_host.png">
                     <div>
-                        <h1 class="lh-1" translate>Selbst installieren</h1>
+                        <h1 class="lh-1 white text-left" translate>Selbst installieren</h1>
                         <p>
                             <span>
                                 {{ "Sie möchten OpenSlides auf Ihrem eigenen Server installieren? Wir bieten unsere Software als PyPI-Paket und als Quellcode an. Bitte haben Sie Verständnis dafür, dass wir Supportleistungen nur für unsere Hosting-Lösungen anbieten." | translate }}
@@ -366,7 +363,7 @@
             </div>
         </div>
 
-        <!-- Newsletter -->
+        <!-- Newsletter 
         <div class="section container">
             <h2 translate>Newsletter</h2>
             <p>
@@ -390,5 +387,6 @@
                 <span translate>Sie haben sich erfolgreich für unseren Newsletter registriert!</span>
             </p>
         </div>
+        -->
     </div>
 </div>

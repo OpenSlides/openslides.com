@@ -24,28 +24,18 @@ export class ReferenceService {
             refs: [
                 {
                     name: 'Deutscher Gewerkschaftsbund (DGB)',
-                    event: 'DGB-Bundeskongress 2018, DGB-Bezirkskonferenzen',
+                    event: 'Bundeskongress 2018, Bundesjugendkonferenz, Bezirkskonferenzen',
                     src: 'dgb-logo.png',
                     frontpage: true
                 },
                 {
-                    name: 'DGB Jugend',
-                    event: 'DGB-Bundesjugendkonferenz 2017, DGB-Bezirksjugendkonferenzen',
-                    src: 'dgb-jugend-logo.png'
-                },
-                {
                     name: 'ver.di',
-                    event: 'ver.di-Bundeskongress 2019',
+                    event: 'Bundeskongress 2019, Bundesjugendkonferenz',
                     src: 'verdi-logo.png',
                     frontpage: true
                 },
                 {
-                    name: 'ver.di Jugend',
-                    event: 'ver.di-Bundesjugendkonferenz 2019',
-                    src: 'verdi-jugend-logo.png'
-                },
-                {
-                    name: 'Industriegewerkschaft Bauen Agrar Umwelt',
+                    name: 'Industriegewerkschaft Bauen Agrar Umwelt (IG BAU)',
                     event: 'Gewerkschaftstag 2017',
                     src: 'igbau-logo.png'
                 },
@@ -61,10 +51,15 @@ export class ReferenceService {
                 },
                 {
                     name: 'Gewerkschaft Erziehung und Wissenschaft (GEW)',
-                    event: 'Landesvertreterversammlungen 2018 Thüringen, Brandenburg',
+                    event: 'Gewerkschaftstag 2021, Landesvertreterversammlungen',
                     src: 'gew-logo.png',
                     frontpage: true
-                }
+                },
+                {
+                    name: 'Industriegewerkschaft Bergbau, Chemie, Energie (IG BCE)',
+                    event: 'Bundesjugendkonferenz 2021',
+                    src: 'igbce-logo.png'
+                },
             ]
         },
         {
@@ -128,11 +123,6 @@ export class ReferenceService {
                     name: 'Piratenpartei Deutschland / Schweiz',
                     event: 'Bundes-, Landes- und Kreisparteitage',
                     src: 'piraten-logo.png'
-                },
-                {
-                    name: 'Piraten ohne Grenzen',
-                    event: 'Piratenversammlungen',
-                    src: 'pog-logo.png'
                 }
             ]
         },
@@ -281,6 +271,11 @@ export class ReferenceService {
                     src: 'vda-logo.png'
                 },
                 {
+                    name: 'Evangelische Kirche in Deutschland',
+                    event: 'Synode der EKD',
+                    src: 'ekd-logo.png'
+                },
+                {
                     name: 'Evangelisch-Lutherische Kirche in Norddeutschland',
                     event: 'Landessynode',
                     src: 'nordkirche-logo.png'
@@ -294,6 +289,16 @@ export class ReferenceService {
                     name: 'AStA der Universität des Saarlandes',
                     event: 'Studierendenparlament',
                     src: 'asta-uni-saarland-logo.png'
+                },
+                {
+                    name: 'Pädagogische Hochschule Heidelberg',
+                    event: 'div. Hochschulgremien',
+                    src: 'phhd-logo.png'
+                },
+                {
+                    name: 'Deutsch-Französische Hochschule Saarbrücken',
+                    event: 'div. Hochschulgremien',
+                    src: 'dfh-logo.png'
                 },
                 {
                     name: 'Deutscher Verband für Neuro-Linguistisches Programmieren e.V.',
