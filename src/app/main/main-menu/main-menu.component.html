@@ -25,17 +25,12 @@
     [ngClass]="currentSection == 'contact' ? 'active' : ''">
     <span translate>Kontakt</span>
 </a>
-<a mat-menu-item href="https://support.openslides.com/help/de-de" target="_blank" rel="noreferrer">
+<a *ngIf="languageService.getCurrentLanguage() == 'de'" mat-menu-item href="https://support.openslides.com/help/de-de" target="_blank" rel="noreferrer">
     <span translate>FAQ</span>
 </a>
-
-<!--
-                <a *ngIf="translate.currentLang == 'de'" href="https://support.openslides.com/help/de-de" target="_blank" rel="noreferrer" mat-flat-button
-                    class="os-button transparent-btn blue"><span translate>FAQ</span></a>
-                <a *ngIf="translate.currentLang != 'de'" href="https://support.openslides.com/help/en-gb" target="_blank" rel="noreferrer" mat-flat-button
-                    class="os-button transparent-btn blue"><span translate>FAQ</span></a>
-
--->
+<a *ngIf="languageService.getCurrentLanguage() != 'de'" mat-menu-item href="https://support.openslides.com/help/en-gb" target="_blank" rel="noreferrer">
+    <span translate>FAQ</span>
+</a>
 
 <a mat-menu-item [matMenuTriggerFor]="languageMenu" class="valign-wrapper">
     <img class="flag" [src]="'assets/img/flags/' + languageService.getCurrentLanguage() + '.png'" [alt]="'flag-' + languageService.getCurrentLanguage()">

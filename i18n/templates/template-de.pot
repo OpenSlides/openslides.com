@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-12 10:09+0100\n"
+"POT-Creation-Date: 2021-09-10 09:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -345,7 +345,7 @@ msgstr ""
 msgid "Kongress"
 msgstr ""
 
-#: api/src/data.py:48
+#: api/src/data.py:56
 msgid "Supportpauschale"
 msgstr ""
 
@@ -409,6 +409,15 @@ msgid ""
 msgstr ""
 
 #: api/src/data.py:43
+msgid "Jitsi-Telefoneinwahl"
+msgstr ""
+
+msgid ""
+"Einrichtung einer Festnetz-Rufnummer zur telefonischen Einwahl in die Jitsi-"
+"Videokonferenz"
+msgstr ""
+
+#: api/src/data.py:51
 msgid "Single Sign-On via SAML"
 msgstr ""
 
@@ -417,15 +426,24 @@ msgid ""
 "verfügbar für das Hostingpaket \"Kongress\""
 msgstr ""
 
+#: api/src/data.py:62
+msgid "Chat"
+msgstr ""
+
+msgid ""
+"Bereitstellung und Integration eines Chats, mehrere Gruppenräume "
+"konfigurierbar."
+msgstr ""
+
 #: api/app.py:127 api/src/templates/order-summary.jinja:2
 msgid "Hostingpaket"
 msgstr ""
 
-#: api/app.py:160
+#: api/app.py:162
 msgid "Monat"
 msgstr ""
 
-#: api/app.py:111 api/app.py:160
+#: api/app.py:111 api/app.py:162
 msgid "Monate"
 msgstr ""
 
@@ -458,12 +476,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Zur Zeit gibt es ein erhöhtes Anfrageaufkommen.\n"
-"                    Um Ihnen und Anderen schneller weiterhelfen zu können, "
-"schauen Sie bitte zuerst in unsere\n"
-"                    <strong><a href=\"https://support.openslides.com/help/de-"
-"de\">FAQs</a></strong>\n"
-"                    und nutzen dann bevorzugt die Möglichkeit uns eine E-"
+"Um Ihnen und Anderen schneller weiterhelfen zu können, schauen Sie bitte "
+"zuerst in unsere FAQ und nutzen dann bevorzugt die Möglichkeit uns eine E-"
 "Mail zu senden."
 msgstr ""
 
@@ -488,12 +502,101 @@ msgstr ""
 msgid "Impressum"
 msgstr ""
 
-msgid ""
-"Verantwortlich für den Inhalt dieser Seiten in Vertretung für die OpenSlides-"
-"Initiative:"
+msgid "Notfall"
 msgstr ""
 
-msgid "Entwicklung und Redaktion:"
+msgid ""
+"Am Wochenende und außerhalb der üblichen Geschäftszeiten zwischen 9:00 Uhr "
+"und 18:00 Uhr ist unsere Zentrale nicht besetzt."
+msgstr ""
+
+msgid ""
+"Wenn Sie keine Rufbereitschaft für Ihre Veranstaltung gebucht haben, können "
+"wir <b>KEINEN garantierten</b> Sofort-Support gewährleisten."
+msgstr ""
+
+msgid "In dringenden Fällen gehen sie bitte wie folgt vor:"
+msgstr ""
+
+msgid ""
+"Schauen sie in den FAQ und Stichwortsuche ob sie ggf. dort Ansätze zur "
+"selbstständigen Lösung finden:"
+msgstr ""
+
+msgid ""
+"Schreiben sie eine E-Mail an <a href=\"mailto:notfall@openslides.com"
+"\">notfall@openslides.com</a>"
+msgstr ""
+
+msgid "Bitte notieren sie einen möglichst konkreten Problembericht:"
+msgstr ""
+
+msgid "Bertreff"
+msgstr ""
+
+msgid "Instanz"
+msgstr ""
+
+#: api/src/templates/order-summary.jinja:14
+msgid "Ansprechpartner"
+msgstr ""
+
+msgid "Rückrufnummer"
+msgstr ""
+
+msgid "Dringlichkeit"
+msgstr ""
+
+msgid ""
+"kritisch: Veranstaltungsablauf ist blockiert, schnellstmögliche Hilfe "
+"erforderlich"
+msgstr ""
+
+msgid ""
+"dringend: Veranstaltungsablauf ist noch nicht blockert, sollte aber "
+"innerhalb x Stunden behoben werden"
+msgstr ""
+
+msgid ""
+"wichtig: Veranstaltungsablauf ist nicht blockiert, Problem sollte aber "
+"behoben werden und kann nicht bis zum nächsten Werktag warten"
+msgstr ""
+
+msgid "Problembericht, ggf. mit Screenshot"
+msgstr ""
+
+msgid ""
+"Bei Angelegenheiten der Priorität 1 wählen sie bitte zusätzlich folgende "
+"Nummer:"
+msgstr ""
+
+msgid ""
+"Wichtig: Wenn Sie keine Rufbereitschaft für Ihre Veranstaltung gebucht "
+"haben, können wir <b>KEINEN garantierten</b> Sofort-Support gewährleisten."
+msgstr ""
+
+msgid ""
+"Ungeplanter Support außerhalb der Geschäftszeiten wird wie folgt abgerechnet:"
+msgstr ""
+
+msgid ""
+"Jede angefangene Stunde bei Nutzersupport per Mail oder Anruf über die o.g. "
+"Notfall-Kanäle berechnen wir am Wochenende und außerhalb der "
+"Kernarbeitszeiten von 18-9 Uhr mit 500 EUR/h."
+msgstr ""
+
+msgid ""
+"OpenSlides ist Freie Open Source Software und wurde 2011 von Emanuel "
+"Schütze, Oskar Hahn und Norman Jäckel gegründet. Bis heute zeigen sich die 3 "
+"Gründer verantwortlich für die Weiterentwicklung und haben gemeinsam mit der "
+"Intevation GmbH eine Freie Software Initiative sowie ein professionelles "
+"Dienstleitungsangebot rund um OpenSlides aufgebaut."
+msgstr ""
+
+msgid "Verantwortlich für den Inhalt dieser Seiten:"
+msgstr ""
+
+msgid "Demo"
 msgstr ""
 
 msgid "Preise"
@@ -514,40 +617,39 @@ msgstr ""
 msgid "Kontakt"
 msgstr ""
 
+msgid "FAQ"
+msgstr ""
+
 msgid ""
-"OpenSlides ist die umfassende Lösung zur digitalen Organisation Ihrer "
-"Versammlungen und Konferenzen. Verwalten und projizieren Sie Tagesordnungen, "
-"Anträge, Wahlen, Dokumente, Redelisten und Teilnehmende. Webbasiert und "
-"immer auf dem neuesten Stand. "
+"OpenSlides ist ein leistungsstarkes Werkzeug und bietet eine umfassende "
+"Lösung zur digitalen Organisation Ihrer Veranstaltungen und Konferenzen. "
+"Alle Mitgliederversammlungen können als Präsenz-, Hybrid- oder als virtuelle "
+"Veranstaltungen bereitgestellt werden. Verwalten Sie Tagesordnungen, "
+"Anträge, Wahlen, Redelisten, Dokumente und Teilnehmende. Alle diese Dinge "
+"sind erstaunlich intuitiv zu bedienen.  "
+msgstr ""
+
+msgid ""
+"Verschlanken und vereinfachen Sie Ihre Abläufe auf klassischen Präsenz-"
+"Veranstaltungen und lassen sich von den Vorteilen überzeugen: Reagieren Sie "
+"mit OpenSlides flexibel in Echtzeit und modernisieren Ihre Prozesse."
+msgstr ""
+
+msgid ""
+"Geben Sie einem dezentral verteilten Plenum die Möglichkeit zur interaktiven "
+"Teilnahme: Alle Funktionen von OpenSlides können sowohl von zu Hause als "
+"auch am Veranstaltungsort gesteuert und genutzt werden. Hybrid - das Format "
+"der Zukunft!"
+msgstr ""
+
+msgid ""
+"Der integrierte Livestream macht OpenSlides zur Komplettlösung für Ihre "
+"digitale Veranstaltung. Die intelligente Koppelung von Redeliste, "
+"Videokonferenz und Livestream ermöglicht eine einfach Bedienung. Virtuell "
+"macht Sie unabhängig."
 msgstr ""
 
 msgid "eVoting · integrierte Audio-/Videokonferenz · Video-Livestream"
-msgstr ""
-
-msgid ""
-"Schaffen Sie die Voraussetzungen für eine offene Kommunikation, ohne das "
-"Ziel aus den Augen zu verlieren. OpenSlides gibt Ihnen dafür ein modernes "
-"und mächtiges Werkzeug an die Hand. Erweitern Sie Ihre Tagungsordnung live, "
-"reagieren Sie auf Antragsänderungen in Echtzeit und geben Sie Ihren "
-"Delegierten kontrollierten Zugriff auf das System."
-msgstr ""
-
-msgid ""
-"Beziehen Sie das Plenum aktiv mit ein. Öffnen Sie den mobilen Zugriff auf "
-"OpenSlides – zur Einsicht wichtiger Dokumente, zum Einreichen von Anträgen "
-"oder Abrufen von Wahlergebnissen."
-msgstr ""
-
-msgid ""
-"Beschleunigen Sie Prozesse durch eine nahtlose Steuerung mit nur einer "
-"Software. OpenSlides strafft das Verfahren – von der Vorbereitung über "
-"Anträge und Wahlen bis zum Beschlussprotokoll."
-msgstr ""
-
-msgid ""
-"Machen Sie OpenSlides zu Ihrer zentralen Schnittstelle für die Verwaltung "
-"und Veröffentlichung aller relevanten Versammlungsinhalte auf Leinwand, "
-"Notebook oder Smartphone."
 msgstr ""
 
 msgid ""
@@ -583,7 +685,7 @@ msgid ""
 "Nutzergruppe lässt sich pro Antrag/Wahl festlegen. Nur in OpenSlides auf "
 "anwesend und stimmberechtigt geschaltete Teilnehmende dürfen abstimmen. "
 "Möglich sind namentliche oder nicht-namentliche (anonyme) "
-"sAntragsabstimmungen und Personenwahlen. Auch individuelle Stimmgewichtungen "
+"Antragsabstimmungen und Personenwahlen. Auch individuelle Stimmgewichtungen "
 "und Stimmrechtsübertragungen sind möglich."
 msgstr ""
 
@@ -644,28 +746,30 @@ msgstr ""
 msgid "Managen Sie Veranstaltungen digital"
 msgstr ""
 
-msgid "Demo"
+msgid "Jetzt ausprobieren (Demo)"
 msgstr ""
 
-msgid "Hosting starten"
+msgid "OpenSlides für alle Formate"
 msgstr ""
 
-msgid "FAQ"
-msgstr ""
-
-msgid "Maximale Flexibilität und Transparenz"
-msgstr ""
-
-msgid "Einfache Interaktion"
-msgstr ""
-
-msgid "Schnelle Ergebnisse"
-msgstr ""
-
-msgid "Papierlos"
+msgid "Präsenz"
 msgstr ""
 
 msgid "Mehr erfahren"
+msgstr ""
+
+msgid "Hybrid"
+msgstr ""
+
+msgid "Virtuell"
+msgstr ""
+
+msgid ""
+"+++ Auch für virtuelle Mitgliederversammlungen, Hauptversammlungen und "
+"Parteitage +++"
+msgstr ""
+
+msgid "Basisfunktionen in OpenSlides"
 msgstr ""
 
 msgid "Vielseitig und responsiv"
@@ -692,7 +796,7 @@ msgstr ""
 msgid "Vor-Ort-Service"
 msgstr ""
 
-#: api/src/data.py:62
+#: api/src/data.py:76
 msgid "Telefonrufbereitschaft"
 msgstr ""
 
@@ -720,18 +824,6 @@ msgstr ""
 msgid "Alle News anzeigen"
 msgstr ""
 
-msgid "Online-Versammlungen mit OpenSlides effizient durchführen"
-msgstr ""
-
-msgid "Newsletter"
-msgstr ""
-
-msgid "Absenden"
-msgstr ""
-
-msgid "Sie haben sich erfolgreich für unseren Newsletter registriert!"
-msgstr ""
-
 msgid "Pressemitteilungen"
 msgstr ""
 
@@ -739,6 +831,9 @@ msgid "Artikel und Publikationen"
 msgstr ""
 
 msgid "In den Medien"
+msgstr ""
+
+msgid "Online-Versammlungen mit OpenSlides effizient durchführen"
 msgstr ""
 
 msgid ""
@@ -1013,15 +1108,15 @@ msgstr ""
 msgid "Enddatum"
 msgstr ""
 
-#: api/src/templates/order-summary.jinja:11
+#: api/src/templates/order-summary.jinja:12
 msgid "Erwartete Teilnehmeranzahl"
 msgstr ""
 
-#: api/src/templates/order-summary.jinja:8
+#: api/src/templates/order-summary.jinja:9
 msgid "Veranstaltungsname"
 msgstr ""
 
-#: api/src/templates/order-summary.jinja:9
+#: api/src/templates/order-summary.jinja:10
 msgid "Veranstaltungsort"
 msgstr ""
 
@@ -1029,18 +1124,18 @@ msgstr ""
 msgid "Wunschdomain"
 msgstr ""
 
-#: api/src/templates/order-summary.jinja:15
+#: api/src/templates/order-summary.jinja:16
 msgid "Name"
 msgstr ""
 
 msgid "Organisation"
 msgstr ""
 
-#: api/src/templates/order-summary.jinja:16
+#: api/src/templates/order-summary.jinja:17
 msgid "E-Mail"
 msgstr ""
 
-#: api/src/templates/order-summary.jinja:17
+#: api/src/templates/order-summary.jinja:18
 msgid "Telefon"
 msgstr ""
 
@@ -1059,7 +1154,7 @@ msgstr ""
 msgid "Land"
 msgstr ""
 
-#: api/src/templates/order-summary.jinja:29
+#: api/src/templates/order-summary.jinja:30
 msgid "Umsatzsteuer-ID"
 msgstr ""
 
@@ -1098,7 +1193,7 @@ msgstr ""
 msgid "unbegrenzt"
 msgstr ""
 
-#: api/src/templates/order-summary.jinja:5
+#: api/src/templates/order-summary.jinja:6
 msgid "Zusatzfunktionen"
 msgstr ""
 
@@ -1110,15 +1205,15 @@ msgid ""
 "folgenden Leistungen:"
 msgstr ""
 
-#: api/src/templates/order-summary.jinja:7
+#: api/src/templates/order-summary.jinja:8
 msgid "Veranstaltungsdetails"
 msgstr ""
 
-#: api/src/templates/order-summary.jinja:13
-msgid "Ansprechpartner"
+#: api/src/templates/order-summary.jinja:5
+msgid "Startdatum Hosting"
 msgstr ""
 
-#: api/src/templates/order-summary.jinja:22
+#: api/src/templates/order-summary.jinja:23
 msgid "Rechnungsadresse"
 msgstr ""
 
@@ -1128,7 +1223,7 @@ msgstr ""
 msgid "Bestellübersicht"
 msgstr ""
 
-msgid "Jetzt bestellen"
+msgid "Weiter zur Bestellung"
 msgstr ""
 
 msgid "zurück"
@@ -1142,6 +1237,12 @@ msgstr ""
 
 #: api/src/templates/prices-overview.jinja:10
 msgid "Preis für 12 Monate, beliebig verlängerbar."
+msgstr ""
+
+msgid ""
+"Für gemeinnützige Bildungsorganisationen gibt es auf Anfrage bis zu 20% "
+"Rabatt auf das Hosting. Bitte im Kommentarfeld unter \"zusätzliche Angaben\" "
+"beantragen und kurz begründen."
 msgstr ""
 
 msgid "Fehler:"
@@ -1212,7 +1313,7 @@ msgstr ""
 msgid "individueller Support via E-Mail/Telefon"
 msgstr ""
 
-#: api/src/data.py:58
+#: api/src/data.py:72
 msgid "Online-Schulung"
 msgstr ""
 
@@ -1281,7 +1382,7 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Wer betreiben OpenSlides für Sie datenschutzkonform auf Servern in "
+"Wir betreiben OpenSlides für Sie datenschutzkonform auf Servern in "
 "Deutschland."
 msgstr ""
 
@@ -1318,15 +1419,15 @@ msgstr ""
 msgid "Ungültige Auswahl mit den gegebenen Daten:"
 msgstr ""
 
-#: api/app.py:173
+#: api/app.py:175
 msgid "Diese E-Mail-Adresse ist ungültig"
 msgstr ""
 
-#: api/app.py:184
+#: api/app.py:186
 msgid "Diese E-Mail-Adresse ist bereits registriert"
 msgstr ""
 
-#: api/src/data.py:59
+#: api/src/data.py:73
 msgid "Technische Begleitung Ihrer Veranstaltung (virtuell oder Vor-Ort)"
 msgstr ""
 
@@ -1381,23 +1482,23 @@ msgid ""
 "Ihr OpenSlides-Team\n"
 msgstr ""
 
-#: api/src/templates/order-summary.jinja:5
+#: api/src/templates/order-summary.jinja:6
 msgid "keine"
 msgstr ""
 
-#: api/src/templates/order-summary.jinja:10
-msgid "Veranstaltungszeitraum"
+#: api/src/templates/order-summary.jinja:11
+msgid "Veranstaltungstage(e)"
 msgstr ""
 
-#: api/src/templates/order-summary.jinja:14
+#: api/src/templates/order-summary.jinja:15
 msgid "Veranstalter"
 msgstr ""
 
-#: api/src/templates/order-summary.jinja:19
+#: api/src/templates/order-summary.jinja:20
 msgid "Services"
 msgstr ""
 
-#: api/src/templates/order-summary.jinja:31
+#: api/src/templates/order-summary.jinja:32
 msgid "Weitere Anmerkungen"
 msgstr ""
 

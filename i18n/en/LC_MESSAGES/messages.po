@@ -5,15 +5,17 @@
 # 
 # Translators:
 # jsangmeister <joshua.sangmeister@gmail.com>, 2020
+# Birte Spekker <birte.spekker@intevation.de>, 2021
+# Emanuel Schütze <emanuel.schuetze@intevation.de>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-10 15:42+0200\n"
+"POT-Creation-Date: 2021-09-10 09:12+0200\n"
 "PO-Revision-Date: 2020-05-14 10:26+0000\n"
-"Last-Translator: jsangmeister <joshua.sangmeister@gmail.com>, 2020\n"
+"Last-Translator: Emanuel Schütze <emanuel.schuetze@intevation.de>, 2021\n"
 "Language-Team: English (https://www.transifex.com/openslides/teams/14270/en/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -113,6 +115,9 @@ msgstr "Allow motion comment fields"
 msgid "Abstimmungsergebnisse erfassen"
 msgstr "Log voting results"
 
+msgid "elektronische Stimmabgabe möglich"
+msgstr "electronic voting possible"
+
 msgid "Anträge als PDF, CSV und XLSX exportieren"
 msgstr "Export motions as PDF, CSV or XLSX"
 
@@ -179,6 +184,143 @@ msgstr "Support of multiple resolutions"
 msgid "Projektion von PDF- oder Bilddateien"
 msgstr "Projection of PDF or image files"
 
+msgid "Elektronische Stimmabgabe"
+msgstr "Electronic voting"
+
+msgid ""
+"Erweitern Sie OpenSlides um ein integriertes elektronisches "
+"Abstimmungssystem.        Legen Sie die stimmberechtigte Nutzergruppe fest. "
+"Nur in OpenSlides auf anwesend und stimmberechtigt geschaltete Teilnehmende "
+"dürfen abstimmen.        Möglich sind namentliche oder nicht-namentliche "
+"Antragsabstimmungen und Personenwahlen.        Auch individuelle "
+"Stimmgewichtungen sind möglich.        <p>» Testen Sie die elektronische "
+"Stimmabgabe in der <a class=\"inline\" href=\"https://demo.openslides.org/\""
+" target=\"_blank\">Online-Demo</a>.<br>        » Erfahren Sie mehr über <a "
+"class=\"inline\" href=\"/news/online-versammlungen\" fragment=\"evoting"
+"\">Online-Versammlungen.</a>"
+msgstr ""
+"Extend OpenSlides with an integrated electronic voting system. Define the "
+"voting user group. Only users that are set to present and selected as "
+"eligible to vote are allowed to participant in voting on OpenSlides. Nominal"
+" and non-nominal votings are possible for motions and elections. Individual "
+"vote weighting is also possible. <p>» Test the electronic voting in the <a "
+"class=\"inline\" href=\"https://demo.openslides.org/\" "
+"target=\"_blank\">Online Demo</a>. <br>» Learn more about <a "
+"class=\"inline\" href=\"/news/online-versammlungen\" "
+"fragment=\"evoting\">Online Meetings</a>."
+
+msgid ""
+"rechtssichere Antragsabstimmungen (Ja/Nein/Enthaltung) und Personenwahlen "
+"(1-aus-n oder n-aus-m) möglich"
+msgstr ""
+"legally binding voting on motions (Yes/No/Abstain) and elections (1-in-n or "
+"n-in-m) possible"
+
+msgid ""
+"namentliche (wer hat wie abgestimmt) und nicht-namentliche (anonyme) "
+"Stimmabgaben möglich"
+msgstr "nominal (who voted how) and non-nominal (anonymous) voting possible"
+
+msgid "stimmberechtigte Nutzergruppe(n) pro Abstimmung/Wahlgang festlegbar"
+msgstr "voting-eligilbe user groups(s) can be selected per voting procedure"
+
+msgid ""
+"Nur in OpenSlides auf anwesend und stimmberechtigt geschaltete Teilnehmende "
+"dürfen abstimmen"
+msgstr ""
+"Only users that are set to present and selected as eligible to vote are "
+"allowed to participant in voting on OpenSlides"
+
+msgid "Individuelle Stimmgewichtungen pro Nutzer aktivierbar"
+msgstr "individual vote weighing can be activated per user"
+
+msgid ""
+"Stimmrechtsübertragungen (Vollmachtgeber und Vollmachtnehmer) einstellbar"
+msgstr "vote transfer (principal and proxy) possible"
+
+msgid "Einzelstimmennachweise für namentliche Stimmabgaben"
+msgstr "single vote proof possible for nominal votings"
+
+#: api/src/data.py:22
+msgid "Video-Livestream"
+msgstr "Video livestream"
+
+msgid ""
+"Integrieren Sie einen Video-Livestream Ihrer virtuellen Veranstaltung in "
+"OpenSlides.        Alle Teilnehmenden verfolgen den Stream jederzeit "
+"sichtbar in OpenSlides. Möchte sich eine Person zu Wort melden, setzt sich "
+"diese selbständig auf die aktuelle Redeliste in OpenSlides und wechselt "
+"damit automatisch in einen Jitsi-Videokonferenzraum.        Der Livestream "
+"überträgt die Videokonferenz. Nach Ende der Wortmeldung verlässt man den "
+"Konferenzraum und verfolgt wieder den Livestream.        <p>Dieses Verfahren"
+" ist sehr bandbreitenschonend (im Vergleich zu reinen Videokonferenzen) und "
+"erlaubt eine große Skalierung an Teilnehmerzahlen.        Virtuelle "
+"Veranstaltungen mit mehreren hundert Personen sind damit kein Problem mehr."
+"        Hinzu kommt, dass die meisten Teilnehmenden eine Veranstaltung nur "
+"\"konsumierend\" verfolgen, d.h. nur ein kleiner Personenkreis möchte sich "
+"aktiv mit Mikrofon und Kamera zu Wort melden.        Setzen Sie auf erprobte"
+" Broadcast-Streaming-Lösung – intelligent gekoppelt mit der OpenSlides-"
+"Redelistenfunktion.        <p>Die Audiokonferenz - ideal zum Austausch für "
+"kleine virtuelle Gremiensitzung (bis 50 Teilnehmende)<br>        Verwenden "
+"Sie OpenSlides mit integrierter Audiokonferenz. Über unseren exklusiv für "
+"OpenSlides betriebenen Jitsi-Server kommunizieren alle Teilnehmende direkt "
+"miteinander - geschützt in einem Passwort-gesicherten Audio-Konferenzraum. "
+"Jede/r verbindet sich automatisch nach dem Login in OpenSlides mit der "
+"Audiokonferenz und darf das eigene Mikrofon ein- und ausschalten.        "
+"<p>Funktionsweise in Kurzanimation: <a "
+"href=\"https://files.openslides.org/press/3.2/OpenSlides3.2-Audiokonferenz.gif\""
+" class=\"inline\">Audiokonferenz</a>        · <a "
+"href=\"https://files.openslides.org/press/3.2/OpenSlides3.2-Videokonferenz.gif\""
+" class=\"inline\">Video-Livestream</a>"
+msgstr ""
+"Integrate a live video stream of your virtual event in OpenSlides. All "
+"participants can follow the stream in OpenSlides at any time. If a person "
+"wants to speak, he or she can add themselves to the current speaker list in "
+"OpenSlides and thus automatically switches to a Jitsi video conference room."
+" The livestream broadcasts the video conference. At the end of the request "
+"to speak, the person leaves the conference room and follows the livestream "
+"again. <p> This method is very bandwidth-saving (compared to pure video "
+"conferencing) and allows a large scaling of participant numbers. Virtual "
+"events with several hundred participants are no longer a problem. In "
+"addition, most participants only \"consume\" an event, i.e. only a small "
+"group of people want to actively speak with microphone and camera. Rely on a"
+" proven broadcast streaming solution - intelligently coupled with the "
+"OpenSlides speaker list function. <p> The audio conference - ideal for small"
+" virtual committee meetings (up to 50 participants) <br> Use OpenSlides with"
+" integrated audio conferencing. All participants communicate directly with "
+"each other via our Jitsi server, which is operated exclusively for "
+"OpenSlides - protected in a password-secured audio conference room. Everyone"
+" automatically connects to the audio conference after logging in to "
+"OpenSlides and is allowed to turn their own microphone on and off.  <p> "
+"Functionality in short animation: <a "
+"href=\"https://files.openslides.org/press/3.2/OpenSlides3.2-Audiokonferenz.gif\""
+" class=\"inline\"> audio conference</a> · <a "
+"href=\"https://files.openslides.org/press/3.2/OpenSlides3.2-Videokonferenz.gif\""
+" class=\"inline\">video livestream</a>"
+
+msgid ""
+"Anzeige des Livesstreams im Vordergrund (auch minimierbar oder im Vollbild "
+"nutzbar"
+msgstr ""
+"livestream can be viewed in the foreground (minimized or in full screen)"
+
+msgid "Automatische Übertragung des aktuellen Redners in den Livestream"
+msgstr "automatic broadcasting of current speakers in the livestream"
+
+msgid ""
+"intelligente Koppelung mit der Redeliste (nur Personen auf der Redeliste "
+"dürfen in die Videokonferenz eintreten)"
+msgstr ""
+"intelligent coupling with the speaker list (only persons on the list of "
+"speakers can enter the video conference)"
+
+msgid ""
+"bankbreitenschonende Broadcast-Technik (auch für sehr große virtuelle "
+"Veranstaltungen nutzbar)"
+msgstr ""
+"bandwith-saving broadcasting service (suitable even for very large virtual "
+"events)"
+
 msgid "Weitere Funktionen"
 msgstr "Other functions"
 
@@ -224,11 +366,11 @@ msgid "Responsive Design"
 msgstr "Responsive design"
 
 msgid ""
-"Plattformunabhängige Webanwendung basierend auf Python 3 und Angular 8 im "
+"Plattformunabhängige Webanwendung basierend auf Python 3 und Angular im "
 "modernen Material Design"
 msgstr ""
-"Platform independent web application based on Python 3 and Angular 8 in the "
-"modern Material Design"
+"Platform-independent web application based on Python 3 and Angular in modern"
+" material design"
 
 msgid ""
 "Progressive WebApp mit clientseitigem Caching und Lazy Loading für kurze "
@@ -254,10 +396,6 @@ msgstr "The server is not reachable at the moment. Please try again later."
 msgid "Ein unbekannter Fehler ist aufgetreten."
 msgstr "An unknwon error occurred."
 
-#: api/app.py:139 api/src/templates/order-summary.jinja:2
-msgid "Hostingpaket"
-msgstr "Hosting package"
-
 #: api/src/data.py:8
 msgid "Sitzung"
 msgstr "Meeting"
@@ -270,46 +408,123 @@ msgstr "Conference"
 msgid "Kongress"
 msgstr "Congress"
 
-#: api/src/data.py:17
-msgid "eVoting"
-msgstr "eVoting"
+#: api/src/data.py:56
+msgid "Supportpauschale"
+msgstr "Support flat rate"
 
-msgid "Audiokonferenz"
-msgstr "Audio conference"
+msgid ""
+"Zur individuellen Basisunterstützung in der Vor- und Nachbereitung Ihrer "
+"Veranstaltung - per E-Mail und Telefon."
+msgstr ""
+"For individual basic support in the preparation and follow-up of your event "
+"- by e-mail and telephone."
 
-#: api/src/data.py:25
-msgid "Video-Livestream"
-msgstr "Video livestream"
+msgid "Video-Livestream mit Jitsi-Videokonferenz"
+msgstr "Video livestream with Jitsi video conference"
 
-#: api/src/data.py:28
+msgid "Tag"
+msgstr "day"
+
+msgid "Tage"
+msgstr "days"
+
+msgid ""
+"Bereitstellung und Integration eines Video-Livestreams in OpenSlides, "
+"Bereitstellung eines Jitsi-Videokonferenzraums, Koppelung mit der aktuellen "
+"Redeliste. - Der Preis gilt pauschal pro Veranstaltungstag für die ersten "
+"250 Streamingnutzer. Abhängig vom Veranstaltungstag und Verfügbarkeiten."
+msgstr ""
+"Provision and integration of a video livestream in OpenSlides, provision of "
+"a Jitsi video conference room, coupling with the current speech list. - "
+"Price is flat per event day for the first 250 streaming users. Subject to "
+"event day and availabilities."
+
+#: api/src/data.py:30
+msgid "zusätzliche Streamingnutzer"
+msgstr "additional stream viewers"
+
+#: api/src/data.py:33
 msgid "Einheit"
 msgstr "unit"
 
-#: api/src/data.py:28
+#: api/src/data.py:33
 msgid "Einheiten"
 msgstr "units"
 
-#: api/src/templates/prices-overview.jinja:8
+#: api/src/templates/prices-overview.jinja:9
 msgid ""
-"Eine Einheit kann bis zu 250 Streamingnutzer bedienen. Der Preis gilt pro "
-"Veranstaltungstag und zzgl. technische Betreuung der Streamingtechnik, "
-"abhängig vom Veranstaltungstag und Verfügbarkeiten. Die Bestellung erfolgt "
-"unter Vorbehalt. Wir melden uns mit einem konkreten Angebot bei Ihnen."
+"Eine Einheit kann bis zu 250 Streamingnutzer bedienen. Pro 250 Nutzer ist "
+"somit eine zusätzliche Streaming-Einheit nötig."
 msgstr ""
-"One unit can serve up to 250 streaming users. The price applies per day of "
-"the assembly and plus technical streaming support which depends on the "
-"actual day of the assembly and the availability. The order occurs under "
-"reserve. We will get back to you with a concrete offer."
+"One unit can serve up to 250 streaming users. Thus, one additional streaming"
+" unit is required per 250 users."
 
-#: api/src/data.py:31
+#: api/src/data.py:36
+msgid "externer Livestream"
+msgstr "external livestream"
+
+msgid ""
+"Einrichtung eines RTMP-Streaming-Uploads für einen vor Ort produzierten "
+"Video-Livestream. Koordination der Schnittstellen mit Ihrem Streaming-"
+"Dienstleister (hybrides Veranstaltungsformat)."
+msgstr ""
+"Set up of RTMP streaming upload for live video stream produced on site. "
+"Coordination of interfaces with your streaming service provider (hybrid "
+"event format)."
+
+#: api/src/data.py:17
+msgid "Audio-/Videokonferenz"
+msgstr "audio/video conference"
+
+msgid ""
+"Integrierte Jitsi-Videokonferenz mit Jitsi - ohne Livestream. Ideal zum "
+"direkten Austausch für kleine virtuelle Gremiensitzung (bis max 50 "
+"Teilnehmende, nur im Hostingpaket \"Sitzung\")."
+msgstr ""
+"Integrated Jitsi video conference - without livestream. Ideal for direct "
+"exchange for small virtual committee meetings (up to max 50 participants, "
+"only for the \"Meeting\" hosting package)."
+
+#: api/src/data.py:43
+msgid "Jitsi-Telefoneinwahl"
+msgstr "Jitsi phone dial-in"
+
+msgid ""
+"Einrichtung einer Festnetz-Rufnummer zur telefonischen Einwahl in die Jitsi-"
+"Videokonferenz"
+msgstr ""
+"Provision of a landline number for telephone dial-in for the Jitsi video "
+"conference"
+
+#: api/src/data.py:51
 msgid "Single Sign-On via SAML"
 msgstr "Single Sign-On via SAML"
 
-#: api/app.py:169
+msgid ""
+"Zur Anbindung eines bereits existierenden SAML-Mitgliedsservers. Nur "
+"verfügbar für das Hostingpaket \"Kongress\""
+msgstr ""
+"For connecting an already existing SAML member server. Only available for "
+"the \"Congress\" hosting package"
+
+#: api/src/data.py:62
+msgid "Chat"
+msgstr "Chat"
+
+msgid ""
+"Bereitstellung und Integration eines Chats, mehrere Gruppenräume "
+"konfigurierbar."
+msgstr "Provision and integration of a chat, several group chats possible"
+
+#: api/app.py:127 api/src/templates/order-summary.jinja:2
+msgid "Hostingpaket"
+msgstr "Hosting package"
+
+#: api/app.py:162
 msgid "Monat"
 msgstr "Month"
 
-#: api/app.py:109 api/app.py:169
+#: api/app.py:111 api/app.py:162
 msgid "Monate"
 msgstr "Months"
 
@@ -345,6 +560,14 @@ msgstr ""
 "We gladly assist you in any questions about OpenSlides or offer a personal "
 "consultation."
 
+msgid ""
+"Um Ihnen und Anderen schneller weiterhelfen zu können, schauen Sie bitte "
+"zuerst in unsere FAQ und nutzen dann bevorzugt die Möglichkeit uns eine "
+"E-Mail zu senden."
+msgstr ""
+"In order to help you and others quickly please first have a look at our FAQ "
+"and then preferably contact us by mail."
+
 msgid "Allgemeine Anfragen"
 msgstr "General inquiries"
 
@@ -366,15 +589,127 @@ msgstr "Privacy policy"
 msgid "Impressum"
 msgstr "Legal notice"
 
-msgid ""
-"Verantwortlich für den Inhalt dieser Seiten in Vertretung für die "
-"OpenSlides-Initiative:"
-msgstr ""
-"Responsible for the content of these sites in representation of the "
-"OpenSlides initiative:"
+msgid "Notfall"
+msgstr "Emergency"
 
-msgid "Entwicklung und Redaktion:"
-msgstr "Development and editing:"
+msgid ""
+"Am Wochenende und außerhalb der üblichen Geschäftszeiten zwischen 9:00 Uhr "
+"und 18:00 Uhr ist unsere Zentrale nicht besetzt."
+msgstr ""
+"On the weekend and outside of our regular office hours between 9AM and 6PM "
+"our hotline is not available."
+
+msgid ""
+"Wenn Sie keine Rufbereitschaft für Ihre Veranstaltung gebucht haben, können "
+"wir <b>KEINEN garantierten</b> Sofort-Support gewährleisten."
+msgstr ""
+"If you did not order on-call service for your event, we <b>CANNOT "
+"guarantee</b> immediate support."
+
+msgid "In dringenden Fällen gehen sie bitte wie folgt vor:"
+msgstr "In urgent cases, please proceed as follows:"
+
+msgid ""
+"Schauen sie in den FAQ und Stichwortsuche ob sie ggf. dort Ansätze zur "
+"selbstständigen Lösung finden:"
+msgstr "Have a look at our FAQs and search for a solution independently:"
+
+msgid ""
+"Schreiben sie eine E-Mail an <a "
+"href=\"mailto:notfall@openslides.com\">notfall@openslides.com</a>"
+msgstr ""
+"Send us a mail to <a "
+"href=\"mailto:notfall@openslides.com\">notfall@openslides.com</a>"
+
+msgid "Bitte notieren sie einen möglichst konkreten Problembericht:"
+msgstr "Please give a detailed report of your problem:"
+
+msgid "Bertreff"
+msgstr "Subject"
+
+msgid "Instanz"
+msgstr "Instance"
+
+#: api/src/templates/order-summary.jinja:14
+msgid "Ansprechpartner"
+msgstr "Contact person"
+
+msgid "Rückrufnummer"
+msgstr "Telephone number"
+
+msgid "Dringlichkeit"
+msgstr "Urgency"
+
+msgid ""
+"kritisch: Veranstaltungsablauf ist blockiert, schnellstmögliche Hilfe "
+"erforderlich"
+msgstr ""
+"Critical: Conduction of event is blocked, immediate support is necessary"
+
+msgid ""
+"dringend: Veranstaltungsablauf ist noch nicht blockert, sollte aber "
+"innerhalb x Stunden behoben werden"
+msgstr ""
+"Urgent: Conduction of event is not blocked yet, but problem has to be fixed "
+"within X hours"
+
+msgid ""
+"wichtig: Veranstaltungsablauf ist nicht blockiert, Problem sollte aber "
+"behoben werden und kann nicht bis zum nächsten Werktag warten"
+msgstr ""
+"Important: Conduction of event is not blocked, problem needs to be fixed and"
+" cannot wait for following weekday"
+
+msgid "Problembericht, ggf. mit Screenshot"
+msgstr "Bug report, possibly with screenshot"
+
+msgid ""
+"Bei Angelegenheiten der Priorität 1 wählen sie bitte zusätzlich folgende "
+"Nummer:"
+msgstr ""
+"In case of issues with the priority 1, additionally please call this number:"
+
+msgid ""
+"Wichtig: Wenn Sie keine Rufbereitschaft für Ihre Veranstaltung gebucht "
+"haben, können wir <b>KEINEN garantierten</b> Sofort-Support gewährleisten."
+msgstr ""
+"Attention: If you did not order on-call service for your event, we <b>CANNOT"
+" guarantee</b> immediate support."
+
+msgid ""
+"Ungeplanter Support außerhalb der Geschäftszeiten wird wie folgt "
+"abgerechnet:"
+msgstr ""
+"Spontaneous support outside of our office hours will be billed the "
+"following:"
+
+msgid ""
+"Jede angefangene Stunde bei Nutzersupport per Mail oder Anruf über die o.g. "
+"Notfall-Kanäle berechnen wir am Wochenende und außerhalb der "
+"Kernarbeitszeiten von 18-9 Uhr mit 500 EUR/h."
+msgstr ""
+"We charge 500 EUR/h for every hour or part thereof of support by mail or "
+"call via the above-mentioned emergency channels on weekends and outside of "
+"our core working hours of 6PM - 9AM."
+
+msgid ""
+"OpenSlides ist Freie Open Source Software und wurde 2011 von Emanuel "
+"Schütze, Oskar Hahn und Norman Jäckel gegründet. Bis heute zeigen sich die 3"
+" Gründer verantwortlich für die Weiterentwicklung und haben gemeinsam mit "
+"der Intevation GmbH eine Freie Software Initiative sowie ein professionelles"
+" Dienstleitungsangebot rund um OpenSlides aufgebaut."
+msgstr ""
+"OpenSlides is Free Open Source Software and was founded in 2011 by Emanuel "
+"Schütze, Oskar Hahn and Norman Jäckel. Until today, the 3 founders are "
+"responsible for the further development and, together with Intevation GmbH, "
+"have built up a Free Software initiative as well as a professional service "
+"offering around OpenSlides."
+
+msgid "Verantwortlich für den Inhalt dieser Seiten:"
+msgstr "Responsible for the content of this site:"
+
+msgid "Demo"
+msgstr "Demo"
 
 msgid "Preise"
 msgstr "Pricing"
@@ -394,57 +729,54 @@ msgstr "News"
 msgid "Kontakt"
 msgstr "Contact"
 
+msgid "FAQ"
+msgstr "FAQ"
+
 msgid ""
-"OpenSlides ist die umfassende Lösung zur digitalen Organisation Ihrer "
-"Versammlungen und Konferenzen. Verwalten und projizieren Sie Tagesordnungen,"
-" Anträge, Wahlen, Dokumente, Redelisten und Teilnehmende. Webbasiert und "
-"immer auf dem neuesten Stand. "
+"OpenSlides ist ein leistungsstarkes Werkzeug und bietet eine umfassende "
+"Lösung zur digitalen Organisation Ihrer Veranstaltungen und Konferenzen. "
+"Alle Mitgliederversammlungen können als Präsenz-, Hybrid- oder als virtuelle"
+" Veranstaltungen bereitgestellt werden. Verwalten Sie Tagesordnungen, "
+"Anträge, Wahlen, Redelisten, Dokumente und Teilnehmende. Alle diese Dinge "
+"sind erstaunlich intuitiv zu bedienen.  "
 msgstr ""
-"OpenSlides is the all-in-one solution for running your plenary meetings and "
-"conferences. Show the current presentation on the main screen, while you "
-"show the agenda, motions, list of speakers on others. Working on elections "
-"and documents in parallel with all participants. Web-based and always up-to-"
-"date."
+"OpenSlides is a powerful tool and offers a comprehensive solution to "
+"organize your events and conferences digitally. All general meetings can be "
+"delivered as face-to-face, hybrid or virtual events. Manage agendas, "
+"motions, elections, speaker lists, documents and participants. All of these "
+"things are amazingly intuitive to use. "
+
+msgid ""
+"Verschlanken und vereinfachen Sie Ihre Abläufe auf klassischen Präsenz-"
+"Veranstaltungen und lassen sich von den Vorteilen überzeugen: Reagieren Sie "
+"mit OpenSlides flexibel in Echtzeit und modernisieren Ihre Prozesse."
+msgstr ""
+"Streamline and simplify your processes at classic face-to-face events and "
+"let the benefits convince you: Respond flexibly in real time with OpenSlides"
+" and modernize your processes."
+
+msgid ""
+"Geben Sie einem dezentral verteilten Plenum die Möglichkeit zur interaktiven"
+" Teilnahme: Alle Funktionen von OpenSlides können sowohl von zu Hause als "
+"auch am Veranstaltungsort gesteuert und genutzt werden. Hybrid - das Format "
+"der Zukunft!"
+msgstr ""
+"Give a decentrally distributed assembly the opportunity for interactive "
+"participation: All functions of OpenSlides can be controlled and used from "
+"home as well as at the venue. Hybrid - the format of the future!"
+
+msgid ""
+"Der integrierte Livestream macht OpenSlides zur Komplettlösung für Ihre "
+"digitale Veranstaltung. Die intelligente Koppelung von Redeliste, "
+"Videokonferenz und Livestream ermöglicht eine einfach Bedienung. Virtuell "
+"macht Sie unabhängig."
+msgstr ""
+"The integrated livestream makes OpenSlides the complete solution for your "
+"digital event. The intelligent coupling of speaker list, video conference "
+"and livestream makes it easy to use. Virtual makes you independent."
 
 msgid "eVoting · integrierte Audio-/Videokonferenz · Video-Livestream"
 msgstr "eVoting · integrated audio/video conference · video livestream"
-
-msgid ""
-"Schaffen Sie die Voraussetzungen für eine offene Kommunikation, ohne das "
-"Ziel aus den Augen zu verlieren. OpenSlides gibt Ihnen dafür ein modernes "
-"und mächtiges Werkzeug an die Hand. Erweitern Sie Ihre Tagungsordnung live, "
-"reagieren Sie auf Antragsänderungen in Echtzeit und geben Sie Ihren "
-"Delegierten kontrollierten Zugriff auf das System."
-msgstr ""
-"Create the right conditions for open communication without losing the focus."
-" For this purpose OpenSlides provides you a modern and powerful tool. "
-"Supplement your agenda immediately, react to motion changes in real time and"
-" give your delegates controlled access to the system."
-
-msgid ""
-"Beziehen Sie das Plenum aktiv mit ein. Öffnen Sie den mobilen Zugriff auf "
-"OpenSlides – zur Einsicht wichtiger Dokumente, zum Einreichen von Anträgen "
-"oder Abrufen von Wahlergebnissen."
-msgstr ""
-"Actively integrate the plenum. Open the mobile access to OpenSlides – for "
-"get important documents, submit and read motions or check election results."
-
-msgid ""
-"Beschleunigen Sie Prozesse durch eine nahtlose Steuerung mit nur einer "
-"Software. OpenSlides strafft das Verfahren – von der Vorbereitung über "
-"Anträge und Wahlen bis zum Beschlussprotokoll."
-msgstr ""
-"Accelerate your processes via consistently management with only one "
-"software. OpenSlides consolidates the procedure – starting with the "
-"preparations of motions and elections up to the final protocol. "
-
-msgid ""
-"Machen Sie OpenSlides zu Ihrer zentralen Schnittstelle für die Verwaltung "
-"und Veröffentlichung aller relevanten Versammlungsinhalte auf Leinwand, "
-"Notebook oder Smartphone."
-msgstr ""
-"Assimilate OpenSlides and get a central interface to manage and publish all "
-"relevant assembly contents to a projector, notebook or smartphone."
 
 msgid ""
 "Ergänzen, ändern oder verschieben Sie automatisch nummerierte "
@@ -488,6 +820,36 @@ msgstr ""
 "editing of slides while the projectors are running in full screen."
 
 msgid ""
+"Nutzen Sie Live-Voting für Anträge und Wahlen. Die stimmberechtigte "
+"Nutzergruppe lässt sich pro Antrag/Wahl festlegen. Nur in OpenSlides auf "
+"anwesend und stimmberechtigt geschaltete Teilnehmende dürfen abstimmen. "
+"Möglich sind namentliche oder nicht-namentliche (anonyme) "
+"Antragsabstimmungen und Personenwahlen. Auch individuelle Stimmgewichtungen "
+"und Stimmrechtsübertragungen sind möglich."
+msgstr ""
+"Use live voting for motions and elections. The participant group that is "
+"eligible to vote can be defined per motion/election. Only participants set "
+"to present and selected as eligible to vote in OpenSlides are allowed to "
+"vote. Nominal or non-nominal (anonymous) voting on motions and elections are"
+" possible. Individual vote weighting and vote transfers are also possible."
+
+msgid ""
+"Integrieren Sie einen Video-Livestream Ihrer virtuellen Veranstaltung in "
+"OpenSlides. Alle Teilnehmenden verfolgen den Stream jederzeit sichtbar in "
+"OpenSlides. Möchte sich eine Person zu Wort melden, setzt sich diese "
+"selbständig auf die aktuelle Redeliste in OpenSlides und wechselt damit "
+"automatisch in einen Jitsi-Videokonferenzraum. Der Livestream überträgt die "
+"Videokonferenz. Nach Ende der Wortmeldung verlässt man den Konferenzraum und"
+" verfolgt wieder den Livestream."
+msgstr ""
+"Integrate a video livestream of your virtual assembly in OpenSlides. All "
+"participants can follow the always-visible stream in OpenSlides. If a person"
+" wants to speak, he/she can put him/herself on the current list of speakers "
+"and thereby automatically switches to a Jitsi video conference room. The "
+"livestream broadcasts the video conference. After the speaker is finished, "
+"the conference room is left and one can follow the livestream again."
+
+msgid ""
 "Die Verwaltung der Delegierten und ihrer Anwesenheit sowie das ausgefeilte "
 "Rechtemanagement sind unkompliziert und intuitiv. Jeder Bereich von "
 "OpenSlides kann für einzelne Nutzergruppen freigeschalten werden."
@@ -525,6 +887,16 @@ msgstr ""
 "services:"
 
 msgid ""
+"Sie möchten OpenSlides auf Ihrem eigenen Server installieren? Wir bieten "
+"unsere Software als PyPI-Paket und als Quellcode an. Bitte haben Sie "
+"Verständnis dafür, dass wir Supportleistungen nur für unsere Hosting-"
+"Lösungen anbieten."
+msgstr ""
+"You want to install OpenSlides on your own server? We offer our software as "
+"PyPI package and as source code. Please note that we can offer technical "
+"support for our hosting solutions only."
+
+msgid ""
 "Wir haben uns zu den Grundsätzen eines quelloffenen, freien und kostenlosen "
 "Austauschs unserer Software verpflichtet und tragen diesen Anspruch auch im "
 "Namen. OpenSlides wird unter MIT-Lizenz zur Verfügung gestellt. Hilf mit, "
@@ -545,26 +917,31 @@ msgstr ""
 msgid "Managen Sie Veranstaltungen digital"
 msgstr "Organize your event digitally"
 
-msgid "Demo"
-msgstr "Demo"
+msgid "Jetzt ausprobieren (Demo)"
+msgstr "Try out now (Demo)"
 
-msgid "Hosting starten"
-msgstr "Get started"
+msgid "OpenSlides für alle Formate"
+msgstr "OpenSlides for all formats"
 
-msgid "Maximale Flexibilität und Transparenz"
-msgstr "Earn a maximum of flexibility and transparency"
-
-msgid "Einfache Interaktion"
-msgstr "Simple interaction"
-
-msgid "Schnelle Ergebnisse"
-msgstr "Fast results"
-
-msgid "Papierlos"
-msgstr "Less paper"
+msgid "Präsenz"
+msgstr "Presence"
 
 msgid "Mehr erfahren"
 msgstr "Learn more"
+
+msgid "Hybrid"
+msgstr "Hybrid"
+
+msgid "Virtuell"
+msgstr "Virtual"
+
+msgid ""
+"+++ Auch für virtuelle Mitgliederversammlungen, Hauptversammlungen und "
+"Parteitage +++"
+msgstr "+++ Also for virtual general meetings and party conventions +++"
+
+msgid "Basisfunktionen in OpenSlides"
+msgstr "Basis functions in OpenSlides"
 
 msgid "Vielseitig und responsiv"
 msgstr "Multifunctional and responsive"
@@ -584,14 +961,13 @@ msgstr "Services"
 msgid "Programmvorstellung und Beratung"
 msgstr "Introduction and consulting"
 
-#: api/src/data.py:39
 msgid "Schulung"
 msgstr "Training"
 
 msgid "Vor-Ort-Service"
 msgstr "On-site assistance"
 
-#: api/src/data.py:43
+#: api/src/data.py:76
 msgid "Telefonrufbereitschaft"
 msgstr "On-call service"
 
@@ -603,16 +979,6 @@ msgstr "Contact us"
 
 msgid "Selbst installieren"
 msgstr "Install by yourself"
-
-msgid ""
-"Sie möchten OpenSlides auf Ihrem eigenen Server installieren? Wir bieten "
-"unsere Software als PyPI-Paket und als Quellcode an. Bitte haben Sie "
-"Verständnis dafür, dass wir Supportleistungen nur für unsere Hosting-"
-"Lösungen anbieten."
-msgstr ""
-"You want to install OpenSlides on your own server? We offer our software as "
-"PyPI package and as source code. Please note that we can offer technical "
-"support for our hosting solutions only."
 
 msgid "Installationsanleitung"
 msgstr "Installation guide"
@@ -629,18 +995,6 @@ msgstr "More references"
 msgid "Alle News anzeigen"
 msgstr "Show all news"
 
-msgid "Online-Versammlungen mit OpenSlides effizient durchführen"
-msgstr "Efficiently organize online meetings with OpenSlides"
-
-msgid "Newsletter"
-msgstr "Newsletter"
-
-msgid "Absenden"
-msgstr "Submit"
-
-msgid "Sie haben sich erfolgreich für unseren Newsletter registriert!"
-msgstr "You successfully registered for our newsletter!"
-
 msgid "Pressemitteilungen"
 msgstr "Press releases"
 
@@ -649,6 +1003,9 @@ msgstr "Articles and publications"
 
 msgid "In den Medien"
 msgstr "In the media"
+
+msgid "Online-Versammlungen mit OpenSlides effizient durchführen"
+msgstr "Efficiently organize online meetings with OpenSlides"
 
 msgid ""
 "April 2020, von <a href=\"mailto:eric.lanfer@openslides.com\">Eric "
@@ -1026,16 +1383,12 @@ msgid ""
 "melden."
 msgstr "We will work on it as fast as possible and then contact you soon."
 
-msgid "Senden Sie uns das ausgefüllte Formular."
-msgstr "Send us the filled-out form below."
-
 msgid ""
-"Mit unserer Bestätigung starten wir i.d.R. innerhalb eines Tages das "
-"Hosting."
-msgstr "With our confirmation we will start hosting usually within a day."
-
-msgid "Wir werden uns zeitnah mit einem konkreten Angebot bei Ihnen melden."
-msgstr "We will contact you as fast as possible with a concrete offer."
+"Berechnen Sie Ihren individuellen Hostingpreis! Im nächsten Schritt können "
+"Sie direkt bestellen oder unverbindlich ein Angebot anfordern."
+msgstr ""
+"Calculate your individual hosting price! In the next step you can order "
+"directly or request a non-binding offer."
 
 msgid "bis"
 msgstr "up to"
@@ -1047,46 +1400,62 @@ msgstr "participants"
 msgid "zzgl. USt"
 msgstr "plus VAT"
 
+msgid "Veranstaltungstag(e)"
+msgstr "Event day(s)"
+
+msgid "Startdatum"
+msgstr "Starting date"
+
+msgid "Enddatum"
+msgstr "Ending date"
+
+#: api/src/templates/order-summary.jinja:12
+msgid "Erwartete Teilnehmeranzahl"
+msgstr "Expected participants"
+
+#: api/src/templates/order-summary.jinja:9
+msgid "Veranstaltungsname"
+msgstr "Event name"
+
+#: api/src/templates/order-summary.jinja:10
+msgid "Veranstaltungsort"
+msgstr "Event location"
+
 #: api/src/templates/order-summary.jinja:4
 msgid "Wunschdomain"
 msgstr "Preferred domain"
 
-#: api/src/templates/order-summary.jinja:8
-msgid "Veranstaltungsname"
-msgstr "Event name"
-
-#: api/src/templates/order-summary.jinja:9
-msgid "Veranstaltungsort"
-msgstr "Event location"
-
-#: api/src/templates/order-summary.jinja:10
-msgid "Veranstaltungszeitraum"
-msgstr "Event date"
-
-#: api/src/templates/order-summary.jinja:11
-msgid "Erwartete Teilnehmeranzahl"
-msgstr "Expected participants"
-
-#: api/src/templates/order-summary.jinja:15
+#: api/src/templates/order-summary.jinja:16
 msgid "Name"
 msgstr "Name"
 
 msgid "Organisation"
 msgstr "Organisation"
 
-#: api/src/templates/order-summary.jinja:16
+#: api/src/templates/order-summary.jinja:17
 msgid "E-Mail"
 msgstr "E-Mail"
 
-#: api/src/templates/order-summary.jinja:17
+#: api/src/templates/order-summary.jinja:18
 msgid "Telefon"
 msgstr "Phone"
 
-#: api/src/templates/order-summary.jinja:22
-msgid "Rechnungsadresse"
-msgstr "Billing address"
+msgid "Zusatz (optional)"
+msgstr "Addition (optional)"
 
-#: api/src/templates/order-summary.jinja:24
+msgid "Straße + Hausnummer"
+msgstr "Street + house number"
+
+msgid "PLZ"
+msgstr "ZIP code"
+
+msgid "Ort"
+msgstr "City"
+
+msgid "Land"
+msgstr "Country"
+
+#: api/src/templates/order-summary.jinja:30
 msgid "Umsatzsteuer-ID"
 msgstr "Tax ID"
 
@@ -1094,18 +1463,21 @@ msgid "Ihre Anmerkungen und Wünsche"
 msgstr "Your remarks and wishes"
 
 #: api/src/templates/prices-overview.jinja:4
-msgid "Summe Netto"
+msgid "Summe netto"
 msgstr "Net sum"
 
 #: api/src/templates/prices-overview.jinja:6
 msgid "Gesamtsumme"
 msgstr "Total sum"
 
+msgid "Preiskalkulator"
+msgstr "Price calculator"
+
 msgid "Angebot anfordern"
 msgstr "Request offer"
 
-msgid "Bestellen"
-msgstr "Order"
+msgid "Hostingpaket bestellen"
+msgstr "Order hosting"
 
 #: api/src/templates/order-summary.jinja:1
 msgid "Hostingauswahl"
@@ -1118,49 +1490,66 @@ msgstr "OpenSlides hosting package"
 msgid "Hostinglaufzeit"
 msgstr "Hosting duration"
 
-#: api/app.py:111
+#: api/app.py:113
 msgid "unbegrenzt"
 msgstr "unlimited"
 
-#: api/src/templates/order-summary.jinja:5
+#: api/src/templates/order-summary.jinja:6
 msgid "Zusatzfunktionen"
 msgstr "Additional services"
 
-msgid "Serviceleistungen"
-msgstr "Additional services"
+msgid "Serviceleistungen (auf Anfrage)"
+msgstr "Services (on request)"
 
-#: api/src/templates/order-summary.jinja:7
+msgid ""
+"Sie benötigen eine Rund-um-Betreuung? Wir senden Ihnen gerne ein Angebot zu "
+"folgenden Leistungen:"
+msgstr ""
+"Do you need all-inclusive support? We can send you an offer for the "
+"following services:"
+
+#: api/src/templates/order-summary.jinja:8
 msgid "Veranstaltungsdetails"
 msgstr "Event details"
 
-#: api/src/templates/order-summary.jinja:13
-msgid "Ansprechpartner"
-msgstr "Contact person"
+#: api/src/templates/order-summary.jinja:5
+msgid "Startdatum Hosting"
+msgstr "Start date hosting"
+
+#: api/src/templates/order-summary.jinja:23
+msgid "Rechnungsadresse"
+msgstr "Billing address"
 
 msgid "Zusätzliche Angaben"
 msgstr "Additional information"
 
-msgid "weiter zur Übersicht"
-msgstr "go to overview"
-
-msgid "Anfrage senden"
-msgstr "Send request"
-
 msgid "Bestellübersicht"
 msgstr "Order overview"
 
-#: api/src/templates/prices-overview.jinja:9
-msgid "Preis für 12 Monate, beliebig verlängerbar."
-msgstr "Price for 12 months, extendable as desired"
+msgid "Weiter zur Bestellung"
+msgstr "Continue to order"
 
 msgid "zurück"
 msgstr "back"
 
+msgid "Unverbindliches Angebot anfordern"
+msgstr "Request nonbinding offer"
+
 msgid "Jetzt kostenpflichtig bestellen"
 msgstr "Order with obligation to pay"
 
-msgid "Jetzt Anfrage senden"
-msgstr "Send request now"
+#: api/src/templates/prices-overview.jinja:10
+msgid "Preis für 12 Monate, beliebig verlängerbar."
+msgstr "Price for 12 months, extendable as desired"
+
+msgid ""
+"Für gemeinnützige Bildungsorganisationen gibt es auf Anfrage bis zu 20% "
+"Rabatt auf das Hosting. Bitte im Kommentarfeld unter \"zusätzliche Angaben\""
+" beantragen und kurz begründen."
+msgstr ""
+"For non-profit educational organizations there is up to 20% discount on "
+"hosting upon request. Please request in the comment field under \"additional"
+" details\" and briefly justify."
 
 msgid "Fehler:"
 msgstr "Error:"
@@ -1174,75 +1563,16 @@ msgstr "incl."
 msgid "USt."
 msgstr "VAT"
 
-msgid "5% Rabatt bei Vorauszahlung von 12 Monaten."
-msgstr "5% discount when paying 12 months in advance."
+msgid "Videokonferenz mit Livestream"
+msgstr "video conference with livestream"
 
-msgid "Wählen Sie praktische Zusatzfunktionen"
-msgstr "Choose practical additional functions"
+msgid "Mindestlaufzeit: 1 Monat"
+msgstr "Minimum term: 1 month"
 
-msgid ""
-"Verwenden Sie OpenSlides mit integrierter Audiokonferenz. Über unseren "
-"exklusiv für OpenSlides betriebenen Jitsi-Server kommunizieren alle "
-"Teilnehmende direkt miteinander - geschützt in einem Passwort-gesicherten "
-"Audio-Konferenzraum. Jede/r verbindet sich automatisch nach dem Login in "
-"OpenSlides mit der Audiokonferenz und darf das eigene Mikrofon ein- und "
-"ausschalten."
+msgid "Jahrespreise sowie Hosting ab 500 Teilnehmende auf Anfrage."
 msgstr ""
-"Use OpenSlides with an integrated audio conference. Via our Jitsi server "
-"hosted exclusively for OpenSlides participants can directly communicate with"
-" each other - protected in a password-secured audio conference room. "
-"Everyone connects automatically after the login with the audio conference "
-"and can mute and unmute him-/herself."
-
-msgid "bis 50 Teilnehmende"
-msgstr "up to 50 participants"
-
-msgid ""
-"Integrieren Sie einen Video-Livestream Ihrer virtuellen Veranstaltung in "
-"OpenSlides. Alle Teilnehmenden verfolgen den Stream jederzeit sichtbar in "
-"OpenSlides. Möchte sich eine Person zu Wort melden, setzt sich diese "
-"selbständig auf die aktuelle Redeliste in OpenSlides und wechselt damit "
-"automatisch in einen Jitsi-Videokonferenzraum. Der Livestream überträgt die "
-"Videokonferenz. Nach Ende der Wortmeldung verlässt man den Konferenzraum und"
-" verfolgt wieder den Livestream."
-msgstr ""
-"Integrate a video livestream of your virtual assembly in OpenSlides. All "
-"participants can follow the always-visible stream in OpenSlides. If a person"
-" wants to speak, he/she can put him/herself on the current list of speakers "
-"and thereby automatically switches to a Jitsi video conference room. The "
-"livestream broadcasts the video conference. After the speaker is finished, "
-"the conference room is left and one can follow the livestream again."
-
-msgid ""
-"Dieses Verfahren ist sehr bandbreitenschonend (im Vergleich zu reinen "
-"Videokonferenzen) und erlaubt eine große Skalierung an Teilnehmerzahlen. "
-"Virtuelle Veranstaltungen mit mehreren hundert Personen sind damit kein "
-"Problem mehr. Hinzu kommt, dass die meisten Teilnehmenden eine Veranstaltung"
-" nur \"konsumierend\" verfolgen, d.h. nur ein kleiner Personenkreis möchte "
-"sich aktiv mit Mikrofon und Kamera zu Wort melden. Setzen Sie auf erprobte "
-"Broadcast-Streaming-Lösung – intelligent gekoppelt mit der OpenSlides-"
-"Redelistenfunktion."
-msgstr ""
-"This method is very bandwith conserving (compared to pure video conferences)"
-" and allows a big scaling of participants. Virtual meetings with hundreds of"
-" people are no problem with this. Additionally, most participants are only "
-"\"consumers\" of the assembly, so only a small circle of people wants to "
-"speak actively with microphone and camera. Try the tested broadcast "
-"streaming solution – intelligently coupled with the list of speakers in "
-"OpenSlides."
-
-msgid ""
-"Ermöglichen Sie Ihren Mitgliedern sich mit ihren bekannten Mitgliedsaccounts"
-" in OpenSlides anzumelden. OpenSlides unterstützt den Standard \"SAML\" "
-"(Security Assertion Markup Language) für Single Sign-On (SSO). Ersparen Sie "
-"sich damit die Teilnehmerverwaltung in OpenSlides. Und Ihre Mitglieder "
-"brauchen sich keinen extra OpenSlides-Login merken."
-msgstr ""
-"Enable your members to login in OpenSlides with their known accounts. "
-"OpenSlides supports the standard \"SAML\" (Security Assertion Markup "
-"Language) for single sign-on (SSO). Save yourself the participant "
-"administration in OpenSlides. And your members don't need to remember an "
-"extra login for OpenSlides."
+"Prices for an annual flat rate as well as hosting for more than 500 "
+"participants on request."
 
 msgid ""
 "OpenSlides ist Freie Software (Open Source) und kann – mit einigen "
@@ -1265,26 +1595,58 @@ msgstr "for small (virtual) committees<br>with recurring meetings"
 msgid "bis <b>50</b> Teilnehmende"
 msgstr "up to <b>50</b> participants"
 
-msgid "ab"
-msgstr "from"
+msgid "NEU: eVoting (jetzt integriert!)"
+msgstr "NEW: eVoting (now integrated!)"
 
-msgid "Mindestlaufzeit: 3 Monate"
-msgstr "Minimum term: 3 months"
+msgid "Tagesordnung mit Redeliste"
+msgstr "Agenda with list of speakers"
 
-msgid "Jetzt bestellen"
-msgstr "Order now"
+msgid "Anträge und Wahlen"
+msgstr "Motions and elections"
 
-msgid "für mittelgroße (virtuelle) Versammlungen"
-msgstr "for medium (virtual) assemblies"
+msgid "Teilnehmende"
+msgstr "Participants"
+
+msgid "u.v.m"
+msgstr "and much more"
+
+msgid "Audio-/Videokonferenz (mit Jitsi)"
+msgstr "audio/video conference (with Jitsi)"
+
+msgid "Support via FAQs"
+msgstr "Support via FAQs"
+
+msgid "für kleine (virtuelle) Versammlungen"
+msgstr "for small (virtual) conferences"
+
+msgid "bis <b>250</b> Teilnehmende"
+msgstr "up to <b>250</b> participants"
+
+msgid "individueller Support via E-Mail/Telefon"
+msgstr "individual support via email/phone"
+
+#: api/src/data.py:72
+msgid "Online-Schulung"
+msgstr "Online training"
+
+msgid ""
+"Technische Begleitung Ihrer Veranstaltung<br>\n"
+"                            (vor Ort, virtuell oder per Rufbereitschaft)"
+msgstr ""
+"Technical support for your event<br>\n"
+"(on-site, virtual or via on-call service)"
+
+msgid "für große (virtuelle) Tagungen und Konferenzen"
+msgstr "for big (virtual) events and congresses"
 
 msgid "bis <b>500</b> Teilnehmende"
 msgstr "up to <b>500</b> participants"
 
-msgid "für große (virtuelle) Konferenzen"
-msgstr "for big (virtual) conferences"
-
-msgid "bis <b>1.000</b> Teilnehmende"
-msgstr "up to <b>1,000</b> participants"
+msgid ""
+"Single Sign-On via SAML (für Organisationen mit zentralem SAML-"
+"Mitgliedsserver)"
+msgstr ""
+"Single sign-on via SAML (for organizations with central SAML member server)"
 
 msgid "Hinweise zur Auswahl:"
 msgstr "Hints for the selection:"
@@ -1310,42 +1672,30 @@ msgstr ""
 "Choose your URL per OpenSlides instance dependent on availability (e.g. "
 "https://my-assemby.openslides.com)"
 
-msgid "Beispiele"
-msgstr "Examples"
+msgid "Beispiele:"
+msgstr "Examples:"
 
 msgid ""
-"A) Ein Verband möchte OpenSlides für seine wöchentlichen Vorstandssitzung "
-"mit 12 Personen sowie für die jährliche Mitgliederversammlung mit ca. 200 "
+"Ein Verband möchte OpenSlides für seine wöchentlichen Vorstandssitzung mit "
+"12 Personen sowie für die jährliche Mitgliederversammlung mit ca. 200 "
 "Teilnehmde nutzen. Dafür sind zwei Hostingpakete nötig: »Sitzung« und "
 "»Tagung«."
 msgstr ""
-"A) An association wants to use OpenSlides for its weekly board meeting with "
-"12 participants as well as the yearly general meeting with about 200 "
-"participants. For this, two packages are neccessary: »Meeting« and "
-"»Conference«."
+"An association wants to use OpenSlides for its weekly board meeting with 12 "
+"people as well as for the annual general meeting with about 200 attendees. "
+"This requires two hosting packages: \"Meeting\" and \"Conference\"."
 
 msgid ""
-"B) Eine Bundesverband möchte für die Vorstandssitzungen seiner 16 "
+"Eine Bundesverband möchte für die Vorstandssitzungen seiner 16 "
 "Landesverbände OpenSlides nutzen (je &lt;50 Personen). Dafür sind 16 "
 "einzelne OpenSlides-Instanzen (Hostingpaket »Sitzung«) nötig."
 msgstr ""
-"B) A federal association want to use OpenSlides for the board meetings of "
-"its 16 state associations (&lt;50 persons each). For this 16 independent "
-"OpenSlides instances (hosting package »Meeting«) are needed."
+"A federal association would like to use OpenSlides for the board meetings of"
+" its 16 state associations (<50 people each). This requires 16 individual "
+"OpenSlides instances (hosting package \"Meeting\")."
 
 msgid "Für alle Hosting-Pakete gelten folgende Leistungen:"
 msgstr "For all hosting packages we offer the following services:"
-
-msgid "kontinuierliche Updates"
-msgstr "continuous updates"
-
-msgid "Versand von Einladungs-E-Mails"
-msgstr "sending of invitation emails"
-
-msgid ""
-"individueller Support nach Aufwand (125 € / Stunde, halbstundengenaue "
-"Abrechnung)"
-msgstr "individual support at cost (125 € / hour, half-hourly billing)"
 
 msgid "sichere Verbindung: HTTPS mit Let's-Encrypt-Zertifikaten"
 msgstr "secure connection: HTTPS with Let's Encrypt certificates"
@@ -1360,54 +1710,14 @@ msgstr ""
 "secure operation: every event runs as an isolated OpenSlides instance with "
 "its own database"
 
-msgid "eVoting – unerlässlich für Online-Versammlungen mit Live-Voting"
-msgstr "eVoting – essential for online meetings with live voting"
-
 msgid ""
-"Erweitern Sie OpenSlides um ein integriertes elektronisches "
-"Abstimmungssystem. Legen Sie die stimmberechtigte Nutzergruppe fest. Nur in "
-"OpenSlides auf anwesend und stimmberechtigt geschaltete Teilnehmende dürfen "
-"abstimmen. Möglich sind namentliche oder nicht-namentliche "
-"Antragsabstimmungen und Personenwahlen. Auch individuelle Stimmgewichtungen "
-"sind möglich.<br> Testen Sie die elektronische Stimmabgabe in der <a "
-"class=\"inline\" href=\"https://demo.openslides.org/\" target=\"_blank"
-"\">Online-Demo</a>."
+"Wir betreiben OpenSlides für Sie datenschutzkonform auf Servern in "
+"Deutschland."
 msgstr ""
-"Extend OpenSlides by an integrated electronic voting system. Define users "
-"which are entitled to vote. Only users which are set to present in "
-"OpenSlides and are entitled can vote. Possible are nominal and non-nominal "
-"motion polls and assignment polls. Individual vote weights are also "
-"possible.<br> Test the electronic voting in our <a class=\"inline\" "
-"href=\"https://demo.openslides.org/\" target=\"_blank\">online demo</a>."
+"We run OpenSlides data protection compliant for you on servers in Germany."
 
-msgid "Mehr erfahren über Online-Versammlungen ..."
-msgstr "Learn more about online assemblies ..."
-
-msgid ""
-"Audiokonferenz – ideal zum Austausch für kleine virtuelle Gremiensitzung"
-msgstr ""
-"Audio conference – perfect for communicating in small virtual assemblies"
-
-msgid "Video-Livestream – für große virtuelle Versammlungen und Parteitage"
-msgstr "Video livestream – for big virtual assemblies and party conventions"
-
-msgid ""
-"Kontaktieren Sie uns! Wir finden die passende Streaming-Lösung für Ihre "
-"Veranstaltung."
-msgstr ""
-"Contact us! We will find a suitable streaming solution for your assembly."
-
-msgid "ab 750 € pro Veranstaltungstag · zzgl. technische Betreuung"
-msgstr "from 750€ per assembly day · plus technical support"
-
-msgid ""
-"Single Sign-On via SAML – für Organisationen mit zentralem Mitgliedsserver"
-msgstr ""
-"Single sign-on via SAML – for organisations with a central authentification "
-"server"
-
-msgid "Alle Preise zzgl. der gesetzlich gültigen Umsatzsteuer."
-msgstr "All prices plus VAT."
+msgid "Mindestlaufzeit: 1 Monat, monatlich kündbar"
+msgstr "Minimum term: 1 month, cancelable monthly"
 
 msgid "Noch Fragen?"
 msgstr "Any questions?"
@@ -1428,37 +1738,33 @@ msgstr ""
 "OpenSlides was already used successfully on a multitude of different events."
 " Here is a selection of references."
 
-#: api/app.py:36
-msgid "Konfigurationsfehler: Keine E-Mail-Empfänger"
-msgstr "Configuration error: No order mail recipients"
-
-#: api/app.py:70
-msgid "Ihre Angebotsanfrage bei OpenSlides"
-msgstr "Your inquiry for OpenSlides"
-
-#: api/app.py:72
+#: api/app.py:35
 msgid "Ihre Bestellung bei OpenSlides"
 msgstr "Your order for OpenSlides"
 
-#: api/app.py:77 api/app.py:81
-msgid "Ihre Angaben:"
-msgstr "Your information:"
+#: api/app.py:40
+msgid "Ihre Angebotsanfrage bei OpenSlides"
+msgstr "Your inquiry for OpenSlides"
 
-#: api/app.py:182
+#: api/app.py:44
+msgid "Konfigurationsfehler: Keine E-Mail-Empfänger"
+msgstr "Configuration error: No order mail recipients"
+
+#: api/app.py:139
+msgid "Ungültige Auswahl mit den gegebenen Daten:"
+msgstr "Invalid selection with the given data:"
+
+#: api/app.py:175
 msgid "Diese E-Mail-Adresse ist ungültig"
 msgstr "The email address is not valid"
 
-#: api/app.py:193
+#: api/app.py:186
 msgid "Diese E-Mail-Adresse ist bereits registriert"
 msgstr "Address already exists"
 
-#: api/src/data.py:21
-msgid "Audiokonferenz via Jitsi"
-msgstr "Audio conference via Jitsi"
-
-#: api/src/data.py:40
-msgid "Technische Begleitung der Veranstaltung (virtuell oder Vor-Ort)"
-msgstr "Technical support of the assembly (virtual or on-site)"
+#: api/src/data.py:73
+msgid "Technische Begleitung Ihrer Veranstaltung (virtuell oder Vor-Ort)"
+msgstr "Technical support for your event (virtual or on-site)"
 
 #: api/src/mail.py:17
 msgid "Der Server ist nicht korrekt konfiguriert"
@@ -1468,47 +1774,88 @@ msgstr "The server is not configured correctly"
 msgid "Konnte E-Mail nicht versenden an:"
 msgstr "Could not send email to:"
 
-#: api/src/templates/confirmation-email.jinja:1
+#: api/src/templates/confirmation-email-offer.jinja:1
 #, python-format
 msgid ""
 "Sehr geehrte/r %(name)s,\n"
 "\n"
-"Vielen Dank für Ihre Hosting-Anfrage bei OpenSlides! Wir werden Ihre Nachricht schnellstmöglich bearbeiten.\n"
+"Vielen Dank für Ihre Angebotsanfrage bei OpenSlides! Wir werden Ihre Nachricht schnellstmöglich bearbeiten.\n"
 "\n"
 "Untenstehend finden Sie noch einmal Ihre Angaben. Sollten Sie noch Korrekturen oder Änderungswünsche haben, antworten Sie einfach auf diese E-Mail.\n"
 "\n"
-"Sollten Sie diese Anfrage nicht gesendet haben, melden Sie sich bitte bei uns, um die Anfrage zu stornieren.\n"
+"Sollten Sie diese Anfrage nicht gesendet haben, melden Sie sich bitte bei uns.\n"
 "\n"
 "Mit besten Grüßen,\n"
 "Ihr OpenSlides-Team\n"
 msgstr ""
 "Dear %(name)s,\n"
 "\n"
-"thank you for your hosting inquiry at OpenSlides! We will process your message as fast as possible.\n"
+"Thank you for your request for an offer for OpenSlides! We will process your message as soon as possible.\n"
 "\n"
-"Below you see your information again. If you want to correct or add something, just write an answer to this email.\n"
+"Below you will find your details once again. If you have any corrections or change requests, just reply to this email.\n"
 "\n"
-"If you didn't send this inquiry, please get in contact with us to cancel it.\n"
+"If you did not send this request, please contact us.\n"
 "\n"
-"Best regards,\n"
-"You OpenSlides team\n"
+"With best regards,\n"
+"Your OpenSlides Team\n"
 
-#: api/src/templates/order-summary.jinja:5
+#: api/src/templates/confirmation-email-offer.jinja:14
+#: api/src/templates/confirmation-email-order.jinja:17
+msgid "Ihre Angaben:"
+msgstr "Your information:"
+
+#: api/src/templates/confirmation-email-order.jinja:1
+#, python-format
+msgid ""
+"Sehr geehrte/r %(name)s,\n"
+"\n"
+"Vielen Dank für Ihre Hosting-Bestellung bei OpenSlides! Wir werden Ihre Nachricht schnellstmöglich bearbeiten.\n"
+"\n"
+"Untenstehend finden Sie noch einmal Ihre Angaben. Sollten Sie noch Korrekturen oder Änderungswünsche haben, antworten Sie einfach auf diese E-Mail.\n"
+"\n"
+"Sollten Sie die Bestellung nicht gesendet haben, melden Sie sich bitte bei uns, um diese zu stornieren.\n"
+"\n"
+"Mit besten Grüßen,\n"
+"Ihr OpenSlides-Team\n"
+msgstr ""
+"Dear %(name)s,\n"
+"\n"
+"Thank you for your hosting order for OpenSlides! We will process your message as soon as possible.\n"
+"\n"
+"Below you will find your details once again. If you have any corrections or change requests, just reply to this email.\n"
+"\n"
+"If you have not sent the order, please contact us to cancel it.\n"
+"\n"
+"With best regards,\n"
+"Your OpenSlides Team\n"
+
+#: api/src/templates/order-summary.jinja:6
 msgid "keine"
 msgstr "none"
 
-#: api/src/templates/order-summary.jinja:14
+#: api/src/templates/order-summary.jinja:11
+msgid "Veranstaltungstage(e)"
+msgstr "Event day(s)"
+
+#: api/src/templates/order-summary.jinja:15
 msgid "Veranstalter"
 msgstr "Organizer"
 
-#: api/src/templates/order-summary.jinja:19
+#: api/src/templates/order-summary.jinja:20
 msgid "Services"
 msgstr "Services"
 
-#: api/src/templates/order-summary.jinja:26
+#: api/src/templates/order-summary.jinja:32
 msgid "Weitere Anmerkungen"
 msgstr "Additional remarks"
 
 #: api/src/templates/prices-overview.jinja:1
 msgid "Kostenübersicht"
 msgstr "Price overview"
+
+#: api/src/templates/prices-overview.jinja:8
+msgid ""
+"Der Preis gilt pro Veranstaltungstag und ist abhängig vom Veranstaltungstag "
+"und Verfügbarkeiten."
+msgstr ""
+"The price is per event day and depends on the event day and availabilities."
