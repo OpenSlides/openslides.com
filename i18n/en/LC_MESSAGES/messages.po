@@ -4,18 +4,18 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# jsangmeister <joshua.sangmeister@gmail.com>, 2020
 # Birte Spekker <birte.spekker@intevation.de>, 2021
 # Emanuel Schütze <emanuel.schuetze@intevation.de>, 2021
+# jsangmeister <joshua.sangmeister@gmail.com>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-10 09:12+0200\n"
+"POT-Creation-Date: 2021-10-21 14:20+0200\n"
 "PO-Revision-Date: 2020-05-14 10:26+0000\n"
-"Last-Translator: Emanuel Schütze <emanuel.schuetze@intevation.de>, 2021\n"
+"Last-Translator: jsangmeister <joshua.sangmeister@gmail.com>, 2021\n"
 "Language-Team: English (https://www.transifex.com/openslides/teams/14270/en/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -562,11 +562,13 @@ msgstr ""
 
 msgid ""
 "Um Ihnen und Anderen schneller weiterhelfen zu können, schauen Sie bitte "
-"zuerst in unsere FAQ und nutzen dann bevorzugt die Möglichkeit uns eine "
-"E-Mail zu senden."
+"zuerst in unsere <a [href]=\"faqService.getUrl()\" target=\"_blank\" "
+"rel=\"noreferrer\"><b>FAQ</b></a> und nutzen dann bevorzugt die Möglichkeit "
+"uns eine E-Mail zu senden."
 msgstr ""
-"In order to help you and others quickly please first have a look at our FAQ "
-"and then preferably contact us by mail."
+"In order to help you and others quickly please first have a look at our <a "
+"[href]=\"faqService.getUrl()\" target=\"_blank\" "
+"rel=\"noreferrer\"><b>FAQ</b></a> and then preferably contact us by mail."
 
 msgid "Allgemeine Anfragen"
 msgstr "General inquiries"
@@ -888,13 +890,13 @@ msgstr ""
 
 msgid ""
 "Sie möchten OpenSlides auf Ihrem eigenen Server installieren? Wir bieten "
-"unsere Software als PyPI-Paket und als Quellcode an. Bitte haben Sie "
-"Verständnis dafür, dass wir Supportleistungen nur für unsere Hosting-"
-"Lösungen anbieten."
+"unsere Software als Freie Software Quellcode an. Bitte haben Sie Verständnis"
+" dafür, dass wir keine Supportleistungen für die Installation und "
+"Konfiguration auf dem eigenen Server anbieten können."
 msgstr ""
 "You want to install OpenSlides on your own server? We offer our software as "
-"PyPI package and as source code. Please note that we can offer technical "
-"support for our hosting solutions only."
+"Open Source code. Please note that we cannot offer technical support for the"
+" installation and configuration on your own server."
 
 msgid ""
 "Wir haben uns zu den Grundsätzen eines quelloffenen, freien und kostenlosen "
@@ -1691,8 +1693,8 @@ msgid ""
 "einzelne OpenSlides-Instanzen (Hostingpaket »Sitzung«) nötig."
 msgstr ""
 "A federal association would like to use OpenSlides for the board meetings of"
-" its 16 state associations (<50 people each). This requires 16 individual "
-"OpenSlides instances (hosting package \"Meeting\")."
+" its 16 state associations (&lt;50 people each). This requires 16 individual"
+" OpenSlides instances (hosting package \"Meeting\")."
 
 msgid "Für alle Hosting-Pakete gelten folgende Leistungen:"
 msgstr "For all hosting packages we offer the following services:"

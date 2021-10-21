@@ -446,9 +446,9 @@ msgstr ""
 
 msgid ""
 "Um Ihnen und Anderen schneller weiterhelfen zu können, schauen Sie bitte "
-"zuerst in unsere <a mat-menu-item [href]=\"faqService.getUrl()\" "
-"target=\"_blank\" rel=\"noreferrer\">FAQ</a> und nutzen dann bevorzugt die "
-"Möglichkeit uns eine E-Mail zu senden."
+"zuerst in unsere <a [href]=\"faqService.getUrl()\" target=\"_blank\" "
+"rel=\"noreferrer\"><b>FAQ</b></a> und nutzen dann bevorzugt die Möglichkeit "
+"uns eine E-Mail zu senden."
 msgstr ""
 
 msgid "Allgemeine Anfragen"
