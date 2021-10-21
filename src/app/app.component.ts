@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
+import { FAQService } from './faq.service';
 import { LanguageService } from './language.service';
 
 /**
@@ -25,7 +26,8 @@ export class AppComponent {
 
     public constructor(
         public router: Router,
-        public languageService: LanguageService // initialize language service
+        public languageService: LanguageService, // initialize language service
+        public faqService: FAQService
     ) {
         this.overloadArrayFunctions();
     }

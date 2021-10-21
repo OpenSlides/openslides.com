@@ -4,6 +4,7 @@ import { ExtraOptions, RouterModule, Routes, UrlSegment } from '@angular/router'
 import { ArticlePaperlessComponent } from './news/article-paperless/article-paperless.component';
 import { ArticleVirtualAssemblyComponent } from './news/article-virtual-assembly/article-virtual-assembly.component';
 import { DgbBundeskongressComponent } from './news/dgb-bundeskongress/dgb-bundeskongress.component';
+import { EmergencyComponent } from './emergency/emergency.component';
 import { FeaturesByRoute } from './feature/feature-data';
 import { FeatureComponent } from './feature/feature.component';
 import { LanguageService, LanguageUrlMatcher } from './language.service';
@@ -17,7 +18,6 @@ import { OrderComponent } from './order/order.component';
 import { PricesComponent } from './prices/prices.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { ReferencesComponent } from './references/references.component';
-import { EmergencyComponent } from './emergency/emergency.component';
 
 export function FeatureUrlMatcher(url: UrlSegment[]): { consumed: UrlSegment[] } | null {
     return url.length && url[0].path.match(Object.keys(FeaturesByRoute).join('|'))

@@ -1,7 +1,6 @@
 @import '../../vars.scss';
 
 .full-width-img-wrapper {
-
     @media (max-width: $breakpoint-xs-down) {
         h1 {
             font-size: 40px;
@@ -198,7 +197,8 @@ p {
     transform: translateY(-5px);
 }
 
-img.screenshot, .box {
+img.screenshot,
+.box {
     width: 100%;
     box-shadow: 0 0 5px 1px rgba(50, 120, 150, 0.5);
 }
