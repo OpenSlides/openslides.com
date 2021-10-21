@@ -33,7 +33,14 @@
                 </div>
                 <mat-divider></mat-divider>
                 <div class="text-left" translate>
-                    Um Ihnen und Anderen schneller weiterhelfen zu können, schauen Sie bitte zuerst in unsere FAQ und nutzen dann bevorzugt die Möglichkeit uns eine E-Mail zu senden.
+                    Um Ihnen und Anderen schneller weiterhelfen zu können, schauen Sie bitte zuerst in unsere 
+                    <a *ngIf="languageService.getCurrentLanguage() == 'de'" href="https://support.openslides.com/help/de-de" target="_blank" rel="noreferrer">
+                        <b><span translate>FAQ</span></b>
+                    </a>
+                    <a *ngIf="languageService.getCurrentLanguage() != 'de'" href="https://support.openslides.com/help/en-gb" target="_blank" rel="noreferrer">
+                        <b><span translate>FAQ</span></b>
+                    </a>
+                    und nutzen dann bevorzugt die Möglichkeit uns eine E-Mail zu senden.
                 </div>
 
                 <div class="mt-1"></div>
