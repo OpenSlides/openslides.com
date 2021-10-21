@@ -122,8 +122,7 @@ export const FeaturesByRoute: { [route: string]: FeatureDescription } = {
         Setzen Sie auf erprobte Broadcast-Streaming-Lösung – intelligent gekoppelt mit der OpenSlides-Redelistenfunktion.\
         <p>Die Audiokonferenz - ideal zum Austausch für kleine virtuelle Gremiensitzung (bis 50 Teilnehmende)<br>\
         Verwenden Sie OpenSlides mit integrierter Audiokonferenz. Über unseren exklusiv für OpenSlides betriebenen Jitsi-Server kommunizieren alle Teilnehmende direkt miteinander - geschützt in einem Passwort-gesicherten Audio-Konferenzraum. Jede/r verbindet sich automatisch nach dem Login in OpenSlides mit der Audiokonferenz und darf das eigene Mikrofon ein- und ausschalten.\
-        <p>Funktionsweise in Kurzanimation: <a href="https://files.openslides.org/press/3.2/OpenSlides3.2-Audiokonferenz.gif" class="inline">Audiokonferenz</a>\
-        · <a href="https://files.openslides.org/press/3.2/OpenSlides3.2-Videokonferenz.gif" class="inline">Video-Livestream</a>'
+        <p>Funktionsweise in Kurzanimation: <a href="https://files.openslides.org/press/3.2/OpenSlides3.2-Videokonferenz.gif" class="inline">Video-Livestream</a>'
         ),
         image_names: ['autopilot', 'jitsi-dialog'],
         details: [
@@ -132,7 +131,7 @@ export const FeaturesByRoute: { [route: string]: FeatureDescription } = {
             _(
                 'intelligente Koppelung mit der Redeliste (nur Personen auf der Redeliste dürfen in die Videokonferenz eintreten)'
             ),
-            _('bankbreitenschonende Broadcast-Technik (auch für sehr große virtuelle Veranstaltungen nutzbar)')
+            _('bandbreitenschonende Broadcast-Technik mit extrem niedriger Latenz (auch für sehr große virtuelle Veranstaltungen nutzbar)')
         ]
     },
     miscellaneous: {
