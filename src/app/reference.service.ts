@@ -59,7 +59,7 @@ export class ReferenceService {
                     name: 'Industriegewerkschaft Bergbau, Chemie, Energie (IG BCE)',
                     event: 'Bundesjugendkonferenz 2021',
                     src: 'igbce-logo.png'
-                },
+                }
             ]
         },
         {

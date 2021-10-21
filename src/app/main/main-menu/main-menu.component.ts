@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+import { FAQService } from 'src/app/faq.service';
 import { LanguageService } from 'src/app/language.service';
 
 import { ScrollSpyService } from '../../scroll-spy.service';
@@ -16,7 +17,8 @@ export class MainMenuComponent implements OnInit {
     public constructor(
         private scrollSpyService: ScrollSpyService,
         public router: Router,
-        public languageService: LanguageService
+        public languageService: LanguageService,
+        public faqService: FAQService
     ) {}
 
     public ngOnInit(): void {
