@@ -91,8 +91,7 @@ export class ReferenceService {
                 {
                     name: 'CDU',
                     event: 'Landesparteitag BaWü',
-                    src: 'cdu-logo.png',
-                    frontpage: true
+                    src: 'cdu-logo.png'
                 },
                 {
                     name: 'SPÖ',
@@ -158,6 +157,11 @@ export class ReferenceService {
                     name: 'Berufsverband der Kinder- und Jugendärzte e.V.',
                     event: 'Delegiertenversammlung',
                     src: 'bvkj-logo.png'
+                },
+                {
+                    name: 'Berufsverband der Augenärzte Deutschlands e.V.',
+                    event: 'Delegiertenversammlung',
+                    src: 'bva-logo.png'
                 },
                 {
                     name: 'Deutscher Hebammenverband',
@@ -243,6 +247,12 @@ export class ReferenceService {
                     name: 'Amnesty International',
                     event: 'Jahresversammlung',
                     src: 'amnesty-logo.png',
+                    frontpage: true
+                },
+                {
+                    name: 'AWO',
+                    event: 'Bundeskonferenz',
+                    src: 'awo-logo.png',
                     frontpage: true
                 },
                 {
