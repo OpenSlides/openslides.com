@@ -49,6 +49,8 @@ import { ReferencesComponent } from './references/references.component';
 import { ScrollSpyDirective } from './scroll-spy.directive';
 import { TranslateHtmlDirective } from './translate-html.directive';
 import { WrappableDirective } from './wrappable.directive';
+import { ArticleOpenSlides4NewComponent } from './news/OpenSlides4/OpenSlides4.component';
+
 
 registerLocaleData(localeDe, 'de');
 registerLocaleData(localeEn, 'en');
@@ -75,6 +77,7 @@ export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
         OrderSuccessComponent,
         DgbBundeskongressComponent,
         ArticleOnlineMeetingComponent,
+        ArticleOpenSlides4NewComponent,
         ArticleOnlineMeetingBasisComponent,
         ReferenceContainerComponent,
         NewsComponent,

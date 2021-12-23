@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes, UrlSegment } from '@angular/router';
 
+import { ArticleOpenSlides4NewComponent } from "./news/OpenSlides4/OpenSlides4.component";
 import { ArticlePaperlessComponent } from './news/article-paperless/article-paperless.component';
 import { ArticleVirtualAssemblyComponent } from './news/article-virtual-assembly/article-virtual-assembly.component';
 import { DgbBundeskongressComponent } from './news/dgb-bundeskongress/dgb-bundeskongress.component';
@@ -42,7 +43,8 @@ const routes: Routes = [
                     { path: 'online-versammlungen-basis', component: ArticleOnlineMeetingBasisComponent },
                     { path: 'dgb-bundeskongress2018', component: DgbBundeskongressComponent },
                     { path: '20141125', component: ArticlePaperlessComponent },
-                    { path: '20121119', component: ArticleVirtualAssemblyComponent }
+                    { path: '20121119', component: ArticleVirtualAssemblyComponent },
+                    { path: 'OpenSlides4', component: ArticleOpenSlides4NewComponent },
                 ]
             },
             { path: 'privacy', component: PrivacyComponent },
