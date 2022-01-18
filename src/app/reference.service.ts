@@ -52,13 +52,17 @@ export class ReferenceService {
                 {
                     name: 'Gewerkschaft Erziehung und Wissenschaft (GEW)',
                     event: 'Gewerkschaftstag 2021, Landesvertreterversammlungen',
-                    src: 'gew-logo.png',
-                    frontpage: true
+                    src: 'gew-logo.png'
                 },
                 {
                     name: 'Industriegewerkschaft Bergbau, Chemie, Energie (IG BCE)',
                     event: 'Bundesjugendkonferenz 2021',
                     src: 'igbce-logo.png'
+                },
+                {
+                    name: 'Gewerkschaft Öffentlicher Dienst (Österreich)',
+                    event: 'Bundeskongress, Landeskongresse',
+                    src: 'goed-logo.png'
                 }
             ]
         },
@@ -131,7 +135,8 @@ export class ReferenceService {
                 {
                     name: 'Marburger Bund',
                     event: 'Hauptversammlung',
-                    src: 'mb-logo.png'
+                    src: 'mb-logo.png',
+                    frontpage: true
                 },
                 {
                     name: 'Sächsische Landesärztekammer',
@@ -167,6 +172,21 @@ export class ReferenceService {
                     name: 'Deutscher Hebammenverband',
                     event: 'Bundesdelegiertentagung',
                     src: 'dhv-logo.png'
+                },
+                {
+                    name: 'Virchowbund',
+                    event: 'Bundeshauptversammlung',
+                    src: 'virchowbund-logo.png'
+                },
+                {
+                    name: 'Bundes-Psychotherapeuten-Kammer (BPtK)',
+                    event: 'Bundespsychotherapeutentag',
+                    src: 'bptk-logo.png'
+                },
+                {
+                    name: 'Kassenzahnärztliche Vereinigung Nordhrein',
+                    event: 'Vertreterversammlung',
+                    src: 'kzvnr-logo.png'
                 }
             ]
         },
@@ -214,7 +234,7 @@ export class ReferenceService {
                     src: 'bdkj-logo.png'
                 },
                 {
-                    name: 'Arbeitsgemeinschaft der Evangelischen Jugend in Deutschland e. V. (aej)',
+                    name: 'Arbeitsgemeinschaft der Evangelischen Jugend in Deutschland e.V. (aej)',
                     event: 'Mitgliederversammlung',
                     src: 'aej-logo.png'
                 },
@@ -222,6 +242,117 @@ export class ReferenceService {
                     name: 'Evangelische Jugend in Bayern',
                     event: 'Vollversammlung Landesjugendkonvent',
                     src: 'ejb-logo.png'
+                },
+                {
+                    name: 'Evangelische Jugend Oldenburg',
+                    event: 'Vollversammlung',
+                    src: 'ejo-logo.png'
+                },
+                {
+                    name: 'Junge Europäische Föderalisten Deutschland e.V.',
+                    event: 'Bundeskongress',
+                    src: 'jef-logo.png'
+                },
+                {
+                    name: 'Dt. Jugendfeuerwehr (LV NDS)',
+                    event: 'NJF Jugendforum',
+                    src: 'jf-logo.png'
+                }
+            ]
+        },
+        {
+            name: _('Kirchen'),
+            refs: [
+                {
+                    name: 'Evangelische Kirche in Deutschland',
+                    event: 'Synode der EKD',
+                    src: 'ekd-logo.png'
+                },
+                {
+                    name: 'Evangelisch-Lutherische Kirche in Norddeutschland',
+                    event: 'Landessynode',
+                    src: 'nordkirche-logo.png'
+                },
+                {
+                    name: 'Evangelisch-Lutherische Landeskirche Sachsens',
+                    event: 'Landessynode',
+                    src: 'lk-sachsen-logo.png'
+                },
+                {
+                    name: 'Lippische Landeskirche',
+                    event: 'Landessynode',
+                    src: 'lk-lippe-logo.png'
+                },
+                {
+                    name: 'Evangelischer Kirchenkreis Krefeld-Viersen',
+                    event: 'Kreissynode',
+                    src: 'ev-kirche-krefeld-viersen-logo.png'
+                }
+            ]
+        },
+        {
+            name: _('Sozialverbände'),
+            refs: [
+                {
+                    name: 'AWO',
+                    event: 'Bundeskonferenz',
+                    src: 'awo-logo.png',
+                    frontpage: true
+                },
+                {
+                    name: 'Diakonisches Werk Bayern',
+                    event: 'Mitgliederversammlung',
+                    src: 'diakonie-logo.png'
+                },
+                {
+                    name: 'Kolpingwerk Deutschland',
+                    event: 'Bundesversammlung',
+                    src: 'kolping-logo.png'
+                },
+            ]
+        },
+        {
+            name: _('Sportverbände'),
+            refs: [
+                {
+                    name: 'Volleyball Bundesliga GmbH',
+                    event: 'Bundesligaversammlung',
+                    src: 'vbl-logo.png'
+                },
+                {
+                    name: 'Deutscher Segler-Verband e.V. (DSV)',
+                    event: 'Seglertag, Jugendseglertag',
+                    src: 'dsv-logo.png'
+                },
+                {
+                    name: 'Hamburger Sportbund e.V. (HSB)',
+                    event: 'Mitgliederversammlung',
+                    src: 'hsb-logo.png'
+                },
+                {
+                    name: 'Hamburger Fußball-Verband e.V. (HFV)',
+                    event: 'Mitgliederversammlung',
+                    src: 'hfv-logo.png'
+                },
+            ]
+        },
+        {
+            name: _('Hochschulbereich'),
+            refs: [
+                {
+                    name: 'AStA der Universität des Saarlandes',
+                    event: 'Studierendenparlament',
+                    src: 'asta-uni-saarland-logo.png'
+                },
+                {
+                    name: 'Pädagogische Hochschule Heidelberg',
+                    event: 'div. Hochschulgremien',
+                    src: 'phhd-logo.png'
+                },
+                {
+                    name: 'Deutsch-Französische Hochschule Saarbrücken',
+                    event: 'div. Hochschulgremien',
+                    src: 'dfh-logo.png'
                 },
                 {
                     name: 'Stipendiatinnen und Stipendiaten des Cusanuswerks',
@@ -232,11 +363,6 @@ export class ReferenceService {
                     name: 'Evangelische StudentInnengemeinde in der Bundesrepublik Deutschland (ESG)',
                     event: 'Bundesversammlung',
                     src: 'esg-logo.png'
-                },
-                {
-                    name: 'Junge Europäische Föderalisten Deutschland e.V.',
-                    event: 'Bundeskongress',
-                    src: 'jef-logo.png'
                 }
             ]
         },
@@ -250,18 +376,12 @@ export class ReferenceService {
                     frontpage: true
                 },
                 {
-                    name: 'AWO',
-                    event: 'Bundeskonferenz',
-                    src: 'awo-logo.png',
-                    frontpage: true
-                },
-                {
                     name: 'Bundesverband WindEndergie',
                     event: '(virtuelle) Delegiertenversammlung',
                     src: 'bwe-logo.png'
                 },
                 {
-                    name: 'Allgemeiner Deutscher Fahrrad-Club e. V. (ADFC)',
+                    name: 'Allgemeiner Deutscher Fahrrad-Club e.V. (ADFC)',
                     event: 'Bund-Länder-Rat',
                     src: 'adfc-logo.png'
                 },
@@ -281,34 +401,19 @@ export class ReferenceService {
                     src: 'vda-logo.png'
                 },
                 {
-                    name: 'Evangelische Kirche in Deutschland',
-                    event: 'Synode der EKD',
-                    src: 'ekd-logo.png'
+                    name: 'Bund Deutscher Kriminalbeamter e.V.',
+                    event: 'Bundesdelegiertentag',
+                    src: 'bdk-logo.png'
                 },
                 {
-                    name: 'Evangelisch-Lutherische Kirche in Norddeutschland',
-                    event: 'Landessynode',
-                    src: 'nordkirche-logo.png'
+                    name: 'Bund der Selbständigen Baden-Württemberg e.V.',
+                    event: 'Mitgliederversammlung',
+                    src: 'bds-logo.png'
                 },
                 {
-                    name: 'Volleyball Bundesliga GmbH',
-                    event: 'Bundesligaversammlung',
-                    src: 'vbl-logo.png'
-                },
-                {
-                    name: 'AStA der Universität des Saarlandes',
-                    event: 'Studierendenparlament',
-                    src: 'asta-uni-saarland-logo.png'
-                },
-                {
-                    name: 'Pädagogische Hochschule Heidelberg',
-                    event: 'div. Hochschulgremien',
-                    src: 'phhd-logo.png'
-                },
-                {
-                    name: 'Deutsch-Französische Hochschule Saarbrücken',
-                    event: 'div. Hochschulgremien',
-                    src: 'dfh-logo.png'
+                    name: 'Naturland e.V.',
+                    event: 'Delegiertenversammlung',
+                    src: 'naturland-logo.png'
                 },
                 {
                     name: 'Deutscher Verband für Neuro-Linguistisches Programmieren e.V.',
@@ -316,14 +421,9 @@ export class ReferenceService {
                     src: 'dvnlp-logo.png'
                 },
                 {
-                    name: 'Mensa in Deutschland e.V.',
-                    event: 'Mitgliederversammlung',
-                    src: 'mensa-logo.png'
-                },
-                {
-                    name: 'Opennet Initiative e.V.',
-                    event: 'Jahresversammlung',
-                    src: 'opennet-logo.png'
+                    name: 'Marchfelder Bank eG',
+                    event: 'Generalversammlung',
+                    src: 'marchfelderbank-logo.png'
                 },
                 {
                     name: 'Deutsche Schäferhunde (SV) e.V.',
@@ -331,19 +431,19 @@ export class ReferenceService {
                     src: 'schaeferhunde-logo.png'
                 },
                 {
-                    name: 'Evangelischer Kirchenkreis Krefeld-Viersen',
-                    event: 'Kreissynode',
-                    src: 'ev-kirche-krefeld-viersen-logo.png'
-                },
-                {
-                    name: 'innovate!',
-                    event: 'innovate!Award-Preisverleihung (mit elektronischer Abstimmung) am 7.11.2013',
-                    src: 'innovate2013-logo.png'
+                    name: 'Deutsche Gesellschaft für Polarforschung e.V.',
+                    event: 'Mitgliederversammlung',
+                    src: 'polarforschung-logo.png'
                 },
                 {
                     name: 'Gemeinde Neu Wulmstorf',
                     event: 'Gemeinderat',
                     src: 'neu-wulmstorf-logo.png'
+                },
+                {
+                    name: 'Mensa in Deutschland e.V.',
+                    event: 'Mitgliederversammlung',
+                    src: 'mensa-logo.png'
                 }
             ]
         }
