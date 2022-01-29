@@ -2,6 +2,17 @@
 
 This is the repository of the official [OpenSlides website](https://www.openslides.com/).
 
+The website is a single page web application made with Angular and Typescript.
+
+## Prerequisites
+
+ * (May need some memory and harddisk, tested in a VM with 2 GiByte RAM and 10 GiByte storage)
+ * Install Node.js (e.g. from your GNU/Linux distribution `apt install nodejs npm` Debian Bullseye)
+ * Install Nginx (e.g. `apt install nginx-light` Debian Bullseye)
+ * Clone source
+ * Fetch Javascript dependencies with `npm install`
+
+
 ## Development server
 
 Run `npm start` for a dev server. Navigate to `http://localhost:4201/`. The app will automatically reload if you change any of the source files.
