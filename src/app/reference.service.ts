@@ -279,6 +279,11 @@ export class ReferenceService {
                     src: 'lk-sachsen-logo.png'
                 },
                 {
+                    name: 'Evangelisch-Lutherische Kirche in Oldenburg',
+                    event: 'Synode',
+                    src: 'evko-logo.png'
+                },
+                {
                     name: 'Lippische Landeskirche',
                     event: 'Landessynode',
                     src: 'lk-lippe-logo.png'
@@ -309,6 +314,11 @@ export class ReferenceService {
                     event: 'Bundesversammlung',
                     src: 'kolping-logo.png'
                 },
+                {
+                    name: 'Deutsche Seemannsmission e.V.',
+                    event: 'Mitgliederversammlung',
+                    src: 'seemannsmission-logo.png'
+                }
             ]
         },
         {
@@ -339,6 +349,11 @@ export class ReferenceService {
         {
             name: _('Hochschulbereich'),
             refs: [
+                {
+                    name: 'Deutsches Studentenwerk',
+                    event: 'Mitgliederversammlung',
+                    src: 'dsw-logo.png'
+                },
                 {
                     name: 'AStA der Universität des Saarlandes',
                     event: 'Studierendenparlament',
@@ -414,6 +429,11 @@ export class ReferenceService {
                     name: 'Naturland e.V.',
                     event: 'Delegiertenversammlung',
                     src: 'naturland-logo.png'
+                },
+                {
+                    name: 'Demeter e.V.',
+                    event: 'Delegiertenversammlung',
+                    src: 'demeter-logo.png'
                 },
                 {
                     name: 'Deutscher Verband für Neuro-Linguistisches Programmieren e.V.',
