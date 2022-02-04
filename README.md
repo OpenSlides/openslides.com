@@ -17,11 +17,18 @@ The website is a single page web application made with Angular and Typescript.
 
 Run `npm start` for a dev server. Navigate to `http://localhost:4201/`. The app will automatically reload if you change any of the source files.
 
-To start the server which is responsible for handling the orders and newsletter registrations, change to the directory `api` and run `flask run`. For a development server with auto-reload, run `export FLASK_ENV=development` beforehand.
+See [api/] for the server which is responsible for handling the orders.
+
 
 ## Uploading translations
 
-For easier translation handling, you have to have the transifex client installed (either from the `requirements-development.txt` or manually). Make sure you exported your API token as described in https://docs.transifex.com/client/init#before-running-tx-init.
+ * Requirements for the extraction step are
+   django-babel with jinja2 and GNU gettext.
+   (e.g. `apt install python3-django-babel python3-jinja2 gettext`
+   Debian Bullseye.)
+
+For easier translation handling, you have to have the transifex client
+installed. Make sure you exported your API token as described in https://docs.transifex.com/client/init#before-running-tx-init.
 
 After you made some changes to the website, run `./scripts/extract-translations.sh` to update the `template-de.pot` file. Then, upload the file with `tx push --source`. You can now edit the translations as usual on transifex.
 
