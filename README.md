@@ -17,7 +17,7 @@ The website is a single page web application made with Angular and Typescript.
 
 Run `npm start` for a dev server. Navigate to `http://localhost:4201/`. The app will automatically reload if you change any of the source files.
 
-See [api/] for the server which is responsible for handling the orders.
+See [api/](api/) for the server which is responsible for handling the orders.
 
 
 ## Uploading translations
