@@ -1,6 +1,6 @@
-See [./requirements/] for needed components.
+See [requirements/](requirements/) for needed components.
 (e.g. `apt-install python3-flask python3-flask-babel python3-flask-mail python3-jsonschema`
-allows you to start a development server on Bullseye.)
+allows you to start a development server on Debian Bullseye.)
 
 For development server run `flask run`.
 For a development server with auto-reload, run `export FLASK_ENV=development`
