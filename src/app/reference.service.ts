@@ -249,6 +249,11 @@ export class ReferenceService {
                     src: 'ejo-logo.png'
                 },
                 {
+                    name: 'European Youth Forum',
+                    event: 'Member Meeting',
+                    src: 'youthforum-logo.png'
+                },
+                {
                     name: 'Junge Europäische Föderalisten Deutschland e.V.',
                     event: 'Bundeskongress',
                     src: 'jef-logo.png'
@@ -416,6 +421,11 @@ export class ReferenceService {
                     src: 'vda-logo.png'
                 },
                 {
+                    name: 'Vereinigung Cockpit e.V.',
+                    event: 'Mitgliederversammlung',
+                    src: 'vereinigung-cockpit-logo.png'
+                },
+                {
                     name: 'Bund Deutscher Kriminalbeamter e.V.',
                     event: 'Bundesdelegiertentag',
                     src: 'bdk-logo.png'
@@ -464,6 +474,11 @@ export class ReferenceService {
                     name: 'Mensa in Deutschland e.V.',
                     event: 'Mitgliederversammlung',
                     src: 'mensa-logo.png'
+                },
+                {
+                    name: 'Meda-Prax Verwaltungs- und Immobiliengesellschaft mbH',
+                    event: 'Eigentümerversammlung',
+                    src: 'meda-prax-logo.png'
                 }
             ]
         }
