@@ -1,5 +1,15 @@
 <div appScrollSpy footer="contact">
 
+    <!-- Akuelles -->
+    <div class="orangesection">
+        <div class="container smaller text-center">
+            <b translate>
+                  <a target="_blank" rel="noreferrer"
+                  href="https://intevation.de/jobs/20220317-openslides-entwicklung/">+++ OpenSlides sucht "Freie-Software-Entwickler:in" +++<br> Bewirb Dich ... JETZT!</a>
+              </b>
+        </div>
+    </div>
+
     <!-- Welcome -->
     <div class="full-width-img-wrapper flex col">
         <img class="full-width-img" src="assets/img/welcome.jpg">
@@ -341,10 +351,14 @@
         <a class="float-right" routerLink="./news">
             <span translate>Alle News anzeigen</span>
         </a>
-        <div class="flex evenly-spaced wrap-mobile news-links" appWrappable>
-            <div>
-                <div><i>{{ "2021-12-23" | localizedDate }}:</i>
+              <div class="flex evenly-spaced wrap-mobile news-links" appWrappable>
+                <div>
+                  <div><i>{{ "2022-04-14" | localizedDate }}:</i>
                     <a target="_blank" rel="noreferrer" class="hover"
+                    href="https://intevation.de/jobs/20220317-openslides-entwicklung/">OpenSlides sucht: "Freie-Software-Entwickler:in"</a>
+                </div>
+                <div><i>{{ "2021-12-23" | localizedDate }}:</i>
+                    <a rel="noreferrer" class="hover"
                      routerLink="./news/OpenSlides4">OpenSlides 4.0 mit Gremienmanagement - Erste Einblicke</a>
                 </div>
                 <div><i>{{ "2021-10-07" | localizedDate }}:</i>
@@ -356,7 +370,7 @@
             </div>
         </div>
 
-        <!-- Newsletter 
+        <!-- Newsletter
         <div class="section container">
             <h2 translate>Newsletter</h2>
             <p>
