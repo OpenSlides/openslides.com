@@ -89,7 +89,7 @@ export const FeaturesByRoute: { [route: string]: FeatureDescription } = {
         Legen Sie die stimmberechtigte Nutzergruppe fest. Nur in OpenSlides auf anwesend und stimmberechtigt geschaltete Teilnehmende dürfen abstimmen.\
         Möglich sind namentliche oder nicht-namentliche Antragsabstimmungen und Personenwahlen.\
         Auch individuelle Stimmgewichtungen sind möglich.\
-        <p>» Testen Sie die elektronische Stimmabgabe in der <a class="inline" href="https://demo.openslides.org/" target="_blank">Online-Demo</a>.<br>\
+        <p>» Testen Sie die elektronische Stimmabgabe in der <a class="inline" href="https://demo.os4.openslides.com" target="_blank">Online-Demo</a>.<br>\
         » Erfahren Sie mehr über <a class="inline" href="/news/online-versammlungen" fragment="evoting">Online-Versammlungen.</a>'
         ),
         image_names: [
