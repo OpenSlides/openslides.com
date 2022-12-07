@@ -1,12 +1,6 @@
 <div class="container main-container">
     <div class="mb-1">
-        <div class="text-right flex hide-xl-down">
-            <a  mat-menu-item *ngFor="let route of featuresByRoute | keyvalue:originalOrder" [routerLink]="['/feature/' + route.key]"
-                [ngClass]="router.url.endsWith('/' + route.key) ? 'active' : ''">
-                {{ route.value.title | translate }}
-            </a>
-        </div>
-        <mat-select class="submenu hide-xl-up" [value]="activeRoute">
+        <mat-select class="submenu" [value]="activeRoute">
             <mat-option *ngFor="let route of featuresByRoute | keyvalue:originalOrder" [routerLink]="['/feature/' + route.key]"
                 [ngClass]="router.url.endsWith('/' + route.key) ? 'active' : ''" [value]="route.key">
                 {{ route.value.title | translate }}

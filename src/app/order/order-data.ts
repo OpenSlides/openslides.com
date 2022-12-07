@@ -24,8 +24,12 @@ export interface ExtraFunctionsMap {
 export interface PackageMap {
     [key: string]: {
         name: string;
-        max_users: number;
-        price: number;
+        category: string,
+        max_meetings?: number;
+        max_accounts?: number;
+        min_accounts?: number;
+        price?: number;
+        priceinfo?: string;
     };
 }
 
@@ -39,24 +43,27 @@ export interface ServiceMap {
 export const packages: PackageMap = {
     meeting: {
         name: _('Sitzung'),
-        max_users: 50,
+        category: _('Einzelveranstaltung'),
+        max_accounts: 50,
         price: 250
     },
     conference: {
         name: _('Tagung'),
-        max_users: 250,
+        category: _('Einzelveranstaltung'),
+        max_accounts: 250,
         price: 500
     },
     congress: {
         name: _('Kongress'),
-        max_users: 500,
+        category: _('Einzelveranstaltung'),
+        max_accounts: 500,
         price: 1000
     }
 };
 
 export const extraFunctions: ExtraFunctionsMap = {
     service: {
-        name: _('Supportpauschale'),
+        name: _('Basis-Supportpauschale für eine Veranstaltung'),
         base_price: 750,
         units_func: null,
         units_desc: null,
@@ -101,24 +108,8 @@ export const extraFunctions: ExtraFunctionsMap = {
         ),
         disabled: data => !data.extra_functions.video
     },
-    audio: {
-        name: _('Audio-/Videokonferenz'),
-        base_price: 100,
-        extra_infos: _(
-            // tslint:disable-next-line
-            'Integrierte Jitsi-Videokonferenz mit Jitsi - ohne Livestream. Ideal zum direkten Austausch für kleine virtuelle Gremiensitzung (bis max 50 Teilnehmende, nur im Hostingpaket "Sitzung").'
-        ),
-        disabled: data => data.package !== 'meeting'
-    },
-    jitsi_phone: {
-        name: _('Jitsi-Telefoneinwahl'),
-        base_price: 100,
-        units_func: null,
-        units_desc: null,
-        extra_infos: _('Einrichtung einer Festnetz-Rufnummer zur telefonischen Einwahl in die Jitsi-Videokonferenz'),
-        disabled: data => !data.extra_functions.audio && !data.extra_functions.video
-    },
     saml: {
+        hidden: true,
         name: _('Single Sign-On via SAML'),
         base_price: 200,
         extra_infos: _(
@@ -126,13 +117,6 @@ export const extraFunctions: ExtraFunctionsMap = {
             'Zur Anbindung eines bereits existierenden SAML-Mitgliedsservers. Nur verfügbar für das Hostingpaket "Kongress"'
         ),
         disabled: data => data.package !== 'congress'
-    },
-    chat: {
-        name: _('Chat'),
-        base_price: 250,
-        units_func: null,
-        units_desc: null,
-        extra_infos: _('Bereitstellung und Integration eines Chats, mehrere Gruppenräume konfigurierbar.')
     }
 };
 

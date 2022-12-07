@@ -54,6 +54,7 @@ export class OrderComponent implements OnInit {
         const data = this.hostingDataForm.value;
         if (!data.running_time) {
             data.running_time = 1;
+            this.onPackageChange();
         }
         const pkg = this.packages[data.package];
         let months = data.running_time;
@@ -62,11 +63,12 @@ export class OrderComponent implements OnInit {
             months = 12;
         }
         const users = data.expected_users;
+
         const positions: OverviewTableEntry[] = [
             this.setDefaultsOnUnitDescriptor({
                 name: this.translate.instant('Hostingpaket') + ' "' + this.translate.instant(pkg.name) + '"',
                 base_price: pkg.price,
-                units: months
+                units: null
             } as OverviewTableEntry)
         ];
 
@@ -82,6 +84,7 @@ export class OrderComponent implements OnInit {
             positions.push(entry);
         };
 
+        // additional streaming user
         for (const functionKey in this.extraFunctions) {
             if (data.extra_functions[functionKey]) {
                 pushPosition(functionKey);
@@ -135,7 +138,7 @@ export class OrderComponent implements OnInit {
         });
         this.detailsForm = this.fb.group({
             mode: ['order', []],
-            domain: ['', []],
+            domain: [''],
             event_name: ['', [Validators.required, this.standard]],
             event_location: ['', [Validators.required, this.standard]],
             contact_person: this.fb.group({
@@ -183,7 +186,7 @@ export class OrderComponent implements OnInit {
             descriptor.units_desc = [_('Monat'), _('Monate')];
         }
         if (descriptor.units_func === undefined) {
-            descriptor.units_func = data => (data.running_time === 'unlimited' ? 12 : data.running_time);
+            descriptor.units_func = data => (data.running_time === '12' ? 1 : data.running_time);
         }
         return descriptor;
     }

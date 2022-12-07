@@ -1,51 +1,27 @@
 <div class="container main-container">
 
-    <p translate>Wir betreiben OpenSlides für Sie datenschutzkonform auf unseren Servern in Deutschland.</p>
+    <h1 translate>Preise</h1>
 
-    <h2 class="mb-1">
-        {{ 'Wählen Sie das Hostingpaket passend zu Ihrer Veranstaltungsgröße' | translate }}:
+    <h2 class="mb-0">
+        {{ 'Einzelveranstaltung' | translate }}
     </h2>
+    <p class="mt-0" translate>für einmalige Veranstaltungen · Laufzeit 1 bis max. 3 Monate</p>
 
     <div class="flex evenly-spaced wrap-tablet mb-0" appWrappable wrapMargin="2rem">
-        <div class="price-col grey">
+        <div class="price-col blue">
             <div class="price-col-header">
                 <h2 translate>Sitzung</h2>
-                <p translate translateHtml>
-                    für kleine (virtuelle) Gremien<br>mit wiederkehrenden Sitzungen
-                </p>
+                <p translate>bis 50 Accounts</p>
             </div>
             <div class="price-col-body">
                 <div class="price-col-price">
-                    <p translate translateHtml>
-                        bis <b>50</b> Teilnehmende
-                    </p>
                     <h1 class="text-center">250 € <small>/ <span translate>Monat</span></small></h1>
                     <small>(297,50 € {{ 'inkl.' | translate }} 19% {{ 'USt.' | translate }})</small>
-                    <p><small translate>Mindestlaufzeit: 1 Monat</small></p>
 
-                    <div class="text-center mb-0">
-                        <a routerLink="/order" [queryParams]="{package: 'meeting'}" mat-flat-button class="os-button filled bordered grey soft">
+                    <div class="text-center mt-1 mb-0">
+                        <a routerLink="/order" [queryParams]="{package: 'meeting'}" mat-flat-button class="os-button filled bordered blue soft">
                             <span translate>Preiskalkulator</span>
                         </a>
-                    </div>
-
-                    <mat-divider></mat-divider>
-                    <div class="description small">
-                        <strong>Basisfunktionen:</strong>
-                        <ul class="check">
-                            <li><a routerLink="../feature/evoting" class="hover" translate>NEU: eVoting (jetzt integriert!)</a></li>
-                            <li translate>Tagesordnung mit Redeliste</li>
-                            <li translate>Anträge und Wahlen</li>
-                            <li translate>Teilnehmende</li>
-                            <li translate>Projektoren</li>
-                            <li translate>u.v.m</li>
-                        </ul>
-
-                        <strong>Zusatzfunktionen:</strong>
-                        <ul class="arrow">
-                            <li translate>Audio-/Videokonferenz (mit Jitsi)</li>
-                            <li translate>Support via FAQs</li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -53,134 +29,214 @@
         <div class="price-col blue">
             <div class="price-col-header">
                 <h2 translate>Tagung</h2>
-                <p translate>für kleine (virtuelle) Versammlungen</p>
+                <p translate>bis 250 Accounts</p>
             </div>
             <div class="price-col-body">
                 <div class="price-col-price">
-                    <p translate translateHtml>
-                        bis <b>250</b> Teilnehmende
-                    </p>
                     <h1 class="text-center">500 € <small>/ <span translate>Monat</span></small></h1>
                     <small>(595 € {{ 'inkl.' | translate }} 19% {{ 'USt.' | translate }})</small>
-                    <p><small translate>Mindestlaufzeit: 1 Monat</small></p>
 
-                    <div class="text-center mb-0">
+                    <div class="text-center mt-1 mb-0">
                         <a routerLink="/order" [queryParams]="{package: 'conference'}" mat-flat-button class="os-button filled bordered blue soft">
                             <span translate>Preiskalkulator</span>
                         </a>
                     </div>
-                    <mat-divider></mat-divider>
-                    <div class="description small">
-                        <p><strong>Basisfunktionen:</strong></p>
-                        <ul class="check">
-                            <li><a routerLink="../feature/evoting" class="hover" translate>NEU: eVoting (jetzt integriert!)</a></li>
-                            <li translate>Tagesordnung mit Redeliste</li>
-                            <li translate>Anträge und Wahlen</li>
-                            <li translate>Teilnehmende</li>
-                            <li translate>Projektoren</li>
-                            <li translate>u.v.m</li>
-                        </ul>
+                </div>
+            </div>
+        </div>
+        <div class="price-col blue">
+            <div class="price-col-header">
+                <h2 translate>Kongress</h2>
+                <p translate>bis 500 Accounts</p>
+            </div>
+            <div class="price-col-body">
+                <div class="price-col-price">
+                    <h1 class="text-center">1.000 € <small>/ <span translate>Monat</span></small></h1>
+                    <small>(1.190 € {{ 'inkl.' | translate }} 19% {{ 'USt.' | translate }})</small>
 
-                        <strong>Zusatzfunktionen:</strong>
-                        <ul class="arrow">
-                            <li><a routerLink="../feature/livestream" class="hover">{{ 'Videokonferenz mit Livestream' | translate }}</a></li>
-                            <li translate>individueller Support via E-Mail/Telefon</li>
-                            <li class="empty">&nbsp;<br>&nbsp;</li>
-                        </ul>
-
-                        <strong>optionale Serviceleistungen:</strong>
-                        <ul class="arrow">
-                            <li translate>Online-Schulung</li>
-                            <li translate>Technische Begleitung Ihrer Veranstaltung<br>
-                            (vor Ort, virtuell oder per Rufbereitschaft)</li>
-                        </ul>
+                    <div class="text-center mt-1 mb-0">
+                        <a routerLink="/order" [queryParams]="{package: 'congress'}" mat-flat-button class="os-button filled bordered blue soft">
+                            <span translate>Preiskalkulator</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="price-col grey">
-            <div class="price-col-header">
-                <h2 translate>Kongress</h2>
-                <p translate>für große (virtuelle) Tagungen und Konferenzen</p>
+        <div class="price-col blue">
+            <div class="price-col-header pale">
+                <h2 translate>Spezial</h2>
+                <p translate translateHtml>ab <b>500</b> Accounts</p>
             </div>
             <div class="price-col-body">
                 <div class="price-col-price">
-                    <p translate translateHtml>
-                        bis <b>500</b> Teilnehmende
-                    </p>
-                    <h1 class="text-center">1.000 € <small>/ <span translate>Monat</span></small></h1>
-                    <small>(1.190 € {{ 'inkl.' | translate }} 19% {{ 'USt.' | translate }})</small>
-                    <p><small>
-                        {{ 'Mindestlaufzeit: 1 Monat' | translate }}
-                    </small></p>
+                    <h1 class="text-center semibold">auf Anfrage</h1>
+                    <small>&nbsp;</small>
 
-                    <div class="text-center mb-0">
-                        <a routerLink="/order" [queryParams]="{package: 'congress'}" mat-flat-button class="os-button filled bordered grey soft">
-                            <span translate>Preiskalkulator</span>
+                    <div class="text-center mt-1 mb-0">
+                        <a mat-flat-button class="os-button bordered blue soft"
+                            href="mailto:info@openslides.com?subject=Anfrage OpenSlides-Veranstaltung Spezial">
+                            <span translate>Anfrage senden</span>
                         </a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    <mat-divider></mat-divider>
-                    <div class="description small">
-                        <strong>Basisfunktionen:</strong>
-                        <ul class="check">
-                            <li><a routerLink="../feature/evoting" class="hover" translate>NEU: eVoting (jetzt integriert!)</a></li>
-                            <li translate>Tagesordnung mit Redeliste</li>
-                            <li translate>Anträge und Wahlen</li>
-                            <li translate>Teilnehmende</li>
-                            <li translate>Projektoren</li>
-                            <li translate>u.v.m</li>
-                        </ul>
 
-                        <strong>Zusatzfunktionen:</strong>
-                        <ul class="arrow">
-                            <li><a routerLink="../feature/livestream" class="hover">{{ 'Videokonferenz mit Livestream' | translate }}</a></li>
-                            <li translate>individueller Support via E-Mail/Telefon</li>
-                            <li translate>Single Sign-On via SAML (für Organisationen mit zentralem SAML-Mitgliedsserver)</li>
-                        </ul>
+    <h2 class="mb-0">
+        {{ 'Jahreshosting' | translate }}
+    </h2>
+    <p class="mt-0" translate>für wiederkehrende Veranstaltungen mit Gremienmanagementsystem und zentraler Internetadresse · Mindestlaufzeit 12 Monate</p>
 
-                        <strong>optionale Serviceleistungen:</strong>
-                        <ul class="arrow">
-                            <li translate>Online-Schulung</li>
-                            <li translate>Technische Begleitung Ihrer Veranstaltung<br>
-                            (vor Ort, virtuell oder per Rufbereitschaft)</li>
-                        </ul>
+    <div class="flex evenly-spaced wrap-tablet mb-0" appWrappable wrapMargin="2rem">
+        <div class="price-col orange">
+            <div class="price-col-header">
+                <h2 translate>Gremium 4</h2>
+                <p>
+                    {{ '4 aktive Veranstaltungen' | translate }}<br>
+                    {{ 'inkl. 250 Accounts' | translate }}
+                </p>
+            </div>
+            <div class="price-col-body">
+                <div class="price-col-price">
+                    <h1 class="text-center">3.600 € <small>/ <span translate>Jahr</span></small></h1>
+                    <small>(4.284,00 € {{ 'inkl.' | translate }} 19% {{ 'USt.' | translate }})</small>
+                    <p>
+                        <small>{{ 'entspricht' | translate }} 300 € / {{ 'Monat' | translate }}</small>
+                    </p>
+                    <div class="text-center mt-1 mb-0">
+                        <a mat-flat-button class="os-button filled bordered orange soft"
+                            href="mailto:info@openslides.com?subject=Anfrage OpenSlides-Jahreshosting Gremium 4">
+                            <span translate>Anfrage senden</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="price-col orange">
+            <div class="price-col-header">
+                <h2 translate>Gremium 16</h2>
+                <p>
+                    {{ '16 aktive Veranstaltungen' | translate }}<br>
+                    {{ 'inkl. 500 Accounts' | translate }}
+                </p>
+            </div>
+            <div class="price-col-body">
+                <div class="price-col-price">
+                    <h1 class="text-center">9.600 € <small>/ <span translate>Jahr</span></small></h1>
+                    <small>(11.424 € {{ 'inkl.' | translate }} 19% {{ 'USt.' | translate }})</small>
+                    <p>
+                        <small>{{ 'entspricht' | translate }} 800 € / {{ 'Monat' | translate }}</small>
+                    </p>
+                    <div class="text-center mt-1 mb-0">
+                        <a mat-flat-button class="os-button filled bordered orange soft"
+                            href="mailto:info@openslides.com?subject=Anfrage OpenSlides-Jahreshosting Gremium 16">
+                            <span translate>Anfrage senden</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="price-col orange">
+            <div class="price-col-header">
+                <h2 translate>Gremium 32</h2>
+                <p>
+                    {{ '32 aktive Veranstaltungen' | translate }}<br>
+                    {{ 'inkl. 1.000 Accounts' | translate }}
+                </p>
+            </div>
+            <div class="price-col-body">
+                <div class="price-col-price">
+                    <h1 class="text-center">14.400 € <small>/ <span translate>Jahr</span></small></h1>
+                    <small>(17.136 € {{ 'inkl.' | translate }} 19% {{ 'USt.' | translate }})</small>
+                    <p>
+                        <small>{{ 'entspricht' | translate }} 1.200 € / {{ 'Monat' | translate }}</small>
+                    </p>
+                    <div class="text-center mt-1 mb-0">
+                        <a mat-flat-button class="os-button filled bordered orange soft"
+                            href="mailto:info@openslides.com?subject=Anfrage OpenSlides-Jahreshosting Gremium 32">
+                            <span translate>Anfrage senden</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="price-col orange">
+            <div class="price-col-header pale">
+                <h2 translate>Spezial</h2>
+                <p>
+                    {{ 'unbegrenzte Veranstaltungen' | translate }}<br>
+                    {{ 'ab 4.000 aktive Accounts' | translate }}
+                </p>            </div>
+            <div class="price-col-body">
+                <div class="price-col-price">
+                    <h1 class="text-center semibold">auf Anfrage</h1>
+                    <small>&nbsp;</small>
+                    <p>&nbsp;</p>
+
+                    <div class="text-center mt-1 mb-0">
+                        <a mat-flat-button class="os-button bordered orange soft"
+                            href="mailto:info@openslides.com?subject=Anfrage OpenSlides-Jahreshosting Gremium Spezial">
+                            <span translate>Anfrage senden</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <p>
-        <small>
-            {{ 'Jahrespreise sowie Hosting ab 500 Teilnehmende auf Anfrage.' | translate }}
-        </small>
+        <span translate>» zzgl. Betriebs-Supportpauschale ab 1.500 €/Jahr (zzgl. USt)</span><br>
+        <span translate>» jede weitere 250 aktive Accounts für 1.000 €/Jahr (zzgl. USt)</span>
     </p>
+    <p translate>Es zählen nur aktive Accounts. Nicht berücksichtigt werden deaktivierte Accounts (kein Login möglich). Ein Gremium kann beliebig viele Veranstaltungen enthalten. Abgelaufene Veranstaltungen können archiviert werden, berechnet werden nur aktive Veranstaltungen. Alle Teilnehmende haben weiter lesenden Zugriff auf archivierte Veranstaltungen</p>
 
 
-    <div class="mt-1 small">
-        <b translate>Hinweise zur Auswahl:</b>
+    <h2 class="mb-0">
+        {{ 'Leistungen' | translate }}
+    </h2>
+    <p class="mt-0" translate>für alle Hosting-Pakete</p>
 
-        <ul class="arrow">
-            <li translate>Für jedes eigenständige Gremium/Organ (z.B. Vorstand, Beirat, Mitgliederversammlung) benötigen Sie je eine separate OpenSlides-Instanz.</li>
-            <li translate>Innerhalb einer OpenSlides-Instanz können Sie beliebig viele wiederkehrende Sitzungen in der Hostinglaufzeit abhalten. Abgerechnet wird pro Monat.</li>
-            <li translate>Wunsch-URL pro OpenSlides-Instanz nach Verfügbarkeit (z.B. https://meine-versammlung.openslides.com)</li>
-        </ul>
+    <ul class="arrow">
+        <li translate>Wunsch-URL nach Verfügbarkeit (z.B. https://meine-organsiation.openslides.com)</li>
+        <li translate>Technischer Kundensupport per Ticket-System (Veranstaltungssupport separat buchbar)</li>
+        <li translate>sichere Verbindung: HTTPS mit Let's-Encrypt-Zertifikaten</li>
+        <li translate>sichere Daten: Abschluss einer <a href="https://files.openslides.org/docs/OpenSlides-Muster-AV-Vertrag.pdf" target=_blank class="inline">Vereinbarung zur Auftragsverarbeitung</a></li>
+        <li translate>sicherer Betrieb: jede OpenSlides-Instanz läuft abgekapselt in einem Container und hat ihre eigene Datenbank</li>
+        <li translate>Wir betreiben OpenSlides für Sie datenschutzkonform auf Servern in Deutschland.</li>
+    </ul>
+    
+    Das <a href="https://files.openslides.org/docs/OpenSlides4-Preisblatt-2023.pdf" target=_blank class="inline">Preisblatt zum Download</a>.
 
-        <b translate>Beispiele:</b>
-        <ol class="arrow">
-            <li translate>Ein Verband möchte OpenSlides für seine wöchentlichen Vorstandssitzung mit 12 Personen sowie für die jährliche Mitgliederversammlung mit ca. 200 Teilnehmde nutzen. Dafür sind zwei Hostingpakete nötig: »Sitzung« und »Tagung«.</li>
-            <li translate translateHtml>Eine Bundesverband möchte für die Vorstandssitzungen seiner 16 Landesverbände OpenSlides nutzen (je &lt;50 Personen). Dafür sind 16 einzelne OpenSlides-Instanzen (Hostingpaket »Sitzung«) nötig.</li>
-        </ol>
+    <h2 class="mb-0">
+        {{ 'Zusatzleistungen' | translate }}
+    </h2>
+    <p class="mt-0" translate>für eine Rundum-Betreuuung Ihrer Veranstaltung</p>
 
-        <b translate>Für alle Hosting-Pakete gelten folgende Leistungen:</b>
-        <ul class="arrow">
-            <li translate>sichere Verbindung: HTTPS mit Let's-Encrypt-Zertifikaten</li>
-            <li translate>sichere Daten: Abschluss einer Vereinbarung zur Auftragsverarbeitung</li>
-            <li translate>sicherer Betrieb: jede Veranstaltung läuft als abgekapselte OpenSlides-Instanz mit eigener Datenbank</li>
-            <li translate>Wir betreiben OpenSlides für Sie datenschutzkonform auf Servern in Deutschland.</li>
-            <li translate>Mindestlaufzeit: 1 Monat, monatlich kündbar</li>
-        </ul>
-    </div>
+    <ul class="arrow">
+        <li translate>Technische Begleitung vor Ort</li>
+        <li translate>Telefonische Rufbereitschaft</li>
+        <li>
+            {{ 'Workshop zur Vorbereitung' | translate }}<br>
+            <small>{{ 'interaktive Schulung (virtuell oder in Präsenz), individuell angepasst auf Ihre Zielgruppe (z.B. Mitarbeitende,  Präsidium, Antragskommission), unterschiedliche Schulungsmodule auswählbar:' | translate }}</small>
+            <br>
+            <ul class="point small mt-0">
+                <li>Einführung von OpenSlides</li>
+                <li>Anträge: Eingabe, Bearbeitung, Weiterleitung von Anträgen, Änderungs- und Initiativanträgen, Beschlussdokumentation</li>
+                <li>Teilnehmenden-Verwaltung: Import von Teilnehmenden, Zuordnung zu Gruppen und Vergabe von Berechtigungen</li>
+                <li>elektronische Abstimmungen und Wahlen: Verwaltung und Durchführung von Abstimmungen, Personenwahlen</li>
+                <li>Redelistensteuerung</li>
+                <li>Projektorsteuerung und -anpassung</li>
+                <li>Simulation der OpenSlides-Steuerung, Absprachen und Aufgabenverteilung für Vor-Ort-Einsatz</li>
+            </ul>
+        </li>
+        <li>
+            {{ 'Veranstaltungs-Supportpauschale' | translate }}<br>
+            <small>{{ 'zur Koordination und Beratung in der Veranstaltungsvorbereitung, pauschal pro Veranstaltung' | translate }}</small>
+        </li>
+    </ul>
+
+    <p>{{ 'Proﬁtieren Sie von unserer langjährigen Erfahrungen beim Einsatz von OpenSlides auf unterschiedlichen Veranstaltungen. Wir erstellen Ihnen gerne ein individuelles Angebot.' | translate }}</p>
 
     <div class="mt-2 mb-2 blue-links">
         <h2 translate>Noch Fragen?</h2>

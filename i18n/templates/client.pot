@@ -4,6 +4,73 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Gremienmanagement"
+msgstr ""
+
+msgid ""
+"Bilden Sie ihre Organisationsstruktur ab, legen sie Freigaben fest und "
+"erstellen Sie beliebig viele Veranstaltungen unter einer URL.            "
+"<p>» <a class=\"inline\" "
+"href=\"https://files.openslides.org/docs/Gremienmanagement-OS4.pdf\" "
+"target=\"_blank\">Schaubild: Gremienmanagement und Antragsweiterleitung in "
+"OS4</a><br>            » <a class=\"inline\" "
+"href=\"https://files.openslides.org/docs/Rollen-und-Rechte-OS4.pdf\" "
+"target=\"_blank\">Schaubild: Rollen & Rechte in OS4</a>"
+msgstr ""
+
+msgid "Verwaltung von Gremienstrukturen"
+msgstr ""
+
+msgid "Veranstaltungen anlegen, duplizieren, archivieren und löschen"
+msgstr ""
+
+msgid ""
+"Vergabe von komplexen Administrationsrollen (Superadmin, "
+"Organisationsadmin, Accountadmin, Veranstaltungsadmin)"
+msgstr ""
+
+msgid "globale Account-Verwaltung mit Zuweisung in Veranstaltungen"
+msgstr ""
+
+msgid "Weiterleitungsoptionen von Anträge zwischen Gremien"
+msgstr ""
+
+msgid "Farbdesign an eigenes CI anpassbar"
+msgstr ""
+
+msgid "neues Profilmenü mit Dark-Theme-Möglichkeit"
+msgstr ""
+
+msgid "Autopilot"
+msgstr ""
+
+msgid ""
+"Der Autopilot ist das Tool zur schnellen Navigation und Interaktion für "
+"Teilnehmende. Er bietet Teilnehmenden die Möglichkeit kompakte "
+"Informationen zum aktuellen Tagesordnungspunkt zu erhalten und gleichzeitig "
+"interaktiv am Veranstaltungsgeschehen teilzunehmen."
+msgstr ""
+
+msgid "Anzeige von aktuellen Tagesordnungspunkten und Redelisten"
+msgstr ""
+
+msgid "direkter Aufruf des aktuellen Tagesordnungspunktes/Antrags"
+msgstr ""
+
+msgid "Einreichung von Redebeiträgen oder GO-Anträgen durch Teilnehmende"
+msgstr ""
+
+msgid ""
+"Klassifizierung von Redebeiträgen (Einbringung, Für-/Gegenrede) durch "
+"Teilnehmende"
+msgstr ""
+
+msgid "Verwaltung der aktuellen Redeliste"
+msgstr ""
+
+msgid "Stimmabgabe bei Antragsastimmungen, Personenwahlen und Umfragen"
+msgstr ""
+
 msgid "Tagesordnung"
 msgstr ""
 
@@ -12,24 +79,16 @@ msgid ""
 "Tagesordnungspunkte im laufenden Betrieb."
 msgstr ""
 
-msgid "Redelisten für jeden Tagesordnungspunkt"
-msgstr ""
-
 msgid "Flexibles Hinzufügen von Tagesordnungspunkten für jegliche Inhalte"
-msgstr ""
-
-msgid ""
-"Die aktuelle Redeliste stets im Blick (als Überblendung oder auf einem 2. "
-"Projektor)"
-msgstr ""
-
-msgid "Countdowns zur Redezeitbeschränkung"
 msgstr ""
 
 msgid "Automatische Nummerierung von Tagesordnungspunkten"
 msgstr ""
 
-msgid "Zeitplanung: Dauer pro Tagesordnungspunkt schätzen"
+msgid "Abgeschlossene Tagesordnungspunkte markieren"
+msgstr ""
+
+msgid "Individuelle Sichtbarkeiten für jeden Tagesordnungspunkt"
 msgstr ""
 
 msgid ""
@@ -37,16 +96,54 @@ msgid ""
 "integrieren"
 msgstr ""
 
-msgid "Abgeschlossene Tagesordnungspunkte markieren und verstecken"
-msgstr ""
-
-msgid "Individuelle Sichtbarkeiten für jeden Tagesordnungspunkt"
+msgid "Zeitplanung: geschätzte Dauer pro Tagesordnungspunkt ergänzen"
 msgstr ""
 
 msgid "Tagesordnung als PDF exportieren"
 msgstr ""
 
 msgid "Tagesordnung per Drag&Drop sortieren"
+msgstr ""
+
+msgid "elektronische Umfragen mit freien Abstimmungsoptionen (ab 4.0)"
+msgstr ""
+
+msgid "Redeliste"
+msgstr ""
+
+msgid ""
+"Nutzen Sie die Redeliste zur Verwaltung ihrer Redebeiträge. Erfassen sie "
+"sekundengenau Redezeiten und legen sie per Countdown Redezeiten fest. Das "
+"Highlight für die Bildregie: automatisierte Bauchbinden der Redner*innen."
+msgstr ""
+
+msgid "Separate Redeliste für jeden Tagesordnungspunkt/Antrag/Wahl"
+msgstr ""
+
+msgid "Teilnehmende können sich selbstständig auf Redeliste listen"
+msgstr ""
+
+msgid "Countdown zur Redezeitbegrenzung"
+msgstr ""
+
+msgid "Geschäftsordnungsantrag als priorisierten Redebeitrag inkl. Anliegen"
+msgstr ""
+
+msgid "Markierung von Redebeiträgen als Für-/Gegenrede oder (Antrags-)Einbringung"
+msgstr ""
+
+msgid "Erfassung von Redezeit sowie Anzahl der Redebeiträge pro Person"
+msgstr ""
+
+msgid ""
+"automatisierte Verwendung des aktuellen Redner*innennamens in einer "
+"Bauchbinde"
+msgstr ""
+
+msgid "Sortieren von Redebeiträgen per Drag&Drop"
+msgstr ""
+
+msgid "Projektion von Redelisten (als Vollbild oder Einblendung)"
 msgstr ""
 
 msgid "Anträge"
@@ -60,16 +157,25 @@ msgstr ""
 msgid "Anpassbare Antrag-Statusmeldungen und -Arbeitsabläufe"
 msgstr ""
 
-msgid "Anträge in Antragsblöcken und Schlagwörter verwalten"
+msgid "Arbeitsablauf im- und exportierbar; Statusspalten sortierbar (ab 4.0)"
 msgstr ""
 
-msgid "Anträge automatisch nummerieren in Sachgebieten und Untersachgebieten"
+msgid "Anträge in Sachgebieten, Antragsblöcken und Schlagwörtern kategorisieren"
+msgstr ""
+
+msgid "Anträge automatisch in Sachgebieten und Untersachgebieten nummerieren"
 msgstr ""
 
 msgid "Sortierung von Anträgen in einer Aufrufliste"
 msgstr ""
 
-msgid "Erforderliche Unterstützern pro Antrag definieren"
+msgid "Anträge unterstützen/mitzeichnen"
+msgstr ""
+
+msgid "Startzeilennummer pro Antrag definierbar (ab 4.0)"
+msgstr ""
+
+msgid "Anträge an Veranstaltungen weiterleiten (ab 4.0)"
 msgstr ""
 
 msgid ""
@@ -77,61 +183,139 @@ msgid ""
 "erstellen"
 msgstr ""
 
-msgid "Unterstützung von Satzungsanträgen"
+msgid "HTML-Editor zum Formatieren von Antragstext und -begründung"
 msgstr ""
 
-msgid "Anzeigen/Verstecken von Anträgen in der Tagesordnung"
+msgid "(gruppenbezogene) Kommentarfelder konfigurierbar"
 msgstr ""
 
-msgid "HTML-Inline-Editor zum Formatieren von Antragstext und -begründung"
+msgid "Hinzufügen von Anträgen in die Tagesordnung"
 msgstr ""
 
-msgid "Kommentarfelder für Anträge erlauben"
+msgid "Verknüpfung von Anträgen mit hochgeladen Dateien"
 msgstr ""
 
-msgid "Abstimmungsergebnisse erfassen"
+msgid ""
+"Durchführung von elektronischen Abstimmungen (namentlich oder "
+"nicht-namentlich)"
 msgstr ""
 
-msgid "elektronische Stimmabgabe möglich"
+msgid "analoge Abstimmungsergebnisse erfassen"
 msgstr ""
 
 msgid "Anträge als PDF, CSV und XLSX exportieren"
+msgstr ""
+
+msgid ""
+"PDF-Export von mehreren Anträgen als Fließtext mit fortlaufender "
+"Zeilennummerierung"
+msgstr ""
+
+msgid ""
+"Layout, Schriftart und Logo vom PDF-Export anpassbar (z. B. Seitenränder, "
+"Schriftgröße)"
 msgstr ""
 
 msgid "Wahlen"
 msgstr ""
 
 msgid ""
-"Beschleunigen Sie das Prozedere: Generieren Sie ad-hoc Stimmzettel für Ihre "
-"geheime Wahlen."
+"Beschleunigen Sie das Prozedere: Erstellen und starten Sie ad-hoc "
+"elektronische Wahlgänge."
 msgstr ""
 
 msgid "Kandidaten aus der Teilnehmenden-Liste vorschlagen"
 msgstr ""
 
-msgid "Personalisierte Wahlscheine für geheime Wahlen drucken"
+msgid ""
+"Unterstützte Wahlverfahren: Ja/Nein/Enthaltung · Ja pro Kandidat · Nein pro "
+"Kandidat · Ja/Nein pro Kandidat, plus weitere generelle Wahloptionen "
+"(Enthaltung, Ablehnung, Zustimmung)"
 msgstr ""
 
-msgid "Unterstützte Wahlverfahren: Ja/Nein/Enthaltung oder eine Stimme pro Kandidat"
+msgid ""
+"Neue Stimmabgabeoption: mehrere Stimmen auf einen Kandidaten erlauben "
+"(kumulieren) (ab 4.0)"
 msgstr ""
 
 msgid "Wahlergebnisse auf Grundlage verschiedener 100%-Basen"
 msgstr ""
 
-msgid "Mehrere Wahlgänge"
+msgid "Mehrere Wahlgänge (z. B. Stichwahlen)"
 msgstr ""
 
-msgid "Wahlergebnisse eingeben und mit Diagramm projizieren"
+msgid "elektronische Stimmabgabe möglich"
+msgstr ""
+
+msgid ""
+"Dauer der Stimmgabe wählbar: kurzlaufend (Live Voting) oder langlaufend "
+"(Umlaufverfahren) (ab 4.0)"
+msgstr ""
+
+msgid "analoge Wahlstimmzettel als PDF generierbar"
+msgstr ""
+
+msgid "ausgezählte Wahlergebnisse erfassen und projizieren"
 msgstr ""
 
 msgid "Wahlen (mit allen Ergebnissen) als PDF exportieren"
+msgstr ""
+
+msgid "Teilnehmende"
+msgstr ""
+
+msgid ""
+"Verwalten Sie zentral auf Organisationsebene alle Accounts. Vergeben Sie "
+"Adminrechte zur Verwaltung von Gremien und Veranstaltungen. Legen Sie "
+"komplexe Nutzerrechte in Gruppen fest und bestimmen Sie, welche Person "
+"worauf Zugriff hat. Erfassen Sie effizient die Anwesenheit von "
+"Teilnehmenden in Veranstaltung – ihre Mandatsprüfungskommission wird "
+"begeistert sein."
+msgstr ""
+
+msgid ""
+"Verwaltung von Teilnehmenden auf Organisations- und/oder "
+"Veranstaltungsebene (ab OS 4.0)"
+msgstr ""
+
+msgid "Erstellung von Gruppen mit frei definierbaren Nutzungsrechten"
+msgstr ""
+
+msgid ""
+"veranstaltungsübergreifende Nutzung von Accounts (ein zentraler Login) (ab "
+"OS 4.0)"
+msgstr ""
+
+msgid ""
+"Einfache Erstellung von neuen Accounts per Einzelerstellung oder via "
+"CSV-Import auf Organisations- und/oder Veranstaltungsebene"
+msgstr ""
+
+msgid ""
+"Erfassung der Anwesenheit und Export von Teilnehmendenliste (z. B. zur "
+"Mandatsprüfung)"
+msgstr ""
+
+msgid "Stimmgewicht und Stimmrechtsübertragungen einstellbar"
+msgstr ""
+
+msgid "Versand von Zugangsdaten per E-Mail mit anpassbarer Einladungstext"
+msgstr ""
+
+msgid "vielseitige Filter- und Sortierfunktionen in der Teilnehmendenliste"
+msgstr ""
+
+msgid "CSV-Import und -Export für Teilnehmende"
+msgstr ""
+
+msgid "Zugangsdaten- und Begrüßungs-PDF-Export"
 msgstr ""
 
 msgid "Projektoren"
 msgstr ""
 
 msgid ""
-"Live dabei: Zeigen Sie den Teilnehmenden gerade diskutierte Inhalte auf den "
+"Live dabei: Zeigen Sie den Teilnehmenden gerade diskutierte Inhalte auf "
 "Projektionsflächen."
 msgstr ""
 
@@ -142,6 +326,12 @@ msgid "Unterstützung mehrerer Projektoren"
 msgstr ""
 
 msgid "Individuelle Projektorgestaltung mit eigenem Logo und Farben"
+msgstr ""
+
+msgid "Individuelle Countdowns und Mitteilungen einblendbar"
+msgstr ""
+
+msgid "Einbindung von Redebeiträgen (Namen) als Bauchbinde"
 msgstr ""
 
 msgid "Anordnen von Inhalten in einer Warteschlange"
@@ -160,17 +350,18 @@ msgid "Elektronische Stimmabgabe"
 msgstr ""
 
 msgid ""
-"Erweitern Sie OpenSlides um ein integriertes elektronisches "
-"Abstimmungssystem.        Legen Sie die stimmberechtigte Nutzergruppe fest. "
-"Nur in OpenSlides auf anwesend und stimmberechtigt geschaltete Teilnehmende "
-"dürfen abstimmen.        Möglich sind namentliche oder nicht-namentliche "
-"Antragsabstimmungen und Personenwahlen.        Auch individuelle "
-"Stimmgewichtungen sind möglich.        <p>» Testen Sie die elektronische "
-"Stimmabgabe in der <a class=\"inline\" "
-"href=\"https://demo.openslides.org/\" "
-"target=\"_blank\">Online-Demo</a>.<br>        » Erfahren Sie mehr über <a "
-"class=\"inline\" href=\"/news/online-versammlungen\" "
-"fragment=\"evoting\">Online-Versammlungen.</a>"
+"Nutzen Sie das integrierte elektronische Abstimmungssystem: Legen Sie die "
+"stimmberechtigte Nutzergruppe fest.             Nur in OpenSlides auf "
+"anwesend und stimmberechtigt geschaltete Teilnehmende dürfen abstimmen.     "
+"         Möglich sind namentliche oder nicht-namentliche "
+"Antragsabstimmungen,Personenwahlen und Umfragen.              Mit "
+"OpenSlides sind rechtssichere, geheime Stimmabgaben möglich.              "
+"Ein <a class=\"inline\" "
+"href=\"https://files.openslides.org/docs/Gutachten_Geheime-Wahlen-mit-"
+"OpenSlides3_20210325.pdf\" target=\"_blank\">Rechtsgutachten</a> liegt vor. "
+"             <p>Testen Sie die elektronische Stimmabgabe in der <a "
+"class=\"inline\" href=\"https://demo.os4.openslides.com\" "
+"target=\"_blank\">Online-Demo</a>."
 msgstr ""
 
 msgid ""
@@ -216,26 +407,17 @@ msgid ""
 "    Virtuelle Veranstaltungen mit mehreren hundert Personen sind damit kein "
 "Problem mehr.        Hinzu kommt, dass die meisten Teilnehmenden eine "
 "Veranstaltung nur \"konsumierend\" verfolgen, d.h. nur ein kleiner "
-"Personenkreis möchte sich aktiv mit Mikrofon und Kamera zu Wort melden.     "
-"   Setzen Sie auf erprobte Broadcast-Streaming-Lösung – intelligent "
-"gekoppelt mit der OpenSlides-Redelistenfunktion.        <p>Die "
-"Audiokonferenz - ideal zum Austausch für kleine virtuelle Gremiensitzung "
-"(bis 50 Teilnehmende)<br>        Verwenden Sie OpenSlides mit integrierter "
-"Audiokonferenz. Über unseren exklusiv für OpenSlides betriebenen "
-"Jitsi-Server kommunizieren alle Teilnehmende direkt miteinander - geschützt "
-"in einem Passwort-gesicherten Audio-Konferenzraum. Jede/r verbindet sich "
-"automatisch nach dem Login in OpenSlides mit der Audiokonferenz und darf "
-"das eigene Mikrofon ein- und ausschalten.        <p>Funktionsweise in "
+"Personenkreis sich aktiv mit Mikrofon und Kamera zu Wort meldet.        "
+"Setzen Sie auf bewährte Broadcast-Streaming-Lösung – intelligent gekoppelt "
+"mit der OpenSlides-Redelistenfunktion.        <p>Funktionsweise in "
 "Kurzanimation: <a "
-"href=\"https://files.openslides.org/press/3.2/OpenSlides3.2-Audiokonferenz."
-"gif\" class=\"inline\">Audiokonferenz</a>        · <a "
 "href=\"https://files.openslides.org/press/3.2/OpenSlides3.2-Videokonferenz."
 "gif\" class=\"inline\">Video-Livestream</a>"
 msgstr ""
 
 msgid ""
 "Anzeige des Livesstreams im Vordergrund (auch minimierbar oder im Vollbild "
-"nutzbar"
+"nutzbar)"
 msgstr ""
 
 msgid "Automatische Übertragung des aktuellen Redners in den Livestream"
@@ -247,8 +429,16 @@ msgid ""
 msgstr ""
 
 msgid ""
-"bankbreitenschonende Broadcast-Technik (auch für sehr große virtuelle "
-"Veranstaltungen nutzbar)"
+"bandbreitenschonende Broadcast-Technik mit extrem niedriger Latenz (auch "
+"für sehr große virtuelle Veranstaltungen nutzbar)"
+msgstr ""
+
+msgid "frei anpassbare Applaus-Funktion für Teilnehmende"
+msgstr ""
+
+msgid ""
+"virtueller Help-Desk-Raum (z. B. zur technischen Prüfung der Teilnehmenden "
+"vor Redebeiträgen)"
 msgstr ""
 
 msgid "Weitere Funktionen"
@@ -262,43 +452,38 @@ msgstr ""
 msgid "Live-Änderungen direkt miterleben"
 msgstr ""
 
-msgid "Teilnehmende, Gruppen und Berechtigungen verwalten"
-msgstr ""
-
-msgid "CSV-Import und -Export für Teilnehmende"
+msgid "konfigurierbare Chatgruppen"
 msgstr ""
 
 msgid "Umfangreiche Dateiverwaltung mit Zugriffsberechtigungen pro Datei und Ordner"
 msgstr ""
 
-msgid "Globale Chronik auf Basis von Snapshots"
-msgstr ""
-
-msgid "Globale Volltextsuche"
+msgid "Chronik für Anträge, Wahlen und Teilnehmenden (ab 4.0)"
 msgstr ""
 
 msgid "Umfangreiche Sortier- und Filtermöglichkeiten aller Listen"
 msgstr ""
 
-msgid "Konfigurierbares Design sowie Erstellung eigener Designs auf Anfrage"
+msgid ""
+"Mehrsprachigkeit (Englisch, Deutsch, Spanisch, Italienisch, Tschechisch und "
+"Russisch)"
 msgstr ""
 
 msgid ""
-"Mehrsprachigkeit (Englisch, Deutsch, Französisch, Tschechisch, "
-"Portugiesisch, Spanisch und Russisch)"
+"Benutzerdefinierte Übersetzungen: einfache Anpassung aller Begriffe nach "
+"individuellen Anforderungen pro Veranstaltung (z. B. Änderung von "
+"\"Anträge\" in \"Beschlüsse\".) "
+msgstr ""
+
+msgid ""
+"Webanwendung basierend auf Python, Go und Angular im modernen Material "
+"Design"
 msgstr ""
 
 msgid "Responsive Design"
 msgstr ""
 
-msgid ""
-"Plattformunabhängige Webanwendung basierend auf Python 3 und Angular im "
-"modernen Material Design"
-msgstr ""
-
-msgid ""
-"Progressive WebApp mit clientseitigem Caching und Lazy Loading für kurze "
-"Ladezeiten"
+msgid "Progressive WebApp ermöglicht Vollbild-App unter Android und iOS"
 msgstr ""
 
 msgid "OpenSlides: das digitale Antrags- und Versammlungssystem"
@@ -321,13 +506,16 @@ msgstr ""
 msgid "Sitzung"
 msgstr ""
 
+msgid "Einzelveranstaltung"
+msgstr ""
+
 msgid "Tagung"
 msgstr ""
 
 msgid "Kongress"
 msgstr ""
 
-msgid "Supportpauschale"
+msgid "Basis-Supportpauschale für eine Veranstaltung"
 msgstr ""
 
 msgid ""
@@ -374,37 +562,12 @@ msgid ""
 "Streaming-Dienstleister (hybrides Veranstaltungsformat)."
 msgstr ""
 
-msgid "Audio-/Videokonferenz"
-msgstr ""
-
-msgid ""
-"Integrierte Jitsi-Videokonferenz mit Jitsi - ohne Livestream. Ideal zum "
-"direkten Austausch für kleine virtuelle Gremiensitzung (bis max 50 "
-"Teilnehmende, nur im Hostingpaket \"Sitzung\")."
-msgstr ""
-
-msgid "Jitsi-Telefoneinwahl"
-msgstr ""
-
-msgid ""
-"Einrichtung einer Festnetz-Rufnummer zur telefonischen Einwahl in die "
-"Jitsi-Videokonferenz"
-msgstr ""
-
 msgid "Single Sign-On via SAML"
 msgstr ""
 
 msgid ""
 "Zur Anbindung eines bereits existierenden SAML-Mitgliedsservers. Nur "
 "verfügbar für das Hostingpaket \"Kongress\""
-msgstr ""
-
-msgid "Chat"
-msgstr ""
-
-msgid ""
-"Bereitstellung und Integration eines Chats, mehrere Gruppenräume "
-"konfigurierbar."
 msgstr ""
 
 msgid "Hostingpaket"
@@ -433,6 +596,18 @@ msgstr ""
 msgid "Jugendverbände"
 msgstr ""
 
+msgid "Kirchen"
+msgstr ""
+
+msgid "Sozialverbände"
+msgstr ""
+
+msgid "Sportverbände"
+msgstr ""
+
+msgid "Hochschulbereich"
+msgstr ""
+
 msgid "Weitere Verbände, Vereine und Organisationen"
 msgstr ""
 
@@ -455,6 +630,9 @@ msgid "Allgemeine Anfragen"
 msgstr ""
 
 msgid "Technischer Kundensupport"
+msgstr ""
+
+msgid "Persönliche Erreichbarkeit"
 msgstr ""
 
 msgid "Beratung und individuelle Servicedienstleistungen"
@@ -575,13 +753,10 @@ msgstr ""
 msgid "Funktionen"
 msgstr ""
 
-msgid "Starten"
+msgid "Service"
 msgstr ""
 
 msgid "Referenzen"
-msgstr ""
-
-msgid "News"
 msgstr ""
 
 msgid "Kontakt"
@@ -591,17 +766,25 @@ msgid "FAQ"
 msgstr ""
 
 msgid ""
-"OpenSlides ist ein leistungsstarkes Werkzeug und bietet eine umfassende "
-"Lösung zur digitalen Organisation Ihrer Veranstaltungen und Konferenzen. "
-"Alle Mitgliederversammlungen können als Präsenz-, Hybrid- oder als "
-"virtuelle Veranstaltungen bereitgestellt werden. Verwalten Sie "
-"Tagesordnungen, Anträge, Wahlen, Redelisten, Dokumente und Teilnehmende. "
-"Alle diese Dinge sind erstaunlich intuitiv zu bedienen.  "
+"OpenSlides ist eine leistungsstarke und moderne, webbasierte Software zur "
+"digitalen Organisation Ihrer Veranstaltungen und Gremienstrukturen. Unter "
+"einer zentralen URL greifen User auf Ihre Gremien und Veranstaltungen zu."
+msgstr ""
+
+msgid ""
+"Veranstaltungsorganisation aus einer Hand: Tagesordnungen, Redelisten, "
+"Anträge, Wahlen und Teilnehmendenmanagement."
+msgstr ""
+
+msgid ""
+"Nutzen Sie die neuen Gremienmanagement-Funktionen von OpenSlides4 um Ihre "
+"Organisation nachhaltig zu digitalisieren. Alle diese Dinge sind "
+"erstaunlich intuitiv zu bedienen."
 msgstr ""
 
 msgid ""
 "Verschlanken und vereinfachen Sie Ihre Abläufe auf klassischen "
-"Präsenz-Veranstaltungen und lassen sich von den Vorteilen überzeugen: "
+"Präsenz-Veranstaltungen und lassen Sie sich von den Vorteilen überzeugen: "
 "Reagieren Sie mit OpenSlides flexibel in Echtzeit und modernisieren Ihre "
 "Prozesse."
 msgstr ""
@@ -620,60 +803,62 @@ msgid ""
 "macht Sie unabhängig."
 msgstr ""
 
-msgid "eVoting · integrierte Audio-/Videokonferenz · Video-Livestream"
+msgid ""
+"Bilden Sie Ihre Gremienstrukturen ab, indem Sie beliebig viele Gremien und "
+"Veranstaltungen anlegen. Legen Sie detailliert fest, welche Gremien Anträge "
+"weiterleiten können und definieren Sie Zugriffsrechte auf Gremien und "
+"Veranstaltungen. Archivieren Sie Ihre abgelaufenen Veranstaltungen."
+msgstr ""
+
+msgid ""
+"Der Autopilot führt alle Teilnehmenden durch eine Veranstaltung. Er zeigt "
+"an, welcher Tagesordnungspunkt oder Antrag gerade beraten wird, wer auf der "
+"Redeliste steht, welche Abstimmung gerade läuft und was aktuell am "
+"Projektor gezeigt wird."
 msgstr ""
 
 msgid ""
 "Ergänzen, ändern oder verschieben Sie automatisch nummerierte "
 "Tagesordnungspunkte per Drag & Drop im laufenden Betrieb. Verknüpfen Sie "
 "die einzelnen Punkte mit Redelisten sowie Redezeiten und integrieren Sie "
-"für eine bessere Zeitplanung auch inoffizielle Einträge wie Pausen."
+"für eine bessere Zeitplanung inoffizielle Einträge wie Pausen."
 msgstr ""
 
 msgid ""
-"Erfassen Sie Anträge mit Antragsteller und Antragstext. Ordnen Sie "
-"Sachgebiete und Antragsnummer zu. Protokollieren Sie Beschluss und "
-"Abstimmungsergebnis während der Antragsberatung. Die flexible Filterung der "
-"Liste hilft bei der Suche in allen Anträgen und ihren Änderungen."
+"Erfassen Sie Anträge und Änderungsanträge. Ordnen Sie Sachgebiete und "
+"Antragsnummer zu. Stimmen Sie elektronisch ab und protokollieren Sie den "
+"Beschluss."
 msgstr ""
 
 msgid ""
-"Schlagen Sie Kandidat/innen aus der Liste der Teilnehmenden vor. Generieren "
-"Sie ad-hoc personalisierte Stimmzettel für geheime Wahlen. Protokollieren "
-"und projizieren Sie die ausgezählten Stimmen – für jeden Teilnehmenden "
-"nachzulesen in OpenSlides."
+"Stellen Sie Kandidierende on-the-fly auf, beschleunigen Sie Ihre Wahlgänge "
+"mit elektronischen Wahlen und präsentieren Sie die Ergebnisse."
+msgstr ""
+
+msgid ""
+"Nutzen Sie Live-Voting für Antragsabstimmungen, Personenwahlen und "
+"Umfragen. Legen Sie stimmberechtigte Nutzergruppe  fest. Erstellen Sie "
+"namentliche oder nicht-namtlichte Stimmabgaben."
+msgstr ""
+
+msgid ""
+"Bestimmen Sie, welche Personen was sehen. Jeder Bereich von OpenSlides kann "
+"für einzelne Nutzergruppen freigeschaltet werden. Die Verwaltung der "
+"Delegierten und ihrer Anwesenheit sowie das ausgefeilte Rechtemanagement "
+"sind unkompliziert und intuitiv."
 msgstr ""
 
 msgid ""
 "OpenSlides ist für die Arbeit mit multiplen Bildschirmen konzipiert und mit "
 "einer mächtigen Projektorsteuerung versehen. Das Webinterface erlaubt das "
-"Projizieren und Bearbeitung der Folien, während die Projektoren in Vollbild "
-"laufen."
+"Projizieren und die Bearbeitung der Folien, während die Projektoren in "
+"Vollbild laufen."
 msgstr ""
 
 msgid ""
-"Nutzen Sie Live-Voting für Anträge und Wahlen. Die stimmberechtigte "
-"Nutzergruppe lässt sich pro Antrag/Wahl festlegen. Nur in OpenSlides auf "
-"anwesend und stimmberechtigt geschaltete Teilnehmende dürfen abstimmen. "
-"Möglich sind namentliche oder nicht-namentliche (anonyme) "
-"Antragsabstimmungen und Personenwahlen. Auch individuelle Stimmgewichtungen "
-"und Stimmrechtsübertragungen sind möglich."
-msgstr ""
-
-msgid ""
-"Integrieren Sie einen Video-Livestream Ihrer virtuellen Veranstaltung in "
-"OpenSlides. Alle Teilnehmenden verfolgen den Stream jederzeit sichtbar in "
-"OpenSlides. Möchte sich eine Person zu Wort melden, setzt sich diese "
-"selbständig auf die aktuelle Redeliste in OpenSlides und wechselt damit "
-"automatisch in einen Jitsi-Videokonferenzraum. Der Livestream überträgt die "
-"Videokonferenz. Nach Ende der Wortmeldung verlässt man den Konferenzraum "
-"und verfolgt wieder den Livestream."
-msgstr ""
-
-msgid ""
-"Die Verwaltung der Delegierten und ihrer Anwesenheit sowie das ausgefeilte "
-"Rechtemanagement sind unkompliziert und intuitiv. Jeder Bereich von "
-"OpenSlides kann für einzelne Nutzergruppen freigeschalten werden."
+"Integrieren Sie einen Video-Livestream in OpenSlides. Alle Teilnehmenden "
+"verfolgen diesen jederzeit sichtbar in OpenSlides und haben die Möglichkeit "
+"Redebeiträge über eine Videokonferenz einzureichen."
 msgstr ""
 
 msgid ""
@@ -709,15 +894,16 @@ msgid ""
 "den Quellcode weiter zu verbessern."
 msgstr ""
 
-msgid ""
-"Erhalten Sie Neuigkeiten und Bekanntmachungen über neue "
-"OpenSlides-Entwicklungen. Tragen Sie sich hier in unseren Verteiler ein:"
+msgid "OpenSlides 4.0 erschienen – mit neuem Gremienmanagementsystem (2022-12-14)"
 msgstr ""
 
-msgid "Managen Sie Veranstaltungen digital"
+msgid "Alle News anzeigen"
 msgstr ""
 
-msgid "Jetzt ausprobieren (Demo)"
+msgid "Managen Sie Veranstaltungen und Gremien digital"
+msgstr ""
+
+msgid "Jetzt Demo ausprobieren"
 msgstr ""
 
 msgid "OpenSlides für alle Formate"
@@ -735,18 +921,30 @@ msgstr ""
 msgid "Virtuell"
 msgstr ""
 
-msgid ""
-"+++ Auch für virtuelle Mitgliederversammlungen, Hauptversammlungen und "
-"Parteitage +++"
+msgid "OpenSlides - DAS Tool für digitale Antragsberatung."
 msgstr ""
 
-msgid "Basisfunktionen in OpenSlides"
+msgid "Funktionen in OpenSlides"
+msgstr ""
+
+msgid "Gremienmanagement (neu ab 4.0)"
+msgstr ""
+
+msgid "Livekonferenz mit Video-Livestream"
 msgstr ""
 
 msgid "Vielseitig und responsiv"
 msgstr ""
 
 msgid "Mehr Funktionen"
+msgstr ""
+
+msgid ""
+"OpenSlides – das weitverbreitetste Antrags- und Konferenzsystem "
+"Deutschlands."
+msgstr ""
+
+msgid "Serviceleistungen"
 msgstr ""
 
 msgid "Hosting bestellen"
@@ -791,7 +989,7 @@ msgstr ""
 msgid "Weitere Referenzen"
 msgstr ""
 
-msgid "Alle News anzeigen"
+msgid "News"
 msgstr ""
 
 msgid "Pressemitteilungen"
@@ -1068,7 +1266,10 @@ msgstr ""
 msgid "bis"
 msgstr ""
 
-msgid "TLN"
+msgid "ab"
+msgstr ""
+
+msgid "Accounts"
 msgstr ""
 
 msgid "zzgl. USt"
@@ -1083,7 +1284,7 @@ msgstr ""
 msgid "Enddatum"
 msgstr ""
 
-msgid "Erwartete Teilnehmeranzahl"
+msgid "Erwartete Teilnehmende"
 msgstr ""
 
 msgid "Veranstaltungsname"
@@ -1128,6 +1329,9 @@ msgstr ""
 msgid "Ihre Anmerkungen und Wünsche"
 msgstr ""
 
+msgid "Jahr"
+msgstr ""
+
 msgid "Summe netto"
 msgstr ""
 
@@ -1150,9 +1354,6 @@ msgid "OpenSlides-Hostingpaket"
 msgstr ""
 
 msgid "Hostinglaufzeit"
-msgstr ""
-
-msgid "unbegrenzt"
 msgstr ""
 
 msgid "Zusatzfunktionen"
@@ -1193,9 +1394,6 @@ msgstr ""
 msgid "Jetzt kostenpflichtig bestellen"
 msgstr ""
 
-msgid "Preis für 12 Monate, beliebig verlängerbar."
-msgstr ""
-
 msgid ""
 "Für gemeinnützige Bildungsorganisationen gibt es auf Anfrage bis zu 20% "
 "Rabatt auf das Hosting. Bitte im Kommentarfeld unter \"zusätzliche "
@@ -1205,22 +1403,69 @@ msgstr ""
 msgid "Fehler:"
 msgstr ""
 
-msgid "Wählen Sie das Hostingpaket passend zu Ihrer Veranstaltungsgröße"
-msgstr ""
-
 msgid "inkl."
 msgstr ""
 
 msgid "USt."
 msgstr ""
 
-msgid "Videokonferenz mit Livestream"
+msgid "Jahreshosting"
 msgstr ""
 
-msgid "Mindestlaufzeit: 1 Monat"
+msgid "4 aktive Veranstaltungen"
 msgstr ""
 
-msgid "Jahrespreise sowie Hosting ab 500 Teilnehmende auf Anfrage."
+msgid "inkl. 250 Accounts"
+msgstr ""
+
+msgid "entspricht"
+msgstr ""
+
+msgid "16 aktive Veranstaltungen"
+msgstr ""
+
+msgid "inkl. 500 Accounts"
+msgstr ""
+
+msgid "32 aktive Veranstaltungen"
+msgstr ""
+
+msgid "inkl. 1.000 Accounts"
+msgstr ""
+
+msgid "unbegrenzte Veranstaltungen"
+msgstr ""
+
+msgid "ab 4.000 aktive Accounts"
+msgstr ""
+
+msgid "Leistungen"
+msgstr ""
+
+msgid "Zusatzleistungen"
+msgstr ""
+
+msgid "Workshop zur Vorbereitung"
+msgstr ""
+
+msgid ""
+"interaktive Schulung (virtuell oder in Präsenz), individuell angepasst auf "
+"Ihre Zielgruppe (z.B. Mitarbeitende,  Präsidium, Antragskommission), "
+"unterschiedliche Schulungsmodule auswählbar:"
+msgstr ""
+
+msgid "Veranstaltungs-Supportpauschale"
+msgstr ""
+
+msgid ""
+"zur Koordination und Beratung in der Veranstaltungsvorbereitung, pauschal "
+"pro Veranstaltung"
+msgstr ""
+
+msgid ""
+"Proﬁtieren Sie von unserer langjährigen Erfahrungen beim Einsatz von "
+"OpenSlides auf unterschiedlichen Veranstaltungen. Wir erstellen Ihnen gerne "
+"ein individuelles Angebot."
 msgstr ""
 
 msgid ""
@@ -1229,112 +1474,80 @@ msgid ""
 "installiert werden."
 msgstr ""
 
-msgid ""
-"Wir betreiben OpenSlides für Sie datenschutzkonform auf unseren Servern in "
-"Deutschland."
+msgid "für einmalige Veranstaltungen · Laufzeit 1 bis max. 3 Monate"
 msgstr ""
 
-msgid "für kleine (virtuelle) Gremien<br>mit wiederkehrenden Sitzungen"
+msgid "bis 50 Accounts"
 msgstr ""
 
-msgid "bis <b>50</b> Teilnehmende"
+msgid "bis 250 Accounts"
 msgstr ""
 
-msgid "NEU: eVoting (jetzt integriert!)"
+msgid "bis 500 Accounts"
 msgstr ""
 
-msgid "Tagesordnung mit Redeliste"
+msgid "Spezial"
 msgstr ""
 
-msgid "Anträge und Wahlen"
+msgid "ab <b>500</b> Accounts"
 msgstr ""
 
-msgid "Teilnehmende"
-msgstr ""
-
-msgid "u.v.m"
-msgstr ""
-
-msgid "Audio-/Videokonferenz (mit Jitsi)"
-msgstr ""
-
-msgid "Support via FAQs"
-msgstr ""
-
-msgid "für kleine (virtuelle) Versammlungen"
-msgstr ""
-
-msgid "bis <b>250</b> Teilnehmende"
-msgstr ""
-
-msgid "individueller Support via E-Mail/Telefon"
-msgstr ""
-
-msgid "Online-Schulung"
+msgid "Anfrage senden"
 msgstr ""
 
 msgid ""
-"Technische Begleitung Ihrer Veranstaltung<br>\n"
-"                            (vor Ort, virtuell oder per Rufbereitschaft)"
+"für wiederkehrende Veranstaltungen mit Gremienmanagementsystem und "
+"zentraler Internetadresse · Mindestlaufzeit 12 Monate"
 msgstr ""
 
-msgid "für große (virtuelle) Tagungen und Konferenzen"
+msgid "Gremium 4"
 msgstr ""
 
-msgid "bis <b>500</b> Teilnehmende"
+msgid "Gremium 16"
 msgstr ""
 
-msgid ""
-"Single Sign-On via SAML (für Organisationen mit zentralem "
-"SAML-Mitgliedsserver)"
+msgid "Gremium 32"
 msgstr ""
 
-msgid "Hinweise zur Auswahl:"
+msgid "» zzgl. Betriebs-Supportpauschale ab 1.500 €/Jahr (zzgl. USt)"
 msgstr ""
 
-msgid ""
-"Für jedes eigenständige Gremium/Organ (z.B. Vorstand, Beirat, "
-"Mitgliederversammlung) benötigen Sie je eine separate OpenSlides-Instanz."
+msgid "» jede weitere 250 aktive Accounts für 1.000 €/Jahr (zzgl. USt)"
 msgstr ""
 
 msgid ""
-"Innerhalb einer OpenSlides-Instanz können Sie beliebig viele wiederkehrende "
-"Sitzungen in der Hostinglaufzeit abhalten. Abgerechnet wird pro Monat."
+"Es zählen nur aktive Accounts. Nicht berücksichtigt werden deaktivierte "
+"Accounts (kein Login möglich). Ein Gremium kann beliebig viele "
+"Veranstaltungen enthalten. Abgelaufene Veranstaltungen können archiviert "
+"werden, berechnet werden nur aktive Veranstaltungen. Alle Teilnehmende "
+"haben weiter lesenden Zugriff auf archivierte Veranstaltungen"
+msgstr ""
+
+msgid "für alle Hosting-Pakete"
 msgstr ""
 
 msgid ""
-"Wunsch-URL pro OpenSlides-Instanz nach Verfügbarkeit (z.B. "
-"https://meine-versammlung.openslides.com)"
-msgstr ""
-
-msgid "Beispiele:"
+"Wunsch-URL nach Verfügbarkeit (z.B. "
+"https://meine-organsiation.openslides.com)"
 msgstr ""
 
 msgid ""
-"Ein Verband möchte OpenSlides für seine wöchentlichen Vorstandssitzung mit "
-"12 Personen sowie für die jährliche Mitgliederversammlung mit ca. 200 "
-"Teilnehmde nutzen. Dafür sind zwei Hostingpakete nötig: »Sitzung« und "
-"»Tagung«."
-msgstr ""
-
-msgid ""
-"Eine Bundesverband möchte für die Vorstandssitzungen seiner 16 "
-"Landesverbände OpenSlides nutzen (je &lt;50 Personen). Dafür sind 16 "
-"einzelne OpenSlides-Instanzen (Hostingpaket »Sitzung«) nötig."
-msgstr ""
-
-msgid "Für alle Hosting-Pakete gelten folgende Leistungen:"
+"Technischer Kundensupport per Ticket-System (Veranstaltungssupport separat "
+"buchbar)"
 msgstr ""
 
 msgid "sichere Verbindung: HTTPS mit Let's-Encrypt-Zertifikaten"
 msgstr ""
 
-msgid "sichere Daten: Abschluss einer Vereinbarung zur Auftragsverarbeitung"
+msgid ""
+"sichere Daten: Abschluss einer <a "
+"href=\"https://files.openslides.org/docs/OpenSlides-Muster-AV-Vertrag.pdf\" "
+"target=_blank class=\"inline\">Vereinbarung zur Auftragsverarbeitung</a>"
 msgstr ""
 
 msgid ""
-"sicherer Betrieb: jede Veranstaltung läuft als abgekapselte "
-"OpenSlides-Instanz mit eigener Datenbank"
+"sicherer Betrieb: jede OpenSlides-Instanz läuft abgekapselt in einem "
+"Container und hat ihre eigene Datenbank"
 msgstr ""
 
 msgid ""
@@ -1342,7 +1555,13 @@ msgid ""
 "Deutschland."
 msgstr ""
 
-msgid "Mindestlaufzeit: 1 Monat, monatlich kündbar"
+msgid "für eine Rundum-Betreuuung Ihrer Veranstaltung"
+msgstr ""
+
+msgid "Technische Begleitung vor Ort"
+msgstr ""
+
+msgid "Telefonische Rufbereitschaft"
 msgstr ""
 
 msgid "Noch Fragen?"
