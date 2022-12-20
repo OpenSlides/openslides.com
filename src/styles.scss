@@ -50,6 +50,10 @@ small, .small {
     font-size: 16px;
 }
 
+.semibold {
+    font-weight: 500 !important;
+}
+
 h3 {
     font-weight: 500;
     margin-top: 30px;
@@ -139,6 +143,14 @@ p, li {
             }
         }
 
+        &.orange {
+            background-color: $os-orange;
+
+            &:hover {
+                color: $os-orange;
+            }
+        }
+
         &.bordered {
             box-shadow: none;
             border: 1px solid $os-turquoise;
@@ -199,6 +211,28 @@ p, li {
                         &.soft {
                             color: $os-blue;
                             background-color: rgba($os-blue, 0.2);
+                        }
+                    }
+                }
+            }
+
+            &.orange {
+                border: 1px solid $os-orange;
+
+                &.soft:hover {
+                    background-color: rgba($os-orange, 0.7) !important;
+                }
+
+                &.inverted {
+                    &:not(:hover) {
+                        color: $os-orange;
+                    }
+                    &:hover {
+                        background-color: $os-orange;
+
+                        &.soft {
+                            color: $os-orange;
+                            background-color: rgba($os-orange, 0.2);
                         }
                     }
                 }
@@ -287,6 +321,10 @@ h1 {
 
 h2 {
     font-weight: normal;
+}
+
+.mt-0 {
+    margin-top: 5px !important;
 }
 
 .mt-1 {

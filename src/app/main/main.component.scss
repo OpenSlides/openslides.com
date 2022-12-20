@@ -12,12 +12,16 @@ p {
     line-height: 1.5;
 }
 
+.smallfont {
+    font-size: 18px;
+}
+
 .orangesection {
     background-color: rgba(240,100,0);
     color: white;
     font-size: 100%;
     padding-top: 20px;
-    padding-bottom: 35px;
+    padding-bottom: 20px;
 }
 
 .orangesection a:hover {
@@ -28,7 +32,9 @@ p {
     background-color: $os-darkblue;
     color: white;
     font-size: 110%;
-    padding-top: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
 
 .milky-bg {
@@ -94,6 +100,12 @@ p {
 .hosting-logo {
     width: 80px;
     height: 67px;
+}
+
+.largeicon {
+    width: 72px;
+    height: 72px;
+    font-size: 72px;
 }
 
 .section {
@@ -216,6 +228,9 @@ img.screenshot,
 }
 .box p {
     padding: 0 20px 0 20px;
+}
+.box img {
+    width: 100%;
 }
 
 .denser-paragraphs p {

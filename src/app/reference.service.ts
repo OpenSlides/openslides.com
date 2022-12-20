@@ -24,40 +24,45 @@ export class ReferenceService {
             refs: [
                 {
                     name: 'Deutscher Gewerkschaftsbund (DGB)',
-                    event: 'Bundeskongress 2018, Bundesjugendkonferenz, Bezirkskonferenzen',
+                    event: 'Bundeskongress, Bundesjugendkonferenz, Bezirkskonferenzen',
                     src: 'dgb-logo.png',
                     frontpage: true
                 },
                 {
                     name: 'ver.di',
-                    event: 'Bundeskongress 2019, Bundesjugendkonferenz',
+                    event: 'Bundeskongress, Bundesjugendkonferenz, Fachbereichskonferenzen',
                     src: 'verdi-logo.png',
                     frontpage: true
                 },
                 {
                     name: 'Industriegewerkschaft Bauen Agrar Umwelt (IG BAU)',
-                    event: 'Gewerkschaftstag 2017',
+                    event: 'Gewerkschaftstag',
                     src: 'igbau-logo.png'
                 },
                 {
                     name: 'Gewerkschaft der Polizei (GdP)',
-                    event: 'Bundeskongress 2018, Bundeskonferenzen der Frauen/Senioren/Jugend 2018',
+                    event: 'Bundeskongress, Bundeskonferenzen der Frauen/Senioren/Jugend',
                     src: 'gdp-logo.png'
                 },
                 {
                     name: 'Gewerkschaft Nahrung Genuss Gaststätten (NGG)',
-                    event: 'Gewerkschaftstag 2018, Bundesjugendkonferenz 2018',
+                    event: 'Gewerkschaftstag, Bundesjugendkonferenz',
                     src: 'ngg-logo.png'
                 },
                 {
                     name: 'Gewerkschaft Erziehung und Wissenschaft (GEW)',
-                    event: 'Gewerkschaftstag 2021, Landesvertreterversammlungen',
+                    event: 'Gewerkschaftstag, Landesvertreterversammlungen',
                     src: 'gew-logo.png'
                 },
                 {
                     name: 'Industriegewerkschaft Bergbau, Chemie, Energie (IG BCE)',
-                    event: 'Bundesjugendkonferenz 2021',
+                    event: 'Gewerkscaftskongress, Bundesjugendkonferenz',
                     src: 'igbce-logo.png'
+                },
+                {
+                    name: 'Eisenbahn- und Verkehrsgewerkschaft (EVG)',
+                    event: 'Gewerkschaftstag',
+                    src: 'evg-logo.png'
                 },
                 {
                     name: 'Gewerkschaft Öffentlicher Dienst (Österreich)',
@@ -77,7 +82,7 @@ export class ReferenceService {
                 },
                 {
                     name: 'SPD',
-                    event: 'Bundesparteitag, Landes-, Bezirks- und Kreisparteitage',
+                    event: 'Bundes-, Landes-, Bezirks- und Kreisparteitage',
                     src: 'spd-logo.png',
                     frontpage: true
                 },
@@ -94,7 +99,7 @@ export class ReferenceService {
                 },
                 {
                     name: 'CDU',
-                    event: 'Landesparteitag BaWü',
+                    event: 'Landesparteitag BaWü / Schlewsig-Holstein',
                     src: 'cdu-logo.png'
                 },
                 {

@@ -2,33 +2,42 @@
 
     <!-- Welcome -->
     <div class="full-width-img-wrapper flex col">
-        <img class="full-width-img" src="assets/img/welcome.jpg">
+        <img class="full-width-img" src="assets/img/welcomeOS4.jpg">
     </div>
 
     <!-- News -->
-    <div class="orangesection" style="height: 50px;">
+    <div class="orangesection">
         <div class="container smaller text-center">
-            +++ OpenSlides sucht Kolleg:innen für
-            <a target="_blank" rel="noreferrer" href="https://intevation.de/jobs/20221101-admin-devops/"><b translate> "GNU/Linux-Administrator:in (DevOps)"</b></a>
-            sowie
-            <a target="_blank" rel="noreferrer" href="https://intevation.de/jobs/20221101-intevation-entwicklung/"><b translate>"Freie-Software-Entwickler:innen"</b></a>
-            +++
+            <b>
+                +++
+                <a target="_blank" rel="noreferrer" href="https://files.openslides.org/press/4.0/PM-OpenSlides-4.0.pdf" translate>OpenSlides 4.0 erschienen – mit neuem Gremienmanagementsystem (2022-12-14)</a>
+                 +++</b>
+            <br>
+            <small>
+                <a class="float-right" routerLink="./news">
+                    <span translate>Alle News anzeigen</span>
+                </a>
+            </small>
         </div>
     </div>
 
     <!-- About OpenSlides -->
     <div class="container smaller section">
-        <h1 translate>Managen Sie Veranstaltungen digital</h1>
+        <h1 translate>Managen Sie Veranstaltungen und Gremien digital</h1>
         <p>
-            {{ "OpenSlides ist ein leistungsstarkes Werkzeug und bietet eine umfassende Lösung zur digitalen Organisation Ihrer Veranstaltungen und Konferenzen. Alle Mitgliederversammlungen können als Präsenz-, Hybrid- oder als virtuelle Veranstaltungen bereitgestellt werden. Verwalten Sie Tagesordnungen, Anträge, Wahlen, Redelisten, Dokumente und Teilnehmende. Alle diese Dinge sind erstaunlich intuitiv zu bedienen." | translate }}
+            {{ "OpenSlides ist eine leistungsstarke und moderne, webbasierte Software zur digitalen Organisation Ihrer Veranstaltungen und Gremienstrukturen. Unter einer zentralen URL greifen User auf Ihre Gremien und Veranstaltungen zu." | translate }}
         </p>
+        <p>
+            {{ "Veranstaltungsorganisation aus einer Hand: Tagesordnungen, Redelisten, Anträge, Wahlen und Teilnehmendenmanagement." | translate }}
+            {{ "Nutzen Sie die neuen Gremienmanagement-Funktionen von OpenSlides4 um Ihre Organisation nachhaltig zu digitalisieren. Alle diese Dinge sind erstaunlich intuitiv zu bedienen." | translate }}
+        </p>
+
         <a href="https://demo.os4.openslides.com" target="_blank" rel="noreferrer" mat-flat-button class="os-button transparent-btn blue">
-            <span translate>Jetzt ausprobieren (Demo)</span>
+            <span translate>Jetzt Demo ausprobieren</span>
         </a>
     </div>
     <div class="container smaller section">
         <h1 class="text-center" translate>OpenSlides für alle Formate</h1>
-
         <div class="mt-1 mb-1 flex evenly-spaced wrap-mobile denser-paragraphs center-headings" appWrappable
             wrapMargin="30px">
             <div class="text-justify box">
@@ -36,8 +45,8 @@
                     <img src="assets/img/praesenz.png">
                     <h2 class="os-blue" translate>Präsenz</h2>
                 </div>
-                <p>
-                    {{ "Verschlanken und vereinfachen Sie Ihre Abläufe auf klassischen Präsenz-Veranstaltungen und lassen sich von den Vorteilen überzeugen: Reagieren Sie mit OpenSlides flexibel in Echtzeit und modernisieren Ihre Prozesse." | translate }}
+                <p class="smallfont">
+                    {{ "Verschlanken und vereinfachen Sie Ihre Abläufe auf klassischen Präsenz-Veranstaltungen und lassen Sie sich von den Vorteilen überzeugen: Reagieren Sie mit OpenSlides flexibel in Echtzeit und modernisieren Ihre Prozesse." | translate }}
                     <br><br>
                 </p>
                 <p>
@@ -51,7 +60,7 @@
                     <img src="assets/img/hybrid.png">
                     <h2 class="os-blue" translate>Hybrid</h2>
                 </div>
-                <p>
+                <p class="smallfont">
                     {{ "Geben Sie einem dezentral verteilten Plenum die Möglichkeit zur interaktiven Teilnahme: Alle Funktionen von OpenSlides können sowohl von zu Hause als auch am Veranstaltungsort gesteuert und genutzt werden. Hybrid - das Format der Zukunft!" | translate }}
                 </p>
                 <p>
@@ -65,7 +74,7 @@
                     <img src="assets/img/virtuell.png">
                     <h2 class="os-blue" translate>Virtuell</h2>
                 </div>
-                <p>
+                <p class="smallfont">
                     {{ "Der integrierte Livestream macht OpenSlides zur Komplettlösung für Ihre digitale Veranstaltung. Die intelligente Koppelung von Redeliste, Videokonferenz und Livestream ermöglicht eine einfach Bedienung. Virtuell macht Sie unabhängig." | translate }}
                 </p>
                 <p>
@@ -78,28 +87,56 @@
     </div>
 
     <!-- News -->
-    <div class="bluesection" style="height: 80px;">
+    <div class="bluesection">
         <div class="container smaller text-center">
-            <b translate>+++ Auch für virtuelle Mitgliederversammlungen, Hauptversammlungen und Parteitage +++</b>
-            <br>{{ "eVoting · integrierte Audio-/Videokonferenz · Video-Livestream" | translate }}
+            <b translate>OpenSlides - DAS Tool für digitale Antragsberatung.</b>
         </div>
     </div>
 
     <!-- Features -->
     <div id="features" class="mt-3">
-        <h1 class="text-center" translate>Basisfunktionen in OpenSlides</h1>
+        <h1 class="text-center" translate>Funktionen in OpenSlides</h1>
         <div class="container section center-mobile">
-            <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
+            <div class="flex wrap-mobile" appWrappable wrapMargin="50px">
+                <div class="text-right">
+                    <mat-icon class="largeicon">apps</mat-icon>
+                </div>
                 <div>
-                    <a routerLink="./feature/agenda">
-                        <img class="screenshot"
-                            src="assets/img/features/agenda/agenda_overview_{{ translate.currentLang }}.png">
+                    <h2 class="lh-1" translate>Gremienmanagement (neu ab 4.0)</h2>
+                    <p>
+                        {{ "Bilden Sie Ihre Gremienstrukturen ab, indem Sie beliebig viele Gremien und Veranstaltungen anlegen. Legen Sie detailliert fest, welche Gremien Anträge weiterleiten können und definieren Sie Zugriffsrechte auf Gremien und Veranstaltungen. Archivieren Sie Ihre abgelaufenen Veranstaltungen." | translate }}
+                    </p>
+                    <a routerLink="./feature/committees" mat-flat-button class="os-button">
+                        <span translate>Mehr erfahren</span>
                     </a>
+                </div>
+            </div>
+        </div>
+        <div class="container section center-mobile">
+            <div class="flex wrap-mobile" appWrappable wrapMargin="50px">
+                <div class="text-right">
+                    <mat-icon class="largeicon">sync</mat-icon>
+                </div>
+                <div>
+                    <h2 class="lh-1" translate>Autopilot</h2>
+                    <p>
+                        {{ "Der Autopilot führt alle Teilnehmenden durch eine Veranstaltung. Er zeigt an, welcher Tagesordnungspunkt oder Antrag gerade beraten wird, wer auf der Redeliste steht, welche Abstimmung gerade läuft und was aktuell am Projektor gezeigt wird." | translate }}
+                    </p>
+                    <a routerLink="./feature/autopilot" mat-flat-button class="os-button">
+                        <span translate>Mehr erfahren</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container section center-mobile">
+            <div class="flex wrap-mobile" appWrappable wrapMargin="50px">
+                <div class="text-right">
+                    <mat-icon class="largeicon">today</mat-icon>
                 </div>
                 <div>
                     <h2 class="lh-1" translate>Tagesordnung</h2>
                     <p>
-                        {{ "Ergänzen, ändern oder verschieben Sie automatisch nummerierte Tagesordnungspunkte per Drag & Drop im laufenden Betrieb. Verknüpfen Sie die einzelnen Punkte mit Redelisten sowie Redezeiten und integrieren Sie für eine bessere Zeitplanung auch inoffizielle Einträge wie Pausen." | translate }}
+                        {{ "Ergänzen, ändern oder verschieben Sie automatisch nummerierte Tagesordnungspunkte per Drag & Drop im laufenden Betrieb. Verknüpfen Sie die einzelnen Punkte mit Redelisten sowie Redezeiten und integrieren Sie für eine bessere Zeitplanung inoffizielle Einträge wie Pausen." | translate }}
                     </p>
                     <a routerLink="./feature/agenda" mat-flat-button class="os-button">
                         <span translate>Mehr erfahren</span>
@@ -107,39 +144,48 @@
                 </div>
             </div>
         </div>
-        <div class="section flex center-mobile text-right">
-            <div class="container">
-                <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
-                    <div class="switch-flex-order">
-                        <h2 class="lh-1" translate>Anträge</h2>
-                        <p>
-                            {{ "Erfassen Sie Anträge mit Antragsteller und Antragstext. Ordnen Sie Sachgebiete und Antragsnummer zu. Protokollieren Sie Beschluss und Abstimmungsergebnis während der Antragsberatung. Die flexible Filterung der Liste hilft bei der Suche in allen Anträgen und ihren Änderungen." | translate }}
-                        </p>
-                        <a routerLink="./feature/motions" mat-flat-button class="os-button">
-                            <span translate>Mehr erfahren</span>
-                        </a>
-                    </div>
-                    <div class="switch-flex-order">
-                        <a routerLink="./feature/motions">
-                            <img class="screenshot"
-                                src="assets/img/features/motions/motions_overview_{{ translate.currentLang }}.png">
-                        </a>
-                    </div>
+        <div class="container section center-mobile">
+            <div class="flex wrap-mobile" appWrappable wrapMargin="50px">
+                <div class="text-right">
+                    <mat-icon class="largeicon">record_voice_over</mat-icon>
+                </div>
+                <div>
+                    <h2 class="lh-1" translate>Redeliste</h2>
+                    <p>
+                        {{ "Nutzen Sie die Redeliste zur Verwaltung ihrer Redebeiträge. Erfassen sie sekundengenau Redezeiten und legen sie per Countdown Redezeiten fest. Das Highlight für die Bildregie: automatisierte Bauchbinden der Redner*innen." | translate }}
+                    </p>
+                    <a routerLink="./feature/los" mat-flat-button class="os-button">
+                        <span translate>Mehr erfahren</span>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="container section center-mobile">
-            <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
-                <div>
-                    <a routerLink="./feature/elections">
-                        <img class="screenshot"
-                            src="assets/img/features/elections/elections_overview_{{ translate.currentLang }}.png">
+            <div class="flex wrap-mobile" appWrappable wrapMargin="50px">
+                <div class="text-right">
+                    <mat-icon class="largeicon">assignment</mat-icon>
+                </div>
+                <div class="switch-flex-order">
+                    <h2 class="lh-1" translate>Anträge</h2>
+                    <p>
+                        {{ "Erfassen Sie Anträge und Änderungsanträge. Ordnen Sie Sachgebiete und Antragsnummer zu. Stimmen Sie elektronisch ab und protokollieren Sie den Beschluss." | translate }}
+                    </p>
+                    <a routerLink="./feature/motions" mat-flat-button class="os-button">
+                        <span translate>Mehr erfahren</span>
                     </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="container section center-mobile">
+            <div class="flex wrap-mobile" appWrappable wrapMargin="50px">
+                <div class="text-right">
+                    <mat-icon class="largeicon">how_to_vote</mat-icon>
                 </div>
                 <div>
                     <h2 class="lh-1" translate>Wahlen</h2>
                     <p>
-                        {{ "Schlagen Sie Kandidat/innen aus der Liste der Teilnehmenden vor. Generieren Sie ad-hoc personalisierte Stimmzettel für geheime Wahlen. Protokollieren und projizieren Sie die ausgezählten Stimmen – für jeden Teilnehmenden nachzulesen in OpenSlides." | translate }}
+                        {{ "Stellen Sie Kandidierende on-the-fly auf, beschleunigen Sie Ihre Wahlgänge mit elektronischen Wahlen und präsentieren Sie die Ergebnisse." | translate }}
                     </p>
                     <a routerLink="./feature/elections" mat-flat-button class="os-button">
                         <span translate>Mehr erfahren</span>
@@ -147,39 +193,15 @@
                 </div>
             </div>
         </div>
-        <div class="section flex center-mobile text-right">
-            <div class="container">
-                <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
-                    <div class="switch-flex-order">
-                        <h2 class="lh-1" translate>Projektoren</h2>
-                        <p>
-                            {{ "OpenSlides ist für die Arbeit mit multiplen Bildschirmen konzipiert und mit einer mächtigen Projektorsteuerung versehen. Das Webinterface erlaubt das Projizieren und Bearbeitung der Folien, während die Projektoren in Vollbild laufen." | translate }}
-                        </p>
-                        <a routerLink="./feature/projectors" mat-flat-button class="os-button">
-                            <span translate>Mehr erfahren</span>
-                        </a>
-                    </div>
-                    <div class="switch-flex-order">
-                        <a routerLink="./feature/projectors">
-                            <img class="screenshot"
-                                src="assets/img/features/projectors/projectors_overview_{{ translate.currentLang }}.png">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="container section center-mobile">
-            <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
-                <div>
-                    <a routerLink="./feature/evoting">
-                        <img class="screenshot"
-                            src="assets/img/features/evoting/evoting_motion-singlevotes_{{ translate.currentLang }}.png">
-                    </a>
+            <div class="flex wrap-mobile" appWrappable wrapMargin="50px">
+                <div class="text-right">
+                    <mat-icon class="largeicon">donut_large</mat-icon>
                 </div>
                 <div>
                     <h2 class="lh-1" translate>Elektronische Stimmabgabe</h2>
                     <p>
-                        {{ "Nutzen Sie Live-Voting für Anträge und Wahlen. Die stimmberechtigte Nutzergruppe lässt sich pro Antrag/Wahl festlegen. Nur in OpenSlides auf anwesend und stimmberechtigt geschaltete Teilnehmende dürfen abstimmen. Möglich sind namentliche oder nicht-namentliche (anonyme) Antragsabstimmungen und Personenwahlen. Auch individuelle Stimmgewichtungen und Stimmrechtsübertragungen sind möglich." | translate }}
+                        {{ "Nutzen Sie Live-Voting für Antragsabstimmungen, Personenwahlen und Umfragen. Legen Sie stimmberechtigte Nutzergruppe  fest. Erstellen Sie namentliche oder nicht-namtlichte Stimmabgaben." | translate }}
                     </p>
                     <a routerLink="./feature/evoting" mat-flat-button class="os-button">
                         <span translate>Mehr erfahren</span>
@@ -187,43 +209,65 @@
                 </div>
             </div>
         </div>
-        <div class="section flex center-mobile text-right">
-            <div class="container">
-                <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
-                    <div class="switch-flex-order">
-                        <h2 class="lh-1" translate>Video-Livestream</h2>
-                        <p>
-                            {{ "Integrieren Sie einen Video-Livestream Ihrer virtuellen Veranstaltung in OpenSlides. Alle Teilnehmenden verfolgen den Stream jederzeit sichtbar in OpenSlides. Möchte sich eine Person zu Wort melden, setzt sich diese selbständig auf die aktuelle Redeliste in OpenSlides und wechselt damit automatisch in einen Jitsi-Videokonferenzraum. Der Livestream überträgt die Videokonferenz. Nach Ende der Wortmeldung verlässt man den Konferenzraum und verfolgt wieder den Livestream." | translate }}
-                        </p>
-                        <a routerLink="./feature/livestream" mat-flat-button class="os-button">
-                            <span translate>Mehr erfahren</span>
-                        </a>
-                    </div>
-                    <div class="switch-flex-order">
-                        <a routerLink="./feature/livestream">
-                            <img class="screenshot"
-                                src="assets/img/features/livestream/livestream_autopilot_{{ translate.currentLang }}.png">
-                        </a>
-                    </div>
+        <div class="container section center-mobile">
+            <div class="flex wrap-mobile" appWrappable wrapMargin="50px">
+                <div class="text-right">
+                    <mat-icon class="largeicon">groups</mat-icon>
+                </div>
+                <div>
+                    <h2 class="lh-1" translate>Teilnehmende</h2>
+                    <p>
+                        {{ "Bestimmen Sie, welche Personen was sehen. Jeder Bereich von OpenSlides kann für einzelne Nutzergruppen freigeschaltet werden. Die Verwaltung der Delegierten und ihrer Anwesenheit sowie das ausgefeilte Rechtemanagement sind unkompliziert und intuitiv." | translate }}
+                    </p>
+                    <a routerLink="./feature/users" mat-flat-button class="os-button">
+                        <span translate>Mehr erfahren</span>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="container section big center-mobile">
-            <div class="flex evenly-spaced wrap-mobile" appWrappable wrapMargin="50px">
+        <div class="container section flex center-mobile">
+            <div class="flex wrap-mobile" appWrappable wrapMargin="50px">
+                <div class="text-right">
+                    <mat-icon class="largeicon">videocam</mat-icon>
+                </div>
                 <div>
-                    <a routerLink="./feature/miscellaneous">
-                        <img class="full-width" src="assets/img/responsive-design.png">
+                    <h2 class="lh-1" translate>Projektoren</h2>
+                    <p>
+                        {{ "OpenSlides ist für die Arbeit mit multiplen Bildschirmen konzipiert und mit einer mächtigen Projektorsteuerung versehen. Das Webinterface erlaubt das Projizieren und die Bearbeitung der Folien, während die Projektoren in Vollbild laufen." | translate }}
+                    </p>
+                    <a routerLink="./feature/projectors" mat-flat-button class="os-button">
+                        <span translate>Mehr erfahren</span>
                     </a>
+                </div>
+            </div>
+        </div>
+        <div class="container section flex center-mobile">
+            <div class="flex wrap-mobile" appWrappable wrapMargin="50px">
+                <div class="text-right">
+                    <mat-icon class="largeicon">phone</mat-icon>
+                </div>
+                <div>
+                    <h2 class="lh-1" translate>Livekonferenz mit Video-Livestream</h2>
+                    <p>
+                        {{ "Integrieren Sie einen Video-Livestream in OpenSlides. Alle Teilnehmenden verfolgen diesen jederzeit sichtbar in OpenSlides und haben die Möglichkeit Redebeiträge über eine Videokonferenz einzureichen." | translate }}
+                    </p>
+                    <a routerLink="./feature/livestream" mat-flat-button class="os-button">
+                        <span translate>Mehr erfahren</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container section flex center-mobile">
+            <div class="flex wrap-mobile" appWrappable wrapMargin="50px">
+                <div class="text-right">
+                    <mat-icon class="largeicon">settings</mat-icon>
                 </div>
                 <div>
                     <h2 translate>Vielseitig und responsiv</h2>
                     <p>
-                        {{ "Die Verwaltung der Delegierten und ihrer Anwesenheit sowie das ausgefeilte Rechtemanagement sind unkompliziert und intuitiv. Jeder Bereich von OpenSlides kann für einzelne Nutzergruppen freigeschalten werden." | translate }}
-                    </p>
-                    <p>
                         {{ "Egal ob Dateiablage oder Kommentarfunktion – OpenSlides ist mit einer Vielzahl praxistauglicher Detailwerkzeuge ausgestattet. Darüber hinaus entwickeln wir für Kunden auch maßgeschneiderte Lösungen." | translate }}
                     </p>
-                    <a routerLink="./feature/miscellaneous" mat-flat-button class="os-button">
+                    <a routerLink="./feature/misc" mat-flat-button class="os-button">
                         <span translate>Mehr Funktionen</span>
                     </a>
                 </div>
@@ -231,8 +275,19 @@
         </div>
     </div>
 
+
+    <!-- News -->
+    <div class="bluesection">
+        <div class="container smaller text-center">
+            <b translate>OpenSlides – das weitverbreitetste Antrags- und Konferenzsystem Deutschlands.</b>
+
+        </div>
+    </div>
+
     <!-- Hosting / Professional Services -->
     <div class="container section big center-mobile" id="getting-started">
+        <h1 class="text-center" translate>Serviceleistungen</h1>
+        <br>
         <div class="flex evenly-spaced wrap-tablet" appWrappable wrapMargin="50px">
             <div class="hosting-container">
                 <div class="flex wrap-mobile center-mobile" appWrappable>
@@ -329,6 +384,8 @@
 
     <!-- References -->
     <div class="container section text-center" id="references">
+        <h1 class="text-center" translate>Referenzen</h1>
+        <br>
         <div fxLayout="row wrap" class="flex text-center" appWrappable wrapMarginX="15px">
             <app-reference-container *ngFor="let ref of refService.frontpageRefs" [ref]="ref"></app-reference-container>
         </div>
@@ -342,55 +399,6 @@
         <slideshow class="quote-slideshow" minHeight="300px" [autoPlay]="true" autoPlayInterval="10000"
             [imageUrls]="quotes" captionBackground="transparent" captionColor="#000">
         </slideshow>
-        -->
-    </div>
-
-
-    <!-- News -->
-    <div class="section container" id="news">
-        <h1 class="d-inline-block" translate>News</h1>
-        <a class="float-right" routerLink="./news">
-            <span translate>Alle News anzeigen</span>
-        </a>
-        <div class="flex evenly-spaced wrap-mobile news-links" appWrappable>
-            <div>
-                <div><i>{{ "2021-12-23" | localizedDate }}:</i>
-                    <a rel="noreferrer" class="hover"
-                     routerLink="./news/OpenSlides4">OpenSlides 4.0 mit Gremienmanagement - Erste Einblicke</a>
-                </div>
-                <div><i>{{ "2021-10-07" | localizedDate }}:</i>
-                    <a target="_blank" rel="noreferrer" class="hover"
-                        href="https://files.openslides.org/press/3.4/PM-OpenSlides-3.4.pdf">
-                        <mat-icon style="vertical-align: bottom;">picture_as_pdf</mat-icon>
-                        OpenSlides 3.4 steigert Interaktion für virtuelle Veranstaltungen</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Newsletter
-        <div class="section container">
-            <h2 translate>Newsletter</h2>
-            <p>
-                {{ "Erhalten Sie Neuigkeiten und Bekanntmachungen über neue OpenSlides-Entwicklungen. Tragen Sie sich hier in unseren Verteiler ein:" | translate }}
-            </p>
-            <div fxLayout="row" fxLayout.xs="row wrap" fxLayoutGap="20px" class="valign-wrapper">
-                <mat-form-field fxFlex.gt-xs="80%" fxFlexFill>
-                    <input matInput type="email" placeholder="E-Mail-Adresse" [formControl]="mailInput" required
-                        (keydown)="onKeydown($event)">
-                    <mat-error>{{ getErrorMessage() | translate }}</mat-error>
-                </mat-form-field>
-                <div fxFlex.gt-xs="20%">
-                    <button mat-flat-button type="submit" [disabled]="!mailInput.valid" class="os-button full-width"
-                        (click)="onSubmit()">
-                        <span translate>Absenden</span>
-                    </button>
-                </div>
-            </div>
-            <p *ngIf="success" class="valign-wrapper">
-                <mat-icon class="mr-0">check_circle</mat-icon>
-                <span translate>Sie haben sich erfolgreich für unseren Newsletter registriert!</span>
-            </p>
-        </div>
         -->
     </div>
 </div>
