@@ -68,7 +68,7 @@ export class OrderComponent implements OnInit {
             this.setDefaultsOnUnitDescriptor({
                 name: this.translate.instant('Hostingpaket') + ' "' + this.translate.instant(pkg.name) + '"',
                 base_price: pkg.price,
-                units: null
+                units: months
             } as OverviewTableEntry)
         ];
 
