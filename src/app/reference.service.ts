@@ -65,6 +65,11 @@ export class ReferenceService {
                     src: 'evg-logo.png'
                 },
                 {
+                    name: 'dbb beamtenbund und tarifunion',
+                    event: 'Gewerkschaftstag',
+                    src: 'dbb-logo.png'
+                },
+                {
                     name: 'Gewerkschaft Öffentlicher Dienst (Österreich)',
                     event: 'Bundeskongress, Landeskongresse',
                     src: 'goed-logo.png'
