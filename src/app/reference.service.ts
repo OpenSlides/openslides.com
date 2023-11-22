@@ -30,7 +30,7 @@ export class ReferenceService {
                 },
                 {
                     name: 'ver.di',
-                    event: 'Bundeskongress, Bundesjugendkonferenz, Fachbereichskonferenzen',
+                    event: 'Bundeskongress, div. Bundes-/Fachbereichs- und Bezirkskonferenzen / Vorstandssitzungen',
                     src: 'verdi-logo.png',
                     frontpage: true
                 },
@@ -104,7 +104,7 @@ export class ReferenceService {
                 },
                 {
                     name: 'CDU',
-                    event: 'Landesparteitag BaWü / Schlewsig-Holstein',
+                    event: 'Bundesausschuss, Landesparteitage BaWü / SH',
                     src: 'cdu-logo.png'
                 },
                 {
@@ -124,7 +124,7 @@ export class ReferenceService {
                 },
                 {
                     name: 'Junge Liberale',
-                    event: '1. virtueller Landeskongress der JuLis Bayern',
+                    event: 'Bundeskongress, Landeskongresse',
                     src: 'julis-logo.png'
                 },
                 {
@@ -136,6 +136,11 @@ export class ReferenceService {
                     name: 'Piratenpartei Deutschland / Schweiz',
                     event: 'Bundes-, Landes- und Kreisparteitage',
                     src: 'piraten-logo.png'
+                },
+                {
+                    name: 'Democratic Socialists of America (DSA)',
+                    event: 'DSA Convention',
+                    src: 'dsa-logo.png'
                 }
             ]
         },
@@ -272,6 +277,11 @@ export class ReferenceService {
                     name: 'Dt. Jugendfeuerwehr (LV NDS)',
                     event: 'NJF Jugendforum',
                     src: 'jf-logo.png'
+                },
+                {
+                    name: 'DLRG-Jugend',
+                    event: 'Bundesjugendtag',
+                    src: 'dlrg-jugend-logo.png'
                 }
             ]
         },
