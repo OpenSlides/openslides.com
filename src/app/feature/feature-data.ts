@@ -25,7 +25,9 @@ export const FeaturesByRoute: { [route: string]: FeatureDescription } = {
             _('globale Account-Verwaltung mit Zuweisung in Veranstaltungen'),
             _('Weiterleitungsoptionen von Anträge zwischen Gremien'),
             _('Farbdesign an eigenes CI anpassbar'),
+            _('eigenes Logo konfigurierbar'),
             _('neues Profilmenü mit Dark-Theme-Möglichkeit'),
+            _('neue Volltextsuche – organisationsweit über alle Veranstaltungen und Inhalte'),
         ]
     },
     autopilot: {
@@ -79,7 +81,9 @@ export const FeaturesByRoute: { [route: string]: FeatureDescription } = {
             _('Erfassung von Redezeit sowie Anzahl der Redebeiträge pro Person'),
             _('automatisierte Verwendung des aktuellen Redner*innennamens in einer Bauchbinde'),
             _('Sortieren von Redebeiträgen per Drag&Drop'),
-            _('Projektion von Redelisten (als Vollbild oder Einblendung)')
+            _('Projektion von Redelisten (als Vollbild oder Einblendung)'),
+            _('Sichtbarkeit der Wortmeldungen konfigurierbar'),
+            _('Konfiguration von festen GO-Antragsvorgaben inkl. Gewichtung')
         ]
     },
     motions: {
@@ -115,7 +119,7 @@ export const FeaturesByRoute: { [route: string]: FeatureDescription } = {
         image_names: ['overview', 'detail', 'pdf'],
         details: [
             _('Kandidaten aus der Teilnehmenden-Liste vorschlagen'),
-            _('Unterstützte Wahlverfahren: Ja/Nein/Enthaltung · Ja pro Kandidat · Nein pro Kandidat · Ja/Nein pro Kandidat, plus weitere generelle Wahloptionen (Enthaltung, Ablehnung, Zustimmung)'),
+            _('Unterstützte Wahlverfahren: Ja/Nein/Enthaltung · Ja pro Kandidat · Nein pro Kandidat · Ja/Nein pro Kandidat, plus weitere generelle Wahloptionen (Enthaltung, Ablehnung, Zustimmung) · Ja/Nein/Enthaltung pro Liste'),
             _('Neue Stimmabgabeoption: mehrere Stimmen auf einen Kandidaten erlauben (kumulieren) (ab 4.0)'),
             _('Wahlergebnisse auf Grundlage verschiedener 100%-Basen'),
             _('Mehrere Wahlgänge (z. B. Stichwahlen)'),
@@ -132,9 +136,10 @@ export const FeaturesByRoute: { [route: string]: FeatureDescription } = {
         intro: _('Verwalten Sie zentral auf Organisationsebene alle Accounts. Vergeben Sie Adminrechte zur Verwaltung von Gremien und Veranstaltungen. Legen Sie komplexe Nutzerrechte in Gruppen fest und bestimmen Sie, welche Person worauf Zugriff hat. Erfassen Sie effizient die Anwesenheit von Teilnehmenden in Veranstaltung – ihre Mandatsprüfungskommission wird begeistert sein.'),
         image_names: ['groups'],
         details: [
-            _('Verwaltung von Teilnehmenden auf Organisations- und/oder Veranstaltungsebene (ab OS 4.0)'),
+            _('Verwaltung von Teilnehmenden auf Organisations- und/oder Veranstaltungsebene'),
             _('Erstellung von Gruppen mit frei definierbaren Nutzungsrechten'),
-            _('veranstaltungsübergreifende Nutzung von Accounts (ein zentraler Login) (ab OS 4.0)'),
+            _('veranstaltungsübergreifende Nutzung von Accounts (ein zentraler Login)'),
+            _('Single-Sign-On – Integration eines Identity-Providers (IdP) auf Basis von SAML'),
             _('Einfache Erstellung von neuen Accounts per Einzelerstellung oder via CSV-Import auf Organisations- und/oder Veranstaltungsebene'),
             _('Erfassung der Anwesenheit und Export von Teilnehmendenliste (z. B. zur Mandatsprüfung)'),
             _('Stimmgewicht und Stimmrechtsübertragungen einstellbar'),
@@ -158,7 +163,8 @@ export const FeaturesByRoute: { [route: string]: FeatureDescription } = {
             _('Anordnen von Inhalten in einer Warteschlange'),
             _('Projektionshistorie durch einen Verlauf im Überblick behalten'),
             _('Unterstützung verschiedener Auflösungen'),
-            _('Projektion von PDF- oder Bilddateien')
+            _('Projektion von PDF- oder Bilddateien'),
+            _('interne Projektoren – sichtbar nur für Nutzer mit Verwaltungsrechten (z.B. als interner Vorschaumonitor)')
         ]
     },
     evoting: {
@@ -222,13 +228,12 @@ export const FeaturesByRoute: { [route: string]: FeatureDescription } = {
             _('Live-Änderungen direkt miterleben'),
             _('konfigurierbare Chatgruppen'),
             _('Umfangreiche Dateiverwaltung mit Zugriffsberechtigungen pro Datei und Ordner'),
-            _('Chronik für Anträge, Wahlen und Teilnehmenden (ab 4.0)'),
+            _('Chronik für Anträge, Wahlen und Teilnehmenden'),
             _('Umfangreiche Sortier- und Filtermöglichkeiten aller Listen'),
-            _('Mehrsprachigkeit (Englisch, Deutsch, Spanisch, Italienisch, Tschechisch und Russisch)'),
+            _('Mehrsprachigkeit (Englisch, Deutsch, Spanisch, Italienisch, Französisch, Tschechisch und Russisch)'),
             _('Benutzerdefinierte Übersetzungen: einfache Anpassung aller Begriffe nach individuellen Anforderungen pro Veranstaltung (z. B. Änderung von "Anträge" in "Beschlüsse".) '),
             _('Webanwendung basierend auf Python, Go und Angular im modernen Material Design'),
             _('Responsive Design'),
-            _('Progressive WebApp ermöglicht Vollbild-App unter Android und iOS')
-        ]
+            _('Progressive WebApp ermöglicht Vollbild-App unter Android und iOS')        ]
     }
 };
